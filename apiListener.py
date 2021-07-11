@@ -2,7 +2,7 @@
 from flask import Flask, jsonify, abort, make_response, request
 from flask_cors import CORS
 
-from api_check_user_id_pw.app import lambda_handler as check_user_id_pw
+from api_check_user_id_pw_post.app import lambda_handler as check_user_id_pw
 # from api_lock_validation_post.app import lambda_handler as lock_validation
 
 import sys
@@ -21,7 +21,29 @@ cors = CORS(api)
 # DO NOT deploy on production
 """
 
-@api.route('/login',
+@api.route('/save',
+           methods=['post'])  # TODO : Insert any URL
+def get_save_bookmark_post():
+    # Get body, headers
+    body = request.json
+    headers = request.headers
+
+    # Insert necessary data to body
+    data = {
+        'body-json': body,
+        'params': {
+            'header': headers
+        },
+        'context': {
+            'http-method': 'POST'
+        }
+    }
+
+    result = check_user_id_pw(data)
+
+    return make_response(jsonify(result))
+
+@api.route('/save',
            methods=['post'])  # TODO : Insert any URL
 def get_check_user_id_pw():
     # Get body, headers

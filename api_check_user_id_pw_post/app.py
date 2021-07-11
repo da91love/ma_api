@@ -1,6 +1,6 @@
 from common.util.config_get import get_config
 from common.AppBase import AppBase
-from common.lib.aipscm.data_access.system.AccessService import AccessService
+from common.lib.ma.data_access.system.AccessService import AccessService
 from .type.Res_type import ResType
 # import boto3
 import csv

@@ -1,4 +1,4 @@
-from common.lib.aipscm.data_access.AccessServiceBase import AccessServiceBase
+from common.lib.ma.data_access.AccessServiceBase import AccessServiceBase
 # from common.lib.i18n.i18n import I18n
 from .Query import Query
 

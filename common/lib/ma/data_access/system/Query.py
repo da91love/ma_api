@@ -1,4 +1,16 @@
 class Query():
+
+    sql_save_bookmark = """
+        INSERT INTO bookmarked_share(user_id, value) 
+        values('{user_id}'. '{value}');
+    """
+
+
+    sql_check_user_id_pw = """
+        select * from user_id_pw where user_id='{user_id}'
+    """
+
+
     test = """
      	    with crt_item as (
                 select *
