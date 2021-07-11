@@ -1,6 +1,8 @@
 # 必要なモジュールの読み込み
 from flask import Flask, jsonify, abort, make_response, request
-# from api_analysis_get.app import lambda_handler as get_analysis
+from flask_cors import CORS
+
+from api_check_user_id_pw.app import lambda_handler as check_user_id_pw
 # from api_lock_validation_post.app import lambda_handler as lock_validation
 
 import sys
@@ -12,14 +14,37 @@ os.path.dirname(sys.modules['__main__'].__file__)
 # __name__は現在のファイルのモジュール名
 
 api = Flask(__name__)
+cors = CORS(api)
 
 """
 # This flask API is only used for the development stage.
 # DO NOT deploy on production
 """
 
-@api.route('/test/api/v1/softbank/business-logic/1/common/analysis',
-           methods=['get'])  # TODO : Insert any URL
+@api.route('/login',
+           methods=['post'])  # TODO : Insert any URL
+def get_check_user_id_pw():
+    # Get body, headers
+    body = request.json
+    headers = request.headers
+
+    # Insert necessary data to body
+    data = {
+        'body-json': body,
+        'params': {
+            'header': headers
+        },
+        'context': {
+            'http-method': 'POST'
+        }
+    }
+
+    result = check_user_id_pw(data)
+
+    return make_response(jsonify(result))
+
+@api.route('/login',
+           methods=['post'])  # TODO : Insert any URL
 def get_analysis_get():
     # Get body, headers
     body = None

@@ -4,13 +4,13 @@ from common.util.config_get import get_config
 from common.util.exception_info import exception_info
 from common.type.ErrorRes import ErrorRes
 from common.util.logger_get import get_logger
-from common.lib.db.redis.Redis import Redis
+# from common.lib.db.redis.Redis import Redis
 from common.type.Errors import AuthenticationException
 
 # Create instances
 config = get_config()
 logger = get_logger()
-redis = Redis.getConnInstance()
+# redis = Redis.getConnInstance()
 logger.info(config['name'])
 
 

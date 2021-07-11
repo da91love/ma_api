@@ -1,15 +1,15 @@
 from common.type.Errors import WrongParameterException
-from common.lib.db.mysql.Mysql import Mysql
-from common.lib.db.mysql.sql_execution import executeSql
+from common.lib.db.postgre.Postgre import Postgre
+from common.lib.db.postgre.sql_execution import executeSql
 
 # Create instance
-conn = Mysql.getConnInstance()
+conn = Postgre.getConnInstance()
 
 
 class AccessServiceBase:
 
     @staticmethod
-    def execute_sql(sql, bindings=None):
+    def execute_sql(sql, is_column=None, bindings=None):
         """
         :param sql:
         :param bindings:
@@ -19,6 +19,7 @@ class AccessServiceBase:
             return executeSql(
                 conn,
                 sql,
+                is_column=is_column,
                 bindings=bindings)
 
         except Exception as e:

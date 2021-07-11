@@ -1,8 +1,4 @@
 class Query():
-    sql_check_user_id_pw = """
-        select * from user_id_pw where user_id='{user_id}'
-    """
-
     test = """
      	    with crt_item as (
                 select *
