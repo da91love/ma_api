@@ -4,6 +4,7 @@ __pycache__/
 *$py.class
 *.pyc
 
+/node_modules
 test.py
 /.idea
 /Scripts
