@@ -5,6 +5,10 @@ from .Query import Query
 
 class AccessService(AccessServiceBase):
 
+    """
+    All function's name should start with below 4 verbs: select insert update delete
+    """
+
     @staticmethod
     def save_bookmark(**bindings):
         """
@@ -20,14 +24,28 @@ class AccessService(AccessServiceBase):
             raise e
 
     @staticmethod
-    def check_user_id_pw(**bindings):
+    def insert_auth_id(**bindings):
         """
         :param bindings: (tuple)
         :return: (list) sql query result
         """
         try:
             return AccessServiceBase.execute_sql(
-                sql=Query.sql_check_user_id_pw,
+                sql=Query.sql_insert_auth_id,
+                bindings=bindings)
+
+        except Exception as e:
+            raise e
+
+    @staticmethod
+    def select_user_id_pw(**bindings):
+        """
+        :param bindings: (tuple)
+        :return: (list) sql query result
+        """
+        try:
+            return AccessServiceBase.execute_sql(
+                sql=Query.sql_select_user_id_pw,
                 bindings=bindings)
 
         except Exception as e:

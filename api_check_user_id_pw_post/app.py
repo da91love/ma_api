@@ -4,6 +4,7 @@ from common.lib.ma.data_access.system.AccessService import AccessService
 from .type.Res_type import ResType
 # import boto3
 import csv
+import uuid
 import os
 import sys
 project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -34,17 +35,30 @@ def lambda_handler(event, context=None) -> ResType:
 
     # Get data from API Gateway
     data = event['body-json']['data']
-    user_id = data['id']
+    user_id = data['userId']
     pw = data['pw']
 
-    lRes_user_id_pw = AccessService.check_user_id_pw(
+    # Check user_id and pw
+    lRes_user_id_pw = AccessService.select_user_id_pw(
         user_id=user_id,
     )
 
-    isIdNPwTrue = False
+    is_id_n_pw_true = False
     for row in lRes_user_id_pw:
         if row['pw'] == pw:
-            isIdNPwTrue = True
+            is_id_n_pw_true = True
             break
 
-    return ResType(isIdNPwTrue=isIdNPwTrue).get_response()
+    # If user_id and pw is valid, register auth_id
+    auth_id = None
+    if is_id_n_pw_true:
+        auth_id = str(uuid.uuid4())
+        AccessService.insert_auth_id(
+            user_id=user_id,
+            auth_id=auth_id
+        )
+
+    return ResType(
+                is_id_n_pw_true=is_id_n_pw_true,
+                auth_id=auth_id
+            ).get_response()

@@ -5,8 +5,12 @@ class Query():
         values('{user_id}'. '{value}');
     """
 
+    sql_insert_auth_id = """
+        INSERT INTO user_auth_id(user_id, auth_id) 
+        values('{user_id}', '{auth_id}');  
+    """
 
-    sql_check_user_id_pw = """
+    sql_select_user_id_pw = """
         select * from user_id_pw where user_id='{user_id}'
     """
 

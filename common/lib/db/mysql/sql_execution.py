@@ -25,16 +25,19 @@ def executeSql(conn, sql, bindings=None):
         logger.info(sql)
         cursor.execute(sql)
 
-
         try:
             sql_result = cursor.fetchall()
-            logger.info('executeSql ends')
 
             # Commit
             conn.commit()
 
+            logger.info('executeSql ends')
+
             return sql_result
         except BaseException:
+            # Commit
+            conn.commit()
+
             logger.info('executeSql ends')
             pass
 

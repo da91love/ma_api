@@ -21,29 +21,7 @@ cors = CORS(api)
 # DO NOT deploy on production
 """
 
-@api.route('/save',
-           methods=['post'])  # TODO : Insert any URL
-def get_save_bookmark_post():
-    # Get body, headers
-    body = request.json
-    headers = request.headers
-
-    # Insert necessary data to body
-    data = {
-        'body-json': body,
-        'params': {
-            'header': headers
-        },
-        'context': {
-            'http-method': 'POST'
-        }
-    }
-
-    result = check_user_id_pw(data)
-
-    return make_response(jsonify(result))
-
-@api.route('/save',
+@api.route('/dev/api/ma-api/v1/front/check-login',
            methods=['post'])  # TODO : Insert any URL
 def get_check_user_id_pw():
     # Get body, headers
