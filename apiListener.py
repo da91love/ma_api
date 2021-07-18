@@ -3,6 +3,8 @@ from flask import Flask, jsonify, abort, make_response, request
 from flask_cors import CORS
 
 from api_check_user_id_pw_post.app import lambda_handler as check_user_id_pw
+from api_check_auth_post.app import lambda_handler as check_auth
+from api_save_bookmark_post.app import lambda_handler as save_bookmark
 # from api_lock_validation_post.app import lambda_handler as lock_validation
 
 import sys
@@ -20,6 +22,51 @@ cors = CORS(api)
 # This flask API is only used for the development stage.
 # DO NOT deploy on production
 """
+
+@api.route('/dev/api/ma-api/v1/front/save-bookmark',
+           methods=['post'])  # TODO : Insert any URL
+def get_save_bookmark():
+    # Get body, headers
+    body = request.json
+    headers = request.headers
+
+    # Insert necessary data to body
+    data = {
+        'body-json': body,
+        'params': {
+            'header': headers
+        },
+        'context': {
+            'http-method': 'POST'
+        }
+    }
+
+    result = save_bookmark(data)
+
+    return make_response(jsonify(result))
+
+@api.route('/dev/api/ma-api/v1/front/check-auth',
+           methods=['post'])  # TODO : Insert any URL
+def get_check_auth():
+    # Get body, headers
+    body = request.json
+    headers = request.headers
+
+    # Insert necessary data to body
+    data = {
+        'body-json': body,
+        'params': {
+            'header': headers
+        },
+        'context': {
+            'http-method': 'POST'
+        }
+    }
+
+    result = check_auth(data)
+
+    return make_response(jsonify(result))
+
 
 @api.route('/dev/api/ma-api/v1/front/check-login',
            methods=['post'])  # TODO : Insert any URL

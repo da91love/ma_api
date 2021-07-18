@@ -1,17 +1,22 @@
 class Query():
 
-    sql_save_bookmark = """
+    sql_insert_bookmark = """
         INSERT INTO bookmarked_share(user_id, value) 
-        values('{user_id}'. '{value}');
+        VALUES('{user_id}', '{value}')
+        ON DUPLICATE KEY UPDATE value = '{value}', updated_at = CURRENT_TIMESTAMP
+    """
+
+    sql_select_auth_id = """
+        SELECT * FROM user_auth_id WHERE user_id='{user_id}'
     """
 
     sql_insert_auth_id = """
         INSERT INTO user_auth_id(user_id, auth_id) 
-        values('{user_id}', '{auth_id}');  
+        VALUES('{user_id}', '{auth_id}')
     """
 
     sql_select_user_id_pw = """
-        select * from user_id_pw where user_id='{user_id}'
+        SELECT * FROM user_id_pw WHERE user_id='{user_id}'
     """
 
 

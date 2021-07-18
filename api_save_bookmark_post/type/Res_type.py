@@ -1,9 +1,7 @@
 from common.type.base_res_type import BaseResType
 
 class ResType(BaseResType):
-    def __init__(self, isIdNPwTrue: bool):
+    def __init__(self):
         super().__init__()
 
-        self.set_payload({
-            'isIdNPwTrue': isIdNPwTrue,
-        })
+        self.set_payload(None)

@@ -10,14 +10,28 @@ class AccessService(AccessServiceBase):
     """
 
     @staticmethod
-    def save_bookmark(**bindings):
+    def insert_bookmark(**bindings):
         """
         :param bindings: (tuple)
         :return: (list) sql query result
         """
         try:
             return AccessServiceBase.execute_sql(
-                sql=Query.sql_save_bookmark,
+                sql=Query.sql_insert_bookmark,
+                bindings=bindings)
+
+        except Exception as e:
+            raise e
+
+    @staticmethod
+    def select_auth_id(**bindings):
+        """
+        :param bindings: (tuple)
+        :return: (list) sql query result
+        """
+        try:
+            return AccessServiceBase.execute_sql(
+                sql=Query.sql_select_auth_id,
                 bindings=bindings)
 
         except Exception as e:

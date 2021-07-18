@@ -1,12 +1,12 @@
 from common.util.config_get import get_config
 from common.AppBase import AppBase
 from common.lib.ma.data_access.system.AccessService import AccessService
-from common.type.Errors import AuthenticationException
 from common.util.check_auth import check_auth
 from .type.Res_type import ResType
+from common.type.Errors import AuthenticationException
 # import boto3
 import csv
-import json
+import uuid
 import os
 import sys
 project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -39,14 +39,12 @@ def lambda_handler(event, context=None) -> ResType:
     data = event['body-json']['data']
     user_id = data['userId']
     auth_id = data['authId']
-    value = json.dumps(data['value'],  ensure_ascii=False)
 
     # Check authentication
     is_authed = check_auth(user_id=user_id, auth_id=auth_id)
-    if not is_authed: raise AuthenticationException
 
-    # Insert bookmark data
-    AccessService.insert_bookmark(user_id=user_id, value=value)
+    return ResType(
+            is_authed=is_authed
+        ).get_response()
 
-    return ResType().get_response()
 
