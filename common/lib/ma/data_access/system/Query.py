@@ -1,5 +1,10 @@
 class Query():
 
+    sql_select_bookmark = """
+        SELECT * FROM bookmarked_share
+        WHERE user_id='{user_id}'
+    """
+
     sql_insert_bookmark = """
         INSERT INTO bookmarked_share(user_id, value) 
         VALUES('{user_id}', '{value}')
@@ -16,7 +21,8 @@ class Query():
     """
 
     sql_select_user_id_pw = """
-        SELECT * FROM user_id_pw WHERE user_id='{user_id}'
+        SELECT * FROM user_id_pw
+        WHERE user_id='{user_id}'
     """
 
 
