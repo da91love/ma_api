@@ -1,10 +1,12 @@
 from common.util.config_get import get_config
 from common.AppBase import AppBase
 from common.lib.ma.data_access.system.AccessService import AccessService
+from common.type.Errors import AuthenticationException
+from common.util.check_auth import check_auth
 from .type.Res_type import ResType
 # import boto3
 import csv
-import uuid
+import json
 import os
 import sys
 project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -34,31 +36,18 @@ def lambda_handler(event, context=None) -> ResType:
     """
 
     # Get data from API Gateway
-    data = event['body-json']['data']
-    user_id = data['userId']
-    pw = data['pw']
+    qs = event['params']['querystring']
+    user_id, auth_id = qs.values()
 
-    # Check user_id and pw
-    lRes_user_id_pw = AccessService.select_user_id_pw(
-        user_id=user_id,
-    )
+    # Check authentication
+    is_authed = check_auth(user_id=user_id, auth_id=auth_id)
+    if not is_authed: raise AuthenticationException
 
-    is_id_n_pw_true = False
-    for row in lRes_user_id_pw:
-        if row['pw'] == pw:
-            is_id_n_pw_true = True
-            break
+    # Insert bookmark data
+    lRes_bookmark: list = AccessService.select_bookmark(user_id=user_id)
 
-    # If user_id and pw is valid, register auth_id
-    auth_id = None
-    if is_id_n_pw_true:
-        auth_id = str(uuid.uuid4())
-        AccessService.insert_auth_id(
-            user_id=user_id,
-            auth_id=auth_id
-        )
+    json_value: list = [] if len(lRes_bookmark) < 0 else lRes_bookmark[0]['value']
+    dict_value: dict = json.loads(json_value)
 
-    return ResType(
-                is_id_n_pw_true=is_id_n_pw_true,
-                auth_id=auth_id
-            ).get_response()
+    return ResType(value=dict_value).get_response()
+

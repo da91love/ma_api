@@ -2,10 +2,9 @@
 from flask import Flask, jsonify, abort, make_response, request
 from flask_cors import CORS
 
-from api_check_user_id_pw_post.app import lambda_handler as check_user_id_pw
-from api_check_auth_post.app import lambda_handler as check_auth
-from api_save_bookmark_post.app import lambda_handler as save_bookmark
-from api_get_bookmark_post.app import lambda_handler as get_bookmark
+from api_auth_get.app import lambda_handler as get_auth
+from api_bookmark_put.app import lambda_handler as put_bookmark
+from api_bookmark_get.app import lambda_handler as get_bookmark
 
 import sys
 import os
@@ -23,21 +22,27 @@ cors = CORS(api)
 # DO NOT deploy on production
 """
 
-@api.route('/dev/api/ma-api/v1/front/get-bookmark',
-           methods=['post'])  # TODO : Insert any URL
-def get_get_bookmark():
-    # Get body, headers
-    body = request.json
+@api.route('/dev/api/ma-api/v1/front/bookmark',
+           methods=['get'])  # TODO : Insert any URL
+def bookmark_get():
+    body = None
     headers = request.headers
+    user_id = request.args.get('userId')
+    auth_id = request.args.get('authId')
 
     # Insert necessary data to body
     data = {
         'body-json': body,
+
         'params': {
-            'header': headers
+            'header': headers,
+            "querystring": {
+                "user_id": user_id,
+                "auth_id": auth_id,
+            },
         },
         'context': {
-            'http-method': 'POST'
+            'http-method': 'GET'
         }
     }
 
@@ -46,9 +51,9 @@ def get_get_bookmark():
     return make_response(jsonify(result))
 
 
-@api.route('/dev/api/ma-api/v1/front/save-bookmark',
-           methods=['post'])  # TODO : Insert any URL
-def get_save_bookmark():
+@api.route('/dev/api/ma-api/v1/front/bookmark',
+           methods=['put'])  # TODO : Insert any URL
+def bookmark_put():
     # Get body, headers
     body = request.json
     headers = request.headers
@@ -60,73 +65,33 @@ def get_save_bookmark():
             'header': headers
         },
         'context': {
-            'http-method': 'POST'
+            'http-method': 'PUT'
         }
     }
 
-    result = save_bookmark(data)
-
-    return make_response(jsonify(result))
-
-@api.route('/dev/api/ma-api/v1/front/check-auth',
-           methods=['post'])  # TODO : Insert any URL
-def get_check_auth():
-    # Get body, headers
-    body = request.json
-    headers = request.headers
-
-    # Insert necessary data to body
-    data = {
-        'body-json': body,
-        'params': {
-            'header': headers
-        },
-        'context': {
-            'http-method': 'POST'
-        }
-    }
-
-    result = check_auth(data)
+    result = put_bookmark(data)
 
     return make_response(jsonify(result))
 
 
-@api.route('/dev/api/ma-api/v1/front/check-user-id-pw',
-           methods=['post'])  # TODO : Insert any URL
-def get_check_user_id_pw():
-    # Get body, headers
-    body = request.json
-    headers = request.headers
-
-    # Insert necessary data to body
-    data = {
-        'body-json': body,
-        'params': {
-            'header': headers
-        },
-        'context': {
-            'http-method': 'POST'
-        }
-    }
-
-    result = check_user_id_pw(data)
-
-    return make_response(jsonify(result))
-
-@api.route('/login',
-           methods=['post'])  # TODO : Insert any URL
-def get_analysis_get():
+@api.route('/dev/api/ma-api/v1/front/auth',
+           methods=['get'])  # TODO : Insert any URL
+def auth_get():
     # Get body, headers
     body = None
-    headers = None
+    headers = request.headers
+    user_id = request.args.get('userId')
+    pw = request.args.get('pw')
 
     # Insert necessary data to body
     data = {
         'body-json': body,
+
         'params': {
             'header': headers,
             "querystring": {
-                "simulation_key": "test",
+                "user_id": user_id,
+                "pw": pw,
             },
         },
         'context': {
@@ -134,9 +99,10 @@ def get_analysis_get():
         }
     }
 
-    result = data
+    result = get_auth(data)
 
     return make_response(jsonify(result))
+
 
 # POSTの実装
 @api.route('/test/api/v1/softbank/business-logic/1/common/lock',
