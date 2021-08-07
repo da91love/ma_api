@@ -1,6 +1,7 @@
 import logging
 from common.util.config_get import get_config
 import mysql.connector
+from mysql.connector import pooling
 
 # Set config
 config = get_config()
@@ -15,22 +16,23 @@ class Mysql:
     하지만 하나의 connection에서 작업을 하다보니, 여러 에러가 수반되게 되어 매 sql마다 새로운 connection을 생성하는 방법으로 변경
     https://stackoverflow.com/questions/65169638/mysqlconnector-python-new-db-connection-for-each-query-vs-one-single-connect
     '''
-    # connInstance = None
-    # @classmethod
-    # def getConnInstance(cls):
-    #     try:
-    #         if cls.connInstance is None:
-    #             cls.__setConnInstance()
-    #
-    #         return cls.connInstance
-    #
-    #     except Exception as e:
-    #         raise e
+    connectionPoolInstance = None
 
     @classmethod
-    def getConnInstance(cls):
+    def getConnectionPool(cls):
         try:
-            logger.info('mysql connection starts')
+            if cls.connectionPoolInstance is None:
+                cls.__setConnectionPool()
+
+            return cls.connectionPoolInstance
+
+        except Exception as e:
+            raise e
+
+    @classmethod
+    def __setConnectionPool(cls):
+        try:
+            logger.info('mysql connection pool starts')
 
             # Get configuration of DB
             pgConf = config['DB']['mysql']
@@ -41,17 +43,19 @@ class Mysql:
             rds_password = pgConf['db_password']
             rds_user = pgConf['db_user']
 
-            conn = mysql.connector.connect(
-                host=rds_host,
-                database=rds_database,
-                port=rds_port,
-                user=rds_user,
-                password=rds_password,
-            )
+            connection_pool = pooling.MySQLConnectionPool(pool_name="connection_pool",
+                                                          pool_size=3,
+                                                          pool_reset_session=True,
+                                                          host=rds_host,
+                                                          database=rds_database,
+                                                          port=rds_port,
+                                                          user=rds_user,
+                                                          password=rds_password)
 
-            logger.info('mysql connection ends')
 
-            return conn
+            logger.info('mysql connection pool ends')
+
+            cls.connectionPoolInstance = connection_pool
 
         except Exception as e:
             raise e

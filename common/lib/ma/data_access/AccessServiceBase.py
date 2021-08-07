@@ -17,7 +17,8 @@ class AccessServiceBase:
             logger.info('executeSql starts')
 
             # Create connection instance
-            conn = Mysql.getConnInstance()
+            connection_pool = Mysql.getConnectionPool()
+            conn = connection_pool.get_connection()
 
             # Create a cursor instance
             cursor = conn.cursor(dictionary=True, buffered=True)
