@@ -36,17 +36,17 @@ def lambda_handler(event, context=None) -> ResType:
     """
 
     # Get data from API Gateway
-    qs = event['params']['querystring']
-    user_id, auth_id = qs.values()
+    data = event['body-json']['data']
+    user_id = data['userId']
+    auth_id = data['authId']
+    value = json.dumps(data['value'],  ensure_ascii=False)
 
     # Check authentication
     is_authed = check_auth(user_id=user_id, auth_id=auth_id)
     if not is_authed: raise AuthenticationException
 
     # Insert bookmark data
-    lRes_bookmark: list = AccessService.select_bookmark(user_id=user_id)
-    json_value: list = [] if len(lRes_bookmark) < 0 else lRes_bookmark[0]['value']
-    dict_value: dict = json.loads(json_value)
+    AccessService.insert_bookmark(user_id=user_id, value=value)
 
-    return ResType(value=dict_value).get_response()
+    return ResType().get_response()
 

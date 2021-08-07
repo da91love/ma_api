@@ -1,5 +1,10 @@
 class Query():
 
+    sql_select_valuation = """
+        SELECT * FROM valuation_value
+        WHERE user_id='{user_id}'
+    """
+
     sql_select_bookmark = """
         SELECT * FROM bookmarked_share
         WHERE user_id='{user_id}'

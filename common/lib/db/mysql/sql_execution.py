@@ -17,7 +17,7 @@ def executeSql(conn, sql, bindings=None):
         logger.info('executeSql starts')
 
         # Create a cursor instance
-        cursor = conn.cursor(dictionary=True)
+        cursor = conn.cursor(dictionary=True, buffered=True)
 
         if bindings:
             sql = sql.format(**bindings)
@@ -31,6 +31,10 @@ def executeSql(conn, sql, bindings=None):
             # Commit
             conn.commit()
 
+            # Close cursor, connection close
+            cursor.close()
+            conn.close()
+
             logger.info('executeSql ends')
 
             return sql_result
@@ -38,9 +42,18 @@ def executeSql(conn, sql, bindings=None):
             # Commit
             conn.commit()
 
+            # Close cursor, connection close
+            cursor.close()
+            conn.close()
+
             logger.info('executeSql ends')
             pass
 
     except Exception as e:
         conn.rollback()
+
+        # Close cursor, connection close
+        cursor.close()
+        conn.close()
+
         raise e

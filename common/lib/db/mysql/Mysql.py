@@ -8,26 +8,29 @@ config = get_config()
 # call instancese
 logger = logging.getLogger()
 
-
 class Mysql:
 
-    connInstance = None
+    '''
+    getConnInstance 은 하나의 db connection만을 생성하기 위해, 싱글톤으로 작성됨.
+    하지만 하나의 connection에서 작업을 하다보니, 여러 에러가 수반되게 되어 매 sql마다 새로운 connection을 생성하는 방법으로 변경
+    https://stackoverflow.com/questions/65169638/mysqlconnector-python-new-db-connection-for-each-query-vs-one-single-connect
+    '''
+    # connInstance = None
+    # @classmethod
+    # def getConnInstance(cls):
+    #     try:
+    #         if cls.connInstance is None:
+    #             cls.__setConnInstance()
+    #
+    #         return cls.connInstance
+    #
+    #     except Exception as e:
+    #         raise e
 
     @classmethod
     def getConnInstance(cls):
         try:
-            if cls.connInstance is None:
-                cls.__setConnInstance()
-
-            return cls.connInstance
-
-        except Exception as e:
-            raise e
-
-    @classmethod
-    def __setConnInstance(cls):
-        try:
-            logger.info('mysql starts')
+            logger.info('mysql connection starts')
 
             # Get configuration of DB
             pgConf = config['DB']['mysql']
@@ -46,8 +49,9 @@ class Mysql:
                 password=rds_password,
             )
 
-            logger.info('mysql ends')
-            cls.connInstance = conn
+            logger.info('mysql connection ends')
+
+            return conn
 
         except Exception as e:
             raise e
