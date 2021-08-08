@@ -48,5 +48,10 @@ def lambda_handler(event, context=None) -> ResType:
     # Insert bookmark data
     AccessService.insert_bookmark(user_id=user_id, value=value)
 
-    return ResType().get_response()
+    # Select bookmark data
+    lRes_bookmark: list = AccessService.select_bookmark(user_id=user_id)
+    json_value: list = [] if len(lRes_bookmark) < 0 else lRes_bookmark[0]['value']
+    dict_value: dict = json.loads(json_value)
+
+    return ResType(value=dict_value).get_response()
 

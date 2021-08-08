@@ -1,4 +1,21 @@
 class Query():
+    sql_insert_comp_tg_grp = """
+        INSERT INTO compare_tg_group(user_id, value) 
+        VALUES('{user_id}', '{value}')
+        ON DUPLICATE KEY UPDATE value = '{value}', updated_at = CURRENT_TIMESTAMP
+    """
+
+
+    sql_select_comp_tg_grp = """
+        SELECT * FROM compare_tg_group
+        WHERE user_id='{user_id}'
+    """
+
+    sql_insert_valuation = """
+        INSERT INTO valuation_value(user_id, value) 
+        VALUES('{user_id}', '{value}')
+        ON DUPLICATE KEY UPDATE value = '{value}', updated_at = CURRENT_TIMESTAMP
+    """
 
     sql_select_valuation = """
         SELECT * FROM valuation_value
