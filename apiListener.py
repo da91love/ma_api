@@ -3,6 +3,7 @@ from flask import Flask, jsonify, abort, make_response, request
 from flask_cors import CORS
 
 from api_auth_get.app import lambda_handler as get_auth
+from api_auth_delete.app import lambda_handler as delete_auth
 from api_bookmark_put.app import lambda_handler as put_bookmark
 from api_bookmark_get.app import lambda_handler as get_bookmark
 from api_valuation_put.app import lambda_handler as put_valuation
@@ -176,6 +177,28 @@ def bookmark_put():
     }
 
     result = put_bookmark(data)
+
+    return make_response(jsonify(result))
+
+@api.route('/dev/api/ma-api/v1/front/auth',
+           methods=['delete'])  # TODO : Insert any URL
+def auth_delete():
+    # Get body, headers
+    body = request.json
+    headers = request.headers
+
+    # Insert necessary data to body
+    data = {
+        'body-json': body,
+        'params': {
+            'header': headers
+        },
+        'context': {
+            'http-method': 'DELETE'
+        }
+    }
+
+    result = delete_auth(data)
 
     return make_response(jsonify(result))
 

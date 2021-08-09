@@ -37,6 +37,11 @@ class Query():
         SELECT * FROM user_auth_id WHERE user_id='{user_id}'
     """
 
+    sql_delete_auth_id = """
+        DELETE FROM user_auth_id
+        WHERE user_id='{user_id}'
+    """
+
     sql_insert_auth_id = """
         INSERT INTO user_auth_id(user_id, auth_id) 
         VALUES('{user_id}', '{auth_id}')

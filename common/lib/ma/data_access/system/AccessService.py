@@ -116,6 +116,20 @@ class AccessService(AccessServiceBase):
             raise e
 
     @staticmethod
+    def delete_auth_id(**bindings):
+        """
+        :param bindings: (tuple)
+        :return: (list) sql query result
+        """
+        try:
+            return AccessServiceBase.execute_sql(
+                sql=Query.sql_delete_auth_id,
+                bindings=bindings)
+
+        except Exception as e:
+            raise e
+
+    @staticmethod
     def insert_auth_id(**bindings):
         """
         :param bindings: (tuple)
