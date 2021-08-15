@@ -30,22 +30,16 @@ cors = CORS(api)
 @api.route('/dev/api/ma-api/v1/front/comp-tg-grp',
            methods=['get'])  # TODO : Insert any URL
 def comp_tg_grp_get():
+    # Get body, headers
     body = None
     headers = request.headers
-    user_id = request.args.get('userId')
-    auth_id = request.args.get('authId')
+    params = request.args
 
     # Insert necessary data to body
     data = {
+        'header': headers,
         'body-json': body,
-
-        'params': {
-            'header': headers,
-            "querystring": {
-                "user_id": user_id,
-                "auth_id": auth_id,
-            },
-        },
+        'params': params,
         'context': {
             'http-method': 'GET'
         }
@@ -62,13 +56,13 @@ def comp_tg_grp_put():
     # Get body, headers
     body = request.json
     headers = request.headers
+    params = request.args
 
     # Insert necessary data to body
     data = {
+        'header': headers,
         'body-json': body,
-        'params': {
-            'header': headers
-        },
+        'params': params,
         'context': {
             'http-method': 'PUT'
         }
@@ -81,22 +75,16 @@ def comp_tg_grp_put():
 @api.route('/dev/api/ma-api/v1/front/valuation',
            methods=['get'])  # TODO : Insert any URL
 def valuation_get():
+    # Get body, headers
     body = None
     headers = request.headers
-    user_id = request.args.get('userId')
-    auth_id = request.args.get('authId')
+    params = request.args
 
     # Insert necessary data to body
     data = {
+        'header': headers,
         'body-json': body,
-
-        'params': {
-            'header': headers,
-            "querystring": {
-                "user_id": user_id,
-                "auth_id": auth_id,
-            },
-        },
+        'params': params,
         'context': {
             'http-method': 'GET'
         }
@@ -113,13 +101,13 @@ def valuation_put():
     # Get body, headers
     body = request.json
     headers = request.headers
+    params = request.args
 
     # Insert necessary data to body
     data = {
+        'header': headers,
         'body-json': body,
-        'params': {
-            'header': headers
-        },
+        'params': params,
         'context': {
             'http-method': 'PUT'
         }
@@ -132,22 +120,16 @@ def valuation_put():
 @api.route('/dev/api/ma-api/v1/front/bookmark',
            methods=['get'])  # TODO : Insert any URL
 def bookmark_get():
+    # Get body, headers
     body = None
     headers = request.headers
-    user_id = request.args.get('userId')
-    auth_id = request.args.get('authId')
+    params = request.args
 
     # Insert necessary data to body
     data = {
+        'header': headers,
         'body-json': body,
-
-        'params': {
-            'header': headers,
-            "querystring": {
-                "user_id": user_id,
-                "auth_id": auth_id,
-            },
-        },
+        'params': params,
         'context': {
             'http-method': 'GET'
         }
@@ -164,13 +146,13 @@ def bookmark_put():
     # Get body, headers
     body = request.json
     headers = request.headers
+    params = request.args
 
     # Insert necessary data to body
     data = {
+        'header': headers,
         'body-json': body,
-        'params': {
-            'header': headers
-        },
+        'params': params,
         'context': {
             'http-method': 'PUT'
         }

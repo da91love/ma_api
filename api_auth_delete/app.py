@@ -2,7 +2,7 @@ from common.util.config_get import get_config
 from common.AppBase import AppBase
 from common.lib.ma.data_access.system.AccessService import AccessService
 from common.type.Errors import AuthenticationException
-from common.util.check_auth import check_auth
+from common.util.get_authed_user_id import get_authed_user_id
 from .type.Res_type import ResType
 # import boto3
 import csv

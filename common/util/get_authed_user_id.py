@@ -1,16 +1,16 @@
 from common.lib.ma.data_access.system.AccessService import AccessService
 
-def check_auth(user_id: str, auth_id: str):
+def get_authed_user_id(auth_id: str):
 
     # Check user_id and pw
     lRes_auth_user_id = AccessService.select_auth_id(
-        user_id=user_id
+        auth_id=auth_id
     )
 
-    is_authed = False
+    user_id = None
     for row in lRes_auth_user_id:
         if row['auth_id'] == auth_id:
-            is_authed = True
+            user_id = row['user_id']
             break
 
-    return is_authed
+    return user_id

@@ -2,7 +2,7 @@ from common.util.config_get import get_config
 from common.AppBase import AppBase
 from common.lib.ma.data_access.system.AccessService import AccessService
 from common.type.Errors import AuthenticationException
-from common.util.check_auth import check_auth
+from common.util.get_authed_user_id import get_authed_user_id
 from .type.Res_type import ResType
 # import boto3
 import csv
@@ -36,12 +36,12 @@ def lambda_handler(event, context=None) -> ResType:
     """
 
     # Get data from API Gateway
-    qs = event['params']['querystring']
-    user_id, auth_id = qs.values()
+    header = event['header']
+    auth_id = header['authId']
 
     # Check authentication
-    is_authed = check_auth(user_id=user_id, auth_id=auth_id)
-    if not is_authed: raise AuthenticationException
+    user_id = get_authed_user_id(auth_id=auth_id)
+    if not user_id: raise AuthenticationException
 
     # Select comp data
     lRes_comp_tg_grp: list = AccessService.select_comp_tg_grp(user_id=user_id)

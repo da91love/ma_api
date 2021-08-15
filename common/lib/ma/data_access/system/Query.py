@@ -34,7 +34,7 @@ class Query():
     """
 
     sql_select_auth_id = """
-        SELECT * FROM user_auth_id WHERE user_id='{user_id}'
+        SELECT * FROM user_auth_id WHERE auth_id='{auth_id}'
     """
 
     sql_delete_auth_id = """
