@@ -2,7 +2,7 @@ import sys
 from requests.exceptions import RequestException
 from common.type.Errors import IrrelevantParamException
 from common.type.Errors import DataLockException
-
+from common.type.Errors import AuthenticationException
 
 def exception_info(exception):
 
@@ -17,6 +17,11 @@ def exception_info(exception):
     if isinstance(exception, DataLockException):
         errorCode = 421
         category = "Data Lock Error"
+
+    # 認証エラー
+    if isinstance(exception, AuthenticationException):
+        errorCode = 401
+        category = "Authentication is overdue or does not exist"
 
     # # psycopg2モジュールに関する、DB関連のエラー
     # elif isinstance(exception, Psycopg2Exception):

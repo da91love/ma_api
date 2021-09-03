@@ -36,13 +36,12 @@ def lambda_handler(event, context=None) -> ResType:
     """
 
     # Get data from API Gateway
-    data = event['body-json']['data']
-    user_id = data['userId']
-    auth_id = data['authId']
+    header = event['header']
+    auth_id = header['authId']
 
     # Check authentication
-    is_authed = check_auth(user_id=user_id, auth_id=auth_id)
-    if not is_authed: raise AuthenticationException
+    user_id = get_authed_user_id(auth_id=auth_id)
+    if not user_id: raise AuthenticationException
 
     # Delete auth data
     AccessService.delete_auth_id(user_id=user_id)
