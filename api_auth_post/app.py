@@ -35,8 +35,7 @@ def lambda_handler(event, context=None) -> ResType:
 
     # Get data from API Gateway
     data = event['body-json']['data']
-    user_id = data['userId']
-    pw = data['pw']
+    user_id, pw = data
 
     # Check user_id and pw
     lRes_user_id_pw = AccessService.select_user_id_pw(

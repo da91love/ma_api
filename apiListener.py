@@ -11,6 +11,7 @@ from api_valuation_get.app import lambda_handler as get_valuation
 from api_comp_tg_grp_put.app import lambda_handler as put_comp_tg_grp
 from api_comp_tg_grp_get.app import lambda_handler as get_comp_tg_grp
 from api_rawdata_get.app import lambda_handler as get_rawdata
+from api_fsdata_post.app import lambda_handler as get_fsdata
 
 
 import sys
@@ -28,6 +29,28 @@ cors = CORS(api)
 # This flask API is only used for the development stage.
 # DO NOT deploy on production
 """
+
+@api.route('/dev/api/ma-api/v1/front/fsdata',
+           methods=['get'])  # TODO : Insert any URL
+def fsdata_get():
+    # Get body, headers
+    body = None
+    headers = request.headers
+    params = request.args
+
+    # Insert necessary data to body
+    data = {
+        'header': headers,
+        'body-json': body,
+        'params': params,
+        'context': {
+            'http-method': 'GET'
+        }
+    }
+
+    result = get_fsdata(data)
+
+    return make_response(jsonify(result))
 
 @api.route('/dev/api/ma-api/v1/front/rawdata',
            methods=['get'])  # TODO : Insert any URL
