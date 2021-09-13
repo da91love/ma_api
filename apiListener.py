@@ -30,7 +30,7 @@ cors = CORS(api)
 # DO NOT deploy on production
 """
 
-@api.route('/dev/api/ma-api/v1/front/fsdata',
+@api.route('/dev/api/ma-api/v1/front/fs-data',
            methods=['get'])  # TODO : Insert any URL
 def fsdata_get():
     # Get body, headers
@@ -52,7 +52,7 @@ def fsdata_get():
 
     return make_response(jsonify(result))
 
-@api.route('/dev/api/ma-api/v1/front/rawdata',
+@api.route('/dev/api/ma-api/v1/front/raw-data',
            methods=['get'])  # TODO : Insert any URL
 def rawdata_get():
     # Get body, headers

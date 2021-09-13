@@ -1,7 +1,9 @@
 from common.util.config_get import get_config
 from common.AppBase import AppBase
+from common.lib.ma.data_access.system.AccessService import AccessService
 from .type.Res_type import ResType
 import pandas as pd
+import numpy as np
 from .const.PATH import *
 # import boto3
 import csv
@@ -52,9 +54,20 @@ def lambda_handler(event, context=None) -> ResType:
         df_q_result = pd.DataFrame.from_dict(quarter_result_as_json)
 
         if share_code:
-            year_result = (df_y_result.loc[df_y_result['shareCode'] == share_code]).to_dict('records')
-            quarter_result = (df_q_result.loc[df_q_result['shareCode'] == share_code]).to_dict('records')
+            df_y_result_by_share = df_y_result.loc[df_y_result['shareCode'] == share_code]
+            df_q_result_by_share = df_q_result.loc[df_q_result['shareCode'] == share_code]
 
+            # if Nan is not converted to None, axios could not convert json to object
+            # df_y_result_by_share = df_y_result_by_share.where(df_y_result_by_share.notnull(), None)
+            # df_q_result_by_share = df_q_result_by_share.where(df_q_result_by_share.notnull(), None)
+
+            df_y_result_by_share = df_y_result_by_share.replace([np.nan], [None])
+            df_q_result_by_share = df_q_result_by_share.replace([np.nan], [None])
+
+            year_result = df_y_result_by_share.to_dict('records')
+            quarter_result = df_q_result_by_share.to_dict('records')
+
+        # market_code is temporary stopped
         if market_code:
             year_result = (df_y_result.loc[df_y_result['marketCode'] == share_code]).to_dict('records')
             quarter_result = (df_q_result.loc[df_q_result['marketCode'] == share_code]).to_dict('records')
@@ -63,10 +76,13 @@ def lambda_handler(event, context=None) -> ResType:
         year_result = json.load(open(api_root+YEAR_RESULT_US, encoding="'UTF8'"))
         quarter_result = json.load(open(api_root+QUARTER_RESULT_US, encoding="'UTF8'"))
 
-    result = {
+    result: dict = {
         'year_result': year_result,
         'quarter_result': quarter_result
     }
 
+    test =
+
     return ResType(value=result).get_response()
+
 
