@@ -57,8 +57,12 @@ def lambda_handler(event, context=None) -> ResType:
             df_y_result_by_share = df_y_result.loc[df_y_result['shareCode'] == share_code]
             df_q_result_by_share = df_q_result.loc[df_q_result['shareCode'] == share_code]
 
-            df_y_result_by_share = df_y_result_by_share.replace([np.nan], [None])
-            df_q_result_by_share = df_q_result_by_share.replace([np.nan], [None])
+            # df_y_result_by_share = df_y_result_by_share.replace([np.nan], [None])
+            # df_q_result_by_share = df_q_result_by_share.replace([np.nan], [None])
+
+
+            df_y_result_by_share = df_y_result_by_share.where(df_y_result_by_share.notnull(), None)
+            df_q_result_by_share = df_q_result_by_share.where(df_q_result_by_share.notnull(), None)
 
             year_result: dict = df_y_result_by_share.to_dict('records')
             quarter_result: dict = df_q_result_by_share.to_dict('records')
@@ -73,10 +77,9 @@ def lambda_handler(event, context=None) -> ResType:
         quarter_result = json.load(open(api_root+QUARTER_RESULT_US, encoding="'UTF8'"))
 
     result: dict = {
-        'year_result': json.loads(json.dumps(year_result)),
-        'quarter_result': json.loads(json.dumps(quarter_result))
+        'year_result': year_result,
+        'quarter_result': quarter_result
     }
-
     return ResType(value=result).get_response()
 
 
