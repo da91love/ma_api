@@ -11,7 +11,8 @@ from api_valuation_get.app import lambda_handler as get_valuation
 from api_comp_tg_grp_put.app import lambda_handler as put_comp_tg_grp
 from api_comp_tg_grp_get.app import lambda_handler as get_comp_tg_grp
 from api_rawdata_get.app import lambda_handler as get_rawdata
-from api_fsdata_post.app import lambda_handler as get_fsdata
+from api_fsdata_post.app import lambda_handler as post_fsdata
+from api_model_post.app import lambda_handler as post_model
 
 
 import sys
@@ -30,11 +31,11 @@ cors = CORS(api)
 # DO NOT deploy on production
 """
 
-@api.route('/dev/api/ma-api/v1/front/fs-data',
-           methods=['get'])  # TODO : Insert any URL
-def fsdata_get():
+@api.route('/dev/api/ma-api/v1/front/model',
+           methods=['post'])  # TODO : Insert any URL
+def model_post():
     # Get body, headers
-    body = None
+    body = request.json
     headers = request.headers
     params = request.args
 
@@ -44,11 +45,32 @@ def fsdata_get():
         'body-json': body,
         'params': params,
         'context': {
-            'http-method': 'GET'
+            'http-method': 'POST'
         }
     }
+    result = post_model(data)
 
-    result = get_fsdata(data)
+    return make_response(jsonify(result))
+
+
+@api.route('/dev/api/ma-api/v1/front/fs-data',
+           methods=['post'])  # TODO : Insert any URL
+def fsdata_post():
+    # Get body, headers
+    body = request.json
+    headers = request.headers
+    params = request.args
+
+    # Insert necessary data to body
+    data = {
+        'header': headers,
+        'body-json': body,
+        'params': params,
+        'context': {
+            'http-method': 'POST'
+        }
+    }
+    result = post_fsdata(data)
 
     return make_response(jsonify(result))
 

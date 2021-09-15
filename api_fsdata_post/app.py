@@ -1,12 +1,9 @@
 from common.util.config_get import get_config
 from common.AppBase import AppBase
-from common.lib.ma.data_access.system.AccessService import AccessService
 from .type.Res_type import ResType
 import pandas as pd
-import numpy as np
 from .const.PATH import *
 # import boto3
-import csv
 import json
 import os
 import sys
@@ -39,10 +36,11 @@ def lambda_handler(event, context=None) -> ResType:
     """
 
     # Get data from API Gateway
-    params = event.get('params')
-    country = params.get('country')
-    share_code = params.get('shareCode')
-    market_code = params.get('marketCode')
+    data = event['body-json']['data']
+    country = data.get('country')
+    share_code = data.get('shareCode')
+    market_code = data.get('marketCode')
+
 
     year_result = None
     quarter_result = None
@@ -56,10 +54,6 @@ def lambda_handler(event, context=None) -> ResType:
         if share_code:
             df_y_result_by_share = df_y_result.loc[df_y_result['shareCode'] == share_code]
             df_q_result_by_share = df_q_result.loc[df_q_result['shareCode'] == share_code]
-
-            # df_y_result_by_share = df_y_result_by_share.replace([np.nan], [None])
-            # df_q_result_by_share = df_q_result_by_share.replace([np.nan], [None])
-
 
             df_y_result_by_share = df_y_result_by_share.where(df_y_result_by_share.notnull(), None)
             df_q_result_by_share = df_q_result_by_share.where(df_q_result_by_share.notnull(), None)

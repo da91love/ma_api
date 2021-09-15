@@ -1,0 +1,6 @@
+VALUE = 'value'
+TURNAROUND = 'turnaround'
+CPGROWTH = 'cpgrowth'
+COLLAPSE = 'collapse'
+BLUECHIP = 'bluechip'
+INVGROWTH = 'invgrowth'
