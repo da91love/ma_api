@@ -1,6 +1,6 @@
 import pydash as _
 
-def cut_data_by_term(tg_data, tg_prd, tg_term):
+def cut_data_by_term(tg_data, tg_prd, tg_term=None):
     """
     :param tg_data:
     :param tg_prd:
