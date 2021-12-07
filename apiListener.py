@@ -14,7 +14,6 @@ from api_rawdata_get.app import lambda_handler as get_rawdata
 from api_fsdata_post.app import lambda_handler as post_fsdata
 from api_model_post.app import lambda_handler as post_model
 
-
 import sys
 import os
 

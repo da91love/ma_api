@@ -47,12 +47,12 @@ def lambda_handler(event, context=None) -> ResType:
     year_result: list = []
     quarter_result: list = []
     if country == 'ko':
-        year_result = json.load(open(project_root+YEAR_RESULT_KO, encoding="'UTF8'"))
-        quarter_result = json.load(open(project_root+QUARTER_RESULT_KO, encoding="'UTF8'"))
+        year_result = json.load(open(project_root+KO_YEAR_SUMMARY_DATA, encoding="'UTF8'"))
+        quarter_result = json.load(open(project_root+KO_QUARTER_SUMMARY_DATA, encoding="'UTF8'"))
 
     elif country == 'us':
-        year_result = json.load(open(api_root+YEAR_RESULT_US, encoding="'UTF8'"))
-        quarter_result = json.load(open(api_root+QUARTER_RESULT_US, encoding="'UTF8'"))
+        year_result = json.load(open(api_root+US_YEAR_SUMMARY_DATA, encoding="'UTF8'"))
+        quarter_result = json.load(open(api_root+US_QUARTER_SUMMARY_DATA, encoding="'UTF8'"))
 
     # Set raw data into dataframe
     y_result_by_share = _.group_by(year_result, lambda v: v['shareCode'])

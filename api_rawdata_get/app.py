@@ -43,11 +43,11 @@ def lambda_handler(event, context=None) -> ResType:
     year_result = None
     quarter_result = None
     if country == 'ko':
-        year_result = json.load(open(project_root+YEAR_RESULT_KO, encoding="'UTF8'"))
-        quarter_result = json.load(open(project_root+QUARTER_RESULT_KO, encoding="'UTF8'"))
+        year_result = json.load(open(project_root+KO_YEAR_SUMMARY_DATA, encoding="'UTF8'"))
+        quarter_result = json.load(open(project_root+KO_QUARTER_SUMMARY_DATA, encoding="'UTF8'"))
     elif country == 'us':
-        year_result = json.load(open(project_root+YEAR_RESULT_US, encoding="'UTF8'"))
-        quarter_result = json.load(open(project_root+QUARTER_RESULT_US, encoding="'UTF8'"))
+        year_result = json.load(open(project_root+US_YEAR_SUMMARY_DATA, encoding="'UTF8'"))
+        quarter_result = json.load(open(project_root+US_QUARTER_SUMMARY_DATA, encoding="'UTF8'"))
 
     result = {
         'year_result': year_result,
