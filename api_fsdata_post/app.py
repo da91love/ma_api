@@ -99,6 +99,7 @@ def lambda_handler(event, context=None) -> ResType:
         'year_result': year_result,
         'quarter_result': quarter_result
     }
+
     return ResType(value=result).get_response()
 
 
