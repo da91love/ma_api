@@ -19,11 +19,11 @@ class EconoIndicator:
             return ((this - last)/abs(last)) * 100
 
     @staticmethod
-    def get_ev(summary: Series, bs: df):
+    def get_ev(summary: dict, bs: dict):
         try:
-            mv = summary.loc[SUMMARY_KEY_NAME['mv']]
-            ibl = summary.loc[SUMMARY_KEY_NAME['interestBearingLiabilities']]
-            cae = bs.iloc[0][BS_KEY_NAME['cashAndEquivalents']]
+            mv = summary.get(SUMMARY_KEY_NAME['mv'])
+            ibl = summary.get(SUMMARY_KEY_NAME['interestBearingLiabilities'])
+            cae = bs.get(BS_KEY_NAME['cashAndEquivalents'])
 
             if NumUtil.is_digit(mv) and NumUtil.is_digit(ibl) and NumUtil.is_digit(cae):
                 net_debt = ibl - cae
@@ -39,10 +39,10 @@ class EconoIndicator:
     @staticmethod
     def get_ebitda(pl: df, cf: df):
         try:
-            oi = pl.iloc[0][PL_KEY_NAME['operationIncome']]
-            onoie = pl.iloc[0][PL_KEY_NAME['otherNonOperationIncExp']]
-            dp = cf.iloc[0][CF_KEY_NAME['depreciation']]
-            amz = cf.iloc[0][CF_KEY_NAME['amortization']]
+            oi = pl.get(PL_KEY_NAME['operationIncome'])
+            onoie = pl.get(PL_KEY_NAME['otherNonOperationIncExp'])
+            dp = cf.get(CF_KEY_NAME['depreciation'])
+            amz = cf.get(CF_KEY_NAME['amortization'])
 
             if NumUtil.is_digit(oi) and NumUtil.is_digit(onoie) and NumUtil.is_digit(dp) and NumUtil.is_digit(amz):
                 ebit = oi + onoie

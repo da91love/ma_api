@@ -4,9 +4,34 @@ from pandas import DataFrame as df
 from pandas import Series
 import pydash as _
 
-def create_summary_data(summary, pl, bs, cf):
+def create_summary_data():
 
     try:
+        y_summary_data = FsUtil.open_csv_2_json_file(project_root+KO_YEAR_SUMMARY_DATA)
+        q_summary_data = FsUtil.open_csv_2_json_file(project_root+KO_QUARTER_SUMMARY_DATA)
+
+        y_pl_data = FsUtil.open_csv_2_json_file(project_root+KO_YEAR_PL_DATA)
+        q_pl_data = FsUtil.open_csv_2_json_file(project_root+KO_QUARTER_PL_DATA)
+
+        y_bs_data = FsUtil.open_csv_2_json_file(project_root+KO_YEAR_BS_DATA)
+        q_bs_data = FsUtil.open_csv_2_json_file(project_root+KO_QUARTER_BS_DATA)
+
+        y_cf_data = FsUtil.open_csv_2_json_file(project_root+KO_YEAR_CF_DATA)
+        q_cf_data = FsUtil.open_csv_2_json_file(project_root+KO_QUARTER_CF_DATA)
+
+        # group by
+        y_summary_data_by_share = _.group_by(y_summary_data, lambda v: v['shareCode'])
+        q_summary_data_by_share = _.group_by(q_summary_data, lambda v: v['shareCode'])
+
+        y_pl_data_by_share = _.group_by(y_pl_data, lambda v: v['shareCode'])
+        q_pl_data_by_share = _.group_by(q_pl_data, lambda v: v['shareCode'])
+
+        y_bs_data_by_share = _.group_by(y_bs_data, lambda v: v['shareCode'])
+        q_bs_data_by_share = _.group_by(q_bs_data, lambda v: v['shareCode'])
+
+        y_cf_data_by_share = _.group_by(y_cf_data, lambda v: v['shareCode'])
+        q_cf_data_by_share = _.group_by(q_cf_data, lambda v: v['shareCode'])
+
         for share_code in summary:
             print(share_code)
             tg_sc_summary = summary[share_code]
