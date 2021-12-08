@@ -66,5 +66,8 @@ class EconoIndicator:
             else:
                 return None
 
+        except ZeroDivisionError:
+            return _.round_(ev / 0.1, 2)
+
         except Exception:
             raise Exception
