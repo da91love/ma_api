@@ -1,5 +1,7 @@
 KO_YEAR_SUMMARY_DATA = "/static/ko/summaryData/year_result.csv"
 KO_QUARTER_SUMMARY_DATA = "/static/ko/summaryData/quarter_result.csv"
+KO_YEAR_ADDED_SUMMARY_DATA = "/static/ko/summaryData/smr_year_result.csv"
+KO_QUARTER_ADDED_SUMMARY_DATA = "/static/ko/summaryData/smr_quarter_result.csv"
 KO_YEAR_BS_DATA = "/static/ko/fsData/bs_year_result.csv"
 KO_QUARTER_BS_DATA = "/static/ko/fsData/bs_quarter_result.csv"
 KO_YEAR_CF_DATA = "/static/ko/fsData/cf_year_result.csv"

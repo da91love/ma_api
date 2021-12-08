@@ -1,7 +1,5 @@
 from common.const.KEY_NAME import *
 from common.util.EconoIndicator import EconoIndicator
-from pandas import DataFrame as df
-from pandas import Series
 import pydash as _
 
 def create_summary_data(summary, pl, bs, cf):
@@ -10,9 +8,9 @@ def create_summary_data(summary, pl, bs, cf):
         for share_code in summary:
             print(share_code)
             tg_sc_summary = summary[share_code]
-            tg_sc_pl: df = pl[share_code]
-            tg_sc_bs: df = bs[share_code]
-            tg_sc_cf: df = cf[share_code]
+            tg_sc_pl = pl[share_code]
+            tg_sc_bs = bs[share_code]
+            tg_sc_cf = cf[share_code]
 
             for tg_period_summary in tg_sc_summary:
                 period: str = tg_period_summary[SUMMARY_KEY_NAME['period']]

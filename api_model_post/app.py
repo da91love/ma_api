@@ -9,16 +9,12 @@ api_root = os.path.dirname(os.path.abspath(__file__))
 sys.path.append(project_root)
 sys.path.append(api_root)
 
-from pandas import DataFrame as df
-import numpy as np
-
 from common.util.config_get import get_config
-from common.util.FsUtil import FsUtil
 from common.AppBase import AppBase
 from common.const.PATH import *
+from common.util.FsUtil import FsUtil
 from .type.Res_type import ResType
 from .logic.Model import Model
-from .logic.create_summary_data import create_summary_data
 from .const.MODEL import *
 
 # Create instance
@@ -51,8 +47,8 @@ def lambda_handler(event, context=None) -> ResType:
     year_result: list = []
     quarter_result: list = []
     if country == 'ko':
-        # year_result = json.load(open(project_root+KO_YEAR_SUMMARY_DATA, encoding="'UTF8'"))
-        # quarter_result = json.load(open(project_root+KO_QUARTER_SUMMARY_DATA, encoding="'UTF8'"))
+        year_result = FsUtil.open_csv_2_json_file(project_root+KO_YEAR_ADDED_SUMMARY_DATA)
+        quarter_result = FsUtil.open_csv_2_json_file(project_root+KO_QUARTER_ADDED_SUMMARY_DATA)
 
     elif country == 'us':
         year_result = json.load(open(api_root+US_YEAR_SUMMARY_DATA, encoding="'UTF8'"))
