@@ -1,3 +1,4 @@
+import pydash as _
 from common.util.config_get import get_config
 from common.AppBase import AppBase
 from common.const.PATH import *
@@ -47,9 +48,12 @@ def lambda_handler(event, context=None) -> ResType:
     year_result = None
     quarter_result = None
     if country == 'ko':
+        year_result = FsUtil.open_csv_2_json_file(project_root + KO_YEAR_ADDED_SUMMARY_DATA)
+        quarter_result = FsUtil.open_csv_2_json_file(project_root + KO_QUARTER_ADDED_SUMMARY_DATA)
+
         if share_code:
-            year_result = FsUtil.open_csv_2_json_file(project_root + KO_YEAR_ADDED_SUMMARY_DATA)
-            quarter_result = FsUtil.open_csv_2_json_file(project_root + KO_QUARTER_ADDED_SUMMARY_DATA)
+            year_result = _.filter_(year_result, {'shareCode': share_code})
+            quarter_result = _.filter_(quarter_result, {'shareCode': share_code})
 
         # market_code is temporary stopped
         if market_code:

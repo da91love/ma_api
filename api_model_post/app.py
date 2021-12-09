@@ -2,7 +2,6 @@
 import json
 import os
 import sys
-import pandas as pd
 import pydash as _
 project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 api_root = os.path.dirname(os.path.abspath(__file__))
