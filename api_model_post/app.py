@@ -47,8 +47,8 @@ def lambda_handler(event, context=None) -> ResType:
     year_result: list = []
     quarter_result: list = []
     if country == 'ko':
-        year_result = FsUtil.open_csv_2_json_file(project_root+KO_YEAR_ADDED_SUMMARY_DATA)
-        quarter_result = FsUtil.open_csv_2_json_file(project_root+KO_QUARTER_ADDED_SUMMARY_DATA)
+        year_result = FsUtil.open_csv_2_json_file(project_root + KO_YEAR_ADDED_SUMMARY_DATA)
+        quarter_result = FsUtil.open_csv_2_json_file(project_root + KO_QUARTER_ADDED_SUMMARY_DATA)
 
     elif country == 'us':
         year_result = json.load(open(api_root+US_YEAR_SUMMARY_DATA, encoding="'UTF8'"))

@@ -5,7 +5,7 @@ from pandas.errors import EmptyDataError
 
 class FsUtil:
     @staticmethod
-    def save_json_2_csv_file(json_data: list, csv_dir: str, encoding: str):
+    def save_json_2_csv_file(json_data: list, csv_dir: str):
         try:
             df = pd.DataFrame.from_dict(json_data)
             df = df.fillna('')
