@@ -13,7 +13,7 @@ def create_summary_data(period_unit: str, summary: dict, pl: dict, bs: dict, cf:
             tg_sc_cf = cf.get(share_code)
 
             for tg_period_summary in tg_sc_summary:
-                period: str = tg_period_summary[SUMMARY_KEY_NAME['period']]
+                period: str = tg_period_summary[SUMMARY_KEY_NAME['PERIOD']]
 
                 tg_period_pl = _.find(tg_sc_pl, {'period': period})
                 tg_period_bs = _.find(tg_sc_bs, {'period': period})
@@ -28,9 +28,9 @@ def create_summary_data(period_unit: str, summary: dict, pl: dict, bs: dict, cf:
                 ev: float = EconoIndicator.get_ev(tg_period_summary, tg_period_bs) if tg_period_summary and tg_period_bs else None
                 ev_ebitda: float = EconoIndicator.get_ev_ebitda(ev, ebitda)
 
-                tg_period_summary[SUMMARY_KEY_NAME['ev']] = ev
-                tg_period_summary[SUMMARY_KEY_NAME['ebitda']] = ebitda
-                tg_period_summary[SUMMARY_KEY_NAME['ev/ebitda']] = ev_ebitda
+                tg_period_summary[SUMMARY_KEY_NAME['EV']] = ev
+                tg_period_summary[SUMMARY_KEY_NAME['EBITDA']] = ebitda
+                tg_period_summary[SUMMARY_KEY_NAME['EV_EBITDA']] = ev_ebitda
 
         return summary
     except Exception as e:

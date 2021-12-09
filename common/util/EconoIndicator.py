@@ -19,9 +19,9 @@ class EconoIndicator:
     @staticmethod
     def get_ev(summary: dict, bs: dict):
         try:
-            mv = summary.get(SUMMARY_KEY_NAME['mv'])
-            ibl = summary.get(SUMMARY_KEY_NAME['interestBearingLiabilities'])
-            cae = bs.get(BS_KEY_NAME['cashAndEquivalents'])
+            mv = summary.get(SUMMARY_KEY_NAME['MV'])
+            ibl = summary.get(SUMMARY_KEY_NAME['I_B_LBLT'])
+            cae = bs.get(BS_KEY_NAME['CASH_N_EQVLT'])
 
             if NumUtil.is_digit(mv) and NumUtil.is_digit(ibl) and NumUtil.is_digit(cae):
                 net_debt = ibl - cae
@@ -37,10 +37,10 @@ class EconoIndicator:
     @staticmethod
     def get_y_ebitda(pl, cf):
         try:
-            oi = pl.get(PL_KEY_NAME['operationIncome'])
-            onoie = pl.get(PL_KEY_NAME['otherNonOperationIncExp'])
-            dp = cf.get(CF_KEY_NAME['depreciation'])
-            amz = cf.get(CF_KEY_NAME['amortization'])
+            oi = pl.get(PL_KEY_NAME['OP'])
+            onoie = pl.get(PL_KEY_NAME['N_OP_INC_EXP'])
+            dp = cf.get(CF_KEY_NAME['DPRCT'])
+            amz = cf.get(CF_KEY_NAME['AMRTZ'])
 
             if NumUtil.is_digit(oi) and NumUtil.is_digit(onoie) and NumUtil.is_digit(dp) and NumUtil.is_digit(amz):
                 ebit = oi + onoie
@@ -57,10 +57,10 @@ class EconoIndicator:
     @staticmethod
     def get_q_ebitda(tg_period, pl_period_results, cf_period_results):
         try:
-            oi = EconoIndicator.get_4prd_sum(PL_KEY_NAME['operationIncome'], tg_period, pl_period_results)
-            onoie = EconoIndicator.get_4prd_sum(PL_KEY_NAME['otherNonOperationIncExp'], tg_period, pl_period_results)
-            dp = EconoIndicator.get_4prd_sum(CF_KEY_NAME['depreciation'], tg_period, cf_period_results)
-            amz = EconoIndicator.get_4prd_sum(CF_KEY_NAME['amortization'], tg_period, cf_period_results)
+            oi = EconoIndicator.get_4prd_sum(PL_KEY_NAME['OP'], tg_period, pl_period_results)
+            onoie = EconoIndicator.get_4prd_sum(PL_KEY_NAME['N_OP_INC_EXP'], tg_period, pl_period_results)
+            dp = EconoIndicator.get_4prd_sum(CF_KEY_NAME['DPRCT'], tg_period, cf_period_results)
+            amz = EconoIndicator.get_4prd_sum(CF_KEY_NAME['AMRTZ'], tg_period, cf_period_results)
 
             if NumUtil.is_digit(oi) and NumUtil.is_digit(onoie) and NumUtil.is_digit(dp) and NumUtil.is_digit(amz):
                 ebit = oi + onoie
@@ -94,7 +94,7 @@ class EconoIndicator:
     def get_4prd_sum(idc: str, tg_period: str, period_results: list):
         try:
             # 타겟 기간의 인덱스를 찾음
-            tg_prd_idx = _.sorted_index_by(period_results, {SUMMARY_KEY_NAME['period']: tg_period}, SUMMARY_KEY_NAME['period'])
+            tg_prd_idx = _.sorted_index_by(period_results, {SUMMARY_KEY_NAME['PERIOD']: tg_period}, SUMMARY_KEY_NAME['PERIOD'])
 
             sum = 0
             # 타겟 기간 포함 4연속 기간의 데이터가 존재하지 않을시 None값 리턴
