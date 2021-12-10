@@ -31,11 +31,21 @@ class NumUtil:
 
     @staticmethod
     def convert_num_as_unit(num, unit):
-        s = {
-            "조": 1000000000000,
-            "억": 100000000,
-            "천만": 10000000,
-            "백만": 1000000
-        }
 
-        return _.round_(num/s[unit], 2)
+        try:
+            s = {
+                "조": 1000000000000,
+                "억": 100000000,
+                "천만": 10000000,
+                "백만": 1000000
+            }
+
+            if NumUtil.is_digit(num):
+                return _.round_(num / s[unit], 2)
+            else:
+                return None
+
+        except Exception:
+            raise Exception
+
+

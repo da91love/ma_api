@@ -75,22 +75,6 @@ class EconoIndicator:
             raise Exception
 
     @staticmethod
-    def get_ev_ebitda(ev: float, ebitda: float):
-        try:
-            if NumUtil.is_digit(ev) and NumUtil.is_digit(ebitda):
-
-                ev_ebitda = _.round_(ev/ebitda, 2)
-                return ev_ebitda
-            else:
-                return None
-
-        except ZeroDivisionError:
-            return _.round_(ev / 0.1, 2)
-
-        except Exception:
-            raise Exception
-
-    @staticmethod
     def get_4prd_sum(idc: str, tg_period: str, period_results: list):
         try:
             # 타겟 기간의 인덱스를 찾음
@@ -113,3 +97,48 @@ class EconoIndicator:
 
         except Exception as e:
             raise e
+
+    @staticmethod
+    def get_margin(numerator, denominator):
+        try:
+            if NumUtil.is_digit(numerator) and NumUtil.is_digit(denominator):
+                return _.round_((numerator/denominator) * 100, 2)
+            else:
+                return None
+
+        # 당기순이익, 영업현금흐름 등이 0일때 ZeroDivisionError발생하므로 1로 인정
+        except ZeroDivisionError:
+            return _.round_((numerator / 1) * 100, 2)
+
+        except Exception:
+            raise Exception
+
+    @staticmethod
+    def get_mltp(mv: float, value: int):
+        try:
+            if NumUtil.is_digit(mv) and NumUtil.is_digit(value):
+                return _.round_(mv/value, 2)
+            else:
+                return None
+
+        # 당기순이익, 영업현금흐름 등이 0일때 ZeroDivisionError발생하므로 1로 인정
+        except ZeroDivisionError:
+            return _.round_(mv / 1, 2)
+
+        except Exception:
+            raise Exception
+
+    @staticmethod
+    def get_profit_per_share(numerator, denominator):
+        try:
+            if NumUtil.is_digit(numerator) and NumUtil.is_digit(denominator):
+                return _.round_(numerator / denominator, 2)
+            else:
+                return None
+
+        # 당기순이익, 영업현금흐름 등이 0일때 ZeroDivisionError발생하므로 1로 인정
+        except ZeroDivisionError:
+            return _.round_(numerator / 1, 2)
+
+        except Exception:
+            raise Exception
