@@ -45,7 +45,7 @@ class NumUtil:
             else:
                 return None
 
-        except Exception:
-            raise Exception
+        except Exception as e:
+            raise e
 
 
