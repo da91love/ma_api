@@ -15,4 +15,4 @@ pandas = "*"
 pydash = "*"
 
 [requires]
-python_version = "3.6.9"
+python_version = "3.9.10"
