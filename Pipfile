@@ -13,6 +13,10 @@ psycopg2 = "*"
 boto3 = "*"
 pandas = "*"
 pydash = "*"
+flask-cors = "*"
+mysql = "*"
+"mysql.connector" = "*"
+mysql-connector-python = "*"
 
 [requires]
 python_version = "3.9.10"

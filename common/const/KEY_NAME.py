@@ -117,3 +117,17 @@ KEY_NAME = {
     'CFF_IN': 'financingCashFlowIn',
     'CFF_OUT': 'financingCashFlowOut',
 }
+
+OTHER_KEY_NAME = {
+    'CODE': 'code',
+    'NAME': 'name',
+    'MARKET_TYPE': 'marketType',
+    'PRICE': 'price',
+    'GRAPH': 'graph',
+    'SCORE': 'score',
+    'NUM_OF_CP': 'numOfCp',
+    'TARGET': 'target',
+    'TYPE': 'type',
+    'SHARE': 'share',
+    'MARKET': 'market'
+}

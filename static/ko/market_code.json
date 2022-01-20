@@ -1,0 +1,322 @@
+[
+  {
+    "marketCode": 232,
+    "marketName": "독립전력생산및에너지거래"
+  },
+  {
+    "marketCode": 205,
+    "marketName": "에너지장비및서비스"
+  },
+  {
+    "marketCode": 221,
+    "marketName": "전기제품"
+  },
+  {
+    "marketCode": 218,
+    "marketName": "생명과학도구및서비스"
+  },
+  {
+    "marketCode": 212,
+    "marketName": "해운사"
+  },
+  {
+    "marketCode": 140,
+    "marketName": "화학"
+  },
+  {
+    "marketCode": 214,
+    "marketName": "가정용기기와용품"
+  },
+  {
+    "marketCode": 204,
+    "marketName": "방송과엔터테인먼트"
+  },
+  {
+    "marketCode": 234,
+    "marketName": "항공화물운송과물류"
+  },
+  {
+    "marketCode": 168,
+    "marketName": "가스유틸리티"
+  },
+  {
+    "marketCode": 144,
+    "marketName": "전기장비"
+  },
+  {
+    "marketCode": 211,
+    "marketName": "건강관리장비와용품"
+  },
+  {
+    "marketCode": 174,
+    "marketName": "가정용품"
+  },
+  {
+    "marketCode": 33,
+    "marketName": "소프트웨어"
+  },
+  {
+    "marketCode": 199,
+    "marketName": "디스플레이장비및부품"
+  },
+  {
+    "marketCode": 202,
+    "marketName": "반도체와반도체장비"
+  },
+  {
+    "marketCode": 35,
+    "marketName": "제약"
+  },
+  {
+    "marketCode": 109,
+    "marketName": "창업투자"
+  },
+  {
+    "marketCode": 62,
+    "marketName": "철강"
+  },
+  {
+    "marketCode": 194,
+    "marketName": "건강관리기술"
+  },
+  {
+    "marketCode": 138,
+    "marketName": "기계"
+  },
+  {
+    "marketCode": 217,
+    "marketName": "석유와가스"
+  },
+  {
+    "marketCode": 187,
+    "marketName": "항공사"
+  },
+  {
+    "marketCode": 216,
+    "marketName": "우주항공과국방"
+  },
+  {
+    "marketCode": 167,
+    "marketName": "전문소매"
+  },
+  {
+    "marketCode": 184,
+    "marketName": "무선통신서비스"
+  },
+  {
+    "marketCode": 197,
+    "marketName": "전자장비와기기"
+  },
+  {
+    "marketCode": 203,
+    "marketName": "컴퓨터와주변기기"
+  },
+  {
+    "marketCode": 219,
+    "marketName": "레저용장비와제품"
+  },
+  {
+    "marketCode": 36,
+    "marketName": "자동차부품"
+  },
+  {
+    "marketCode": 191,
+    "marketName": "복합기업"
+  },
+  {
+    "marketCode": 20,
+    "marketName": "은행"
+  },
+  {
+    "marketCode": 166,
+    "marketName": "출판"
+  },
+  {
+    "marketCode": 146,
+    "marketName": "생물공학"
+  },
+  {
+    "marketCode": 12,
+    "marketName": "증권"
+  },
+  {
+    "marketCode": 171,
+    "marketName": "건축제품"
+  },
+  {
+    "marketCode": 220,
+    "marketName": "도로와철도운송"
+  },
+  {
+    "marketCode": 44,
+    "marketName": "자동차"
+  },
+  {
+    "marketCode": 233,
+    "marketName": "건강관리업체및서비스"
+  },
+  {
+    "marketCode": 215,
+    "marketName": "조선"
+  },
+  {
+    "marketCode": 196,
+    "marketName": "종이와목재"
+  },
+  {
+    "marketCode": 193,
+    "marketName": "복합유틸리티"
+  },
+  {
+    "marketCode": 134,
+    "marketName": "섬유,의류,신발,호화품"
+  },
+  {
+    "marketCode": 226,
+    "marketName": "무역회사와판매업체"
+  },
+  {
+    "marketCode": 222,
+    "marketName": "디스플레이패널"
+  },
+  {
+    "marketCode": 231,
+    "marketName": "사무용전자제품"
+  },
+  {
+    "marketCode": 173,
+    "marketName": "포장재"
+  },
+  {
+    "marketCode": 206,
+    "marketName": "화장품"
+  },
+  {
+    "marketCode": 154,
+    "marketName": "IT서비스"
+  },
+  {
+    "marketCode": 235,
+    "marketName": "게임엔터테인먼트"
+  },
+  {
+    "marketCode": 201,
+    "marketName": "교육서비스"
+  },
+  {
+    "marketCode": 25,
+    "marketName": "기타"
+  },
+  {
+    "marketCode": 145,
+    "marketName": "음료"
+  },
+  {
+    "marketCode": 207,
+    "marketName": "핸드셋"
+  },
+  {
+    "marketCode": 208,
+    "marketName": "상업서비스와공급품"
+  },
+  {
+    "marketCode": 192,
+    "marketName": "생명보험"
+  },
+  {
+    "marketCode": 38,
+    "marketName": "식품"
+  },
+  {
+    "marketCode": 42,
+    "marketName": "건설"
+  },
+  {
+    "marketCode": 53,
+    "marketName": "비철금속"
+  },
+  {
+    "marketCode": 229,
+    "marketName": "부동산"
+  },
+  {
+    "marketCode": 182,
+    "marketName": "담배"
+  },
+  {
+    "marketCode": 230,
+    "marketName": "문구류"
+  },
+  {
+    "marketCode": 185,
+    "marketName": "카드"
+  },
+  {
+    "marketCode": 227,
+    "marketName": "식품과기본식료품소매"
+  },
+  {
+    "marketCode": 162,
+    "marketName": "건축자재"
+  },
+  {
+    "marketCode": 213,
+    "marketName": "전자제품"
+  },
+  {
+    "marketCode": 177,
+    "marketName": "광고"
+  },
+  {
+    "marketCode": 198,
+    "marketName": "백화점과일반상점"
+  },
+  {
+    "marketCode": 190,
+    "marketName": "손해보험"
+  },
+  {
+    "marketCode": 200,
+    "marketName": "가구"
+  },
+  {
+    "marketCode": 161,
+    "marketName": "호텔,레스토랑,레저"
+  },
+  {
+    "marketCode": 210,
+    "marketName": "인터넷과카탈로그소매"
+  },
+  {
+    "marketCode": 236,
+    "marketName": "양방향미디어와서비스"
+  },
+  {
+    "marketCode": 176,
+    "marketName": "전기유틸리티"
+  },
+  {
+    "marketCode": 228,
+    "marketName": "다각화된통신서비스"
+  },
+  {
+    "marketCode": 183,
+    "marketName": "기타금융"
+  },
+  {
+    "marketCode": 189,
+    "marketName": "운송인프라"
+  },
+  {
+    "marketCode": 136,
+    "marketName": "통신장비"
+  },
+  {
+    "marketCode": 164,
+    "marketName": "판매업체"
+  },
+  {
+    "marketCode": 999,
+    "marketName": "미분류"
+  }
+]

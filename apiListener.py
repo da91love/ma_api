@@ -6,6 +6,7 @@ from api_auth_post.app import lambda_handler as post_auth
 from api_auth_delete.app import lambda_handler as delete_auth
 from api_bookmark_put.app import lambda_handler as put_bookmark
 from api_bookmark_get.app import lambda_handler as get_bookmark
+from api_share_mrk_name_get.app import lambda_handler as get_share_mrk_name
 from api_valuation_put.app import lambda_handler as put_valuation
 from api_valuation_get.app import lambda_handler as get_valuation
 from api_comp_tg_grp_put.app import lambda_handler as put_comp_tg_grp
@@ -95,6 +96,27 @@ def rawdata_get():
 
     return make_response(jsonify(result))
 
+@api.route('/dev/api/ma-api/v1/front/share-mrk-name',
+           methods=['get'])  # TODO : Insert any URL
+def share_mrk_name_get():
+    # Get body, headers
+    body = None
+    headers = request.headers
+    params = request.args
+
+    # Insert necessary data to body
+    data = {
+        'header': headers,
+        'body-json': body,
+        'params': params,
+        'context': {
+            'http-method': 'GET'
+        }
+    }
+
+    result = get_share_mrk_name(data)
+
+    return make_response(jsonify(result))
 
 @api.route('/dev/api/ma-api/v1/front/comp-tg-grp',
            methods=['get'])  # TODO : Insert any URL
