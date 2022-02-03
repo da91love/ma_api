@@ -8,6 +8,8 @@ def create_summary_data(period_unit: str, summary: dict, pl: dict, bs: dict, cf:
     try:
         for share_code in summary:
             print(share_code)
+            if share_code == '108320':
+                print('stop')
             tg_sc_summary = summary.get(share_code)
             tg_sc_pl = pl.get(share_code)
             tg_sc_bs = bs.get(share_code)
@@ -22,7 +24,7 @@ def create_summary_data(period_unit: str, summary: dict, pl: dict, bs: dict, cf:
 
                 # if target period bs pl cf does not exist, return None
                 if period_unit == 'year':
-                    ebitda: float = EconoIndicator.get_y_ebitda(tg_period_pl, tg_period_cf) if tg_period_pl and tg_period_cf else None
+                    ebitda: float = EconoIndicator.get_ebitda(tg_period_pl, tg_period_cf) if tg_period_pl and tg_period_cf else None
                     ev: float = EconoIndicator.get_ev(tg_period_summary, tg_period_bs) if tg_period_summary and tg_period_bs else None
                     ev_ebitda: float = EconoIndicator.get_mltp(ev, ebitda)
                     epm: float = EconoIndicator.get_margin(ebitda, tg_period_summary[KEY_NAME['SALES']])
@@ -43,11 +45,12 @@ def create_summary_data(period_unit: str, summary: dict, pl: dict, bs: dict, cf:
                     sales_by_4prd = EconoIndicator.get_4prd_sum(KEY_NAME['SALES'], period, tg_sc_summary)
                     op_by_4prd = EconoIndicator.get_4prd_sum(KEY_NAME['OP'], period, tg_sc_summary)
                     np_by_4prd = EconoIndicator.get_4prd_sum(KEY_NAME['NP_CTRL'], period, tg_sc_summary)
-                    ebitda: float = EconoIndicator.get_q_ebitda(period, tg_sc_pl, tg_sc_cf) if tg_period_pl and tg_period_cf else None
+                    ebitda_by_4prd : float = EconoIndicator.get_ebitda_4prd_sum(period, tg_sc_pl, tg_sc_cf) if tg_period_pl and tg_period_cf else None
+                    ebitda: float = EconoIndicator.get_ebitda(tg_period_pl, tg_period_cf) if tg_period_pl and tg_period_cf else None
 
                     ev: float = EconoIndicator.get_ev(tg_period_summary, tg_period_bs) if tg_period_summary and tg_period_bs else None
-                    ev_ebitda: float = EconoIndicator.get_mltp(ev, ebitda)
-                    epm: float = EconoIndicator.get_margin(ebitda, sales_by_4prd)
+                    ev_ebitda: float = EconoIndicator.get_mltp(ev, ebitda_by_4prd)
+                    epm: float = EconoIndicator.get_margin(ebitda_by_4prd, sales_by_4prd)
 
                     pbr: float = EconoIndicator.get_mltp(tg_period_summary[KEY_NAME['MV']], tg_period_summary[KEY_NAME['EQT_CTRL']])
                     bps: float = EconoIndicator.get_profit_per_share(tg_period_summary[KEY_NAME['EQT_CTRL']], NumUtil.convert_num_as_unit(tg_period_summary[KEY_NAME['SHARE_NUM']], '억'))
@@ -73,6 +76,8 @@ def create_summary_data(period_unit: str, summary: dict, pl: dict, bs: dict, cf:
                 tg_period_summary[KEY_NAME['OPS']] = ops
                 tg_period_summary[KEY_NAME['PER']] = per
                 tg_period_summary[KEY_NAME['EPS']] = eps
+                tg_period_summary[KEY_NAME['DPRCT']] = tg_period_cf[KEY_NAME['DPRCT']] if tg_period_cf else None
+                tg_period_summary[KEY_NAME['AMRTZ']] = tg_period_cf[KEY_NAME['AMRTZ']] if tg_period_cf else None
 
         return summary
     except Exception as e:

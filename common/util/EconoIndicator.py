@@ -35,7 +35,7 @@ class EconoIndicator:
 
 
     @staticmethod
-    def get_y_ebitda(pl, cf):
+    def get_ebitda(pl, cf):
         try:
             oi = pl.get(KEY_NAME['OP'])
             onoie = pl.get(KEY_NAME['N_OP_INC_EXP'])
@@ -55,7 +55,7 @@ class EconoIndicator:
             raise Exception
 
     @staticmethod
-    def get_q_ebitda(tg_period, pl_period_results, cf_period_results):
+    def get_ebitda_4prd_sum(tg_period, pl_period_results, cf_period_results):
         try:
             oi = EconoIndicator.get_4prd_sum(KEY_NAME['OP'], tg_period, pl_period_results)
             onoie = EconoIndicator.get_4prd_sum(KEY_NAME['N_OP_INC_EXP'], tg_period, pl_period_results)
