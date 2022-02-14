@@ -12,7 +12,8 @@ from api_valuation_get.app import lambda_handler as get_valuation
 from api_comp_tg_grp_put.app import lambda_handler as put_comp_tg_grp
 from api_comp_tg_grp_get.app import lambda_handler as get_comp_tg_grp
 from api_rawdata_get.app import lambda_handler as get_rawdata
-from api_fsdata_post.app import lambda_handler as post_fsdata
+from api_financial_summary_post.app import lambda_handler as post_financial_summary
+from api_financial_status_post.app import lambda_handler as post_financial_status
 from api_model_post.app import lambda_handler as post_model
 
 import sys
@@ -52,10 +53,9 @@ def model_post():
 
     return make_response(jsonify(result))
 
-
-@api.route('/dev/api/ma-api/v1/front/fs-data',
+@api.route('/dev/api/ma-api/v1/front/financial-status',
            methods=['post'])  # TODO : Insert any URL
-def fsdata_post():
+def financial_status_post():
     # Get body, headers
     body = request.json
     headers = request.headers
@@ -70,7 +70,28 @@ def fsdata_post():
             'http-method': 'POST'
         }
     }
-    result = post_fsdata(data)
+    result = post_financial_status(data)
+
+    return make_response(jsonify(result))
+
+@api.route('/dev/api/ma-api/v1/front/financial-summary',
+           methods=['post'])  # TODO : Insert any URL
+def financial_summary_post():
+    # Get body, headers
+    body = request.json
+    headers = request.headers
+    params = request.args
+
+    # Insert necessary data to body
+    data = {
+        'header': headers,
+        'body-json': body,
+        'params': params,
+        'context': {
+            'http-method': 'POST'
+        }
+    }
+    result = post_financial_summary(data)
 
     return make_response(jsonify(result))
 
