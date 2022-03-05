@@ -37,10 +37,11 @@ class EconoIndicator:
     @staticmethod
     def get_ebitda(pl, cf):
         try:
+            # 영업이익의 경우 반드시 존재해야만 하는 값이지만 onoie, dp, amz의 경우 0일 때 네이버 재무제표에 None값으로 인식되므로 0으로 처리
             oi = pl.get(KEY_NAME['OP'])
-            onoie = pl.get(KEY_NAME['N_OP_INC_EXP'])
-            dp = cf.get(KEY_NAME['DPRCT'])
-            amz = cf.get(KEY_NAME['AMRTZ'])
+            onoie = pl.get(KEY_NAME['N_OP_INC_EXP']) or 0
+            dp = cf.get(KEY_NAME['DPRCT']) or 0
+            amz = cf.get(KEY_NAME['AMRTZ']) or 0
 
             if NumUtil.is_digit(oi) and NumUtil.is_digit(onoie) and NumUtil.is_digit(dp) and NumUtil.is_digit(amz):
                 ebit = oi + onoie
@@ -57,10 +58,10 @@ class EconoIndicator:
     @staticmethod
     def get_ebitda_4prd_sum(tg_period, pl_period_results, cf_period_results):
         try:
-            oi = EconoIndicator.get_4prd_sum(KEY_NAME['OP'], tg_period, pl_period_results)
-            onoie = EconoIndicator.get_4prd_sum(KEY_NAME['N_OP_INC_EXP'], tg_period, pl_period_results)
-            dp = EconoIndicator.get_4prd_sum(KEY_NAME['DPRCT'], tg_period, cf_period_results)
-            amz = EconoIndicator.get_4prd_sum(KEY_NAME['AMRTZ'], tg_period, cf_period_results)
+            oi = EconoIndicator.get_4prd_sum(KEY_NAME['OP'], tg_period, pl_period_results, False)
+            onoie = EconoIndicator.get_4prd_sum(KEY_NAME['N_OP_INC_EXP'], tg_period, pl_period_results, True)
+            dp = EconoIndicator.get_4prd_sum(KEY_NAME['DPRCT'], tg_period, cf_period_results, True)
+            amz = EconoIndicator.get_4prd_sum(KEY_NAME['AMRTZ'], tg_period, cf_period_results, True)
 
             if NumUtil.is_digit(oi) and NumUtil.is_digit(onoie) and NumUtil.is_digit(dp) and NumUtil.is_digit(amz):
                 ebit = oi + onoie
@@ -75,7 +76,15 @@ class EconoIndicator:
             raise Exception
 
     @staticmethod
-    def get_4prd_sum(idc: str, tg_period: str, period_results: list):
+    def get_4prd_sum(idc: str, tg_period: str, period_results: list, isNoneValueAccepted: bool):
+        '''
+        @param idc:
+        @param tg_period:
+        @param period_results:
+        @param isNoneValueAccepted: 매출 영업이익과 같은 값은 반드시 존재해야 하는 값이기 때문에 데이터상 존재하지 않으면
+        None을 반환하도록 했지만, 무형감가상각과 같은 경우는 0일 경우 네이버 재무제표에 숫자가 존재하지 않기에 None데이터여도 0으로 처리하도록 함
+        @return:
+        '''
         try:
             # 타겟 기간의 인덱스를 찾음
             tg_prd_idx = _.sorted_index_by(period_results, {KEY_NAME['PERIOD']: tg_period}, KEY_NAME['PERIOD'])
@@ -88,6 +97,9 @@ class EconoIndicator:
                 for i in range(0, 4):
                     # 과거 4년치 데이터 중 데이터가 하나라도 없는 경우 None 반환
                     value = (period_results[tg_prd_idx - i]).get(idc)
+
+                    if not value and isNoneValueAccepted: value = 0
+
                     if NumUtil.is_digit(value):
                         sum += value
                     else:

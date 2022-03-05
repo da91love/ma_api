@@ -8,6 +8,8 @@ def create_summary_data(period_unit: str, summary: dict, pl: dict, bs: dict, cf:
     try:
         for share_code in summary:
             print(share_code)
+            if share_code == "011200":
+                print("!!")
             tg_sc_summary = summary.get(share_code)
             tg_sc_pl = pl.get(share_code)
             tg_sc_bs = bs.get(share_code)
@@ -40,9 +42,9 @@ def create_summary_data(period_unit: str, summary: dict, pl: dict, bs: dict, cf:
                     eps: float = EconoIndicator.get_profit_per_share(tg_period_summary[KEY_NAME['NP_CTRL']], NumUtil.convert_num_as_unit(tg_period_summary[KEY_NAME['SHARE_NUM']], '억'))
 
                 if period_unit == 'quarter':
-                    sales_by_4prd = EconoIndicator.get_4prd_sum(KEY_NAME['SALES'], period, tg_sc_summary)
-                    op_by_4prd = EconoIndicator.get_4prd_sum(KEY_NAME['OP'], period, tg_sc_summary)
-                    np_by_4prd = EconoIndicator.get_4prd_sum(KEY_NAME['NP_CTRL'], period, tg_sc_summary)
+                    sales_by_4prd = EconoIndicator.get_4prd_sum(KEY_NAME['SALES'], period, tg_sc_summary, False)
+                    op_by_4prd = EconoIndicator.get_4prd_sum(KEY_NAME['OP'], period, tg_sc_summary, False)
+                    np_by_4prd = EconoIndicator.get_4prd_sum(KEY_NAME['NP_CTRL'], period, tg_sc_summary, False)
                     ebitda_by_4prd: float = EconoIndicator.get_ebitda_4prd_sum(period, tg_sc_pl, tg_sc_cf) if tg_period_pl and tg_period_cf else None
                     ebitda: float = EconoIndicator.get_ebitda(tg_period_pl, tg_period_cf) if tg_period_pl and tg_period_cf else None
 
