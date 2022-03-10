@@ -38,13 +38,11 @@ class EconoIndicator:
     def get_ebitda(pl, cf):
         try:
             # 영업이익의 경우 반드시 존재해야만 하는 값이지만 onoie, dp, amz의 경우 0일 때 네이버 재무제표에 None값으로 인식되므로 0으로 처리
-            oi = pl.get(KEY_NAME['OP'])
-            onoie = pl.get(KEY_NAME['N_OP_INC_EXP']) or 0
+            ebit = pl.get(KEY_NAME['OP'])
             dp = cf.get(KEY_NAME['DPRCT']) or 0
             amz = cf.get(KEY_NAME['AMRTZ']) or 0
 
-            if NumUtil.is_digit(oi) and NumUtil.is_digit(onoie) and NumUtil.is_digit(dp) and NumUtil.is_digit(amz):
-                ebit = oi + onoie
+            if NumUtil.is_digit(ebit) and NumUtil.is_digit(dp) and NumUtil.is_digit(amz):
                 da = dp + amz
 
                 ebitda = ebit + da
@@ -58,13 +56,11 @@ class EconoIndicator:
     @staticmethod
     def get_ebitda_4prd_sum(tg_period, pl_period_results, cf_period_results):
         try:
-            oi = EconoIndicator.get_4prd_sum(KEY_NAME['OP'], tg_period, pl_period_results, False)
-            onoie = EconoIndicator.get_4prd_sum(KEY_NAME['N_OP_INC_EXP'], tg_period, pl_period_results, True)
+            ebit = EconoIndicator.get_4prd_sum(KEY_NAME['OP'], tg_period, pl_period_results, False)
             dp = EconoIndicator.get_4prd_sum(KEY_NAME['DPRCT'], tg_period, cf_period_results, True)
             amz = EconoIndicator.get_4prd_sum(KEY_NAME['AMRTZ'], tg_period, cf_period_results, True)
 
-            if NumUtil.is_digit(oi) and NumUtil.is_digit(onoie) and NumUtil.is_digit(dp) and NumUtil.is_digit(amz):
-                ebit = oi + onoie
+            if NumUtil.is_digit(ebit) and NumUtil.is_digit(dp) and NumUtil.is_digit(amz):
                 da = dp + amz
 
                 ebitda = ebit + da

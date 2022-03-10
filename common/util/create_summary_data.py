@@ -42,6 +42,8 @@ def create_summary_data(period_unit: str, summary: dict, pl: dict, bs: dict, cf:
                     eps: float = EconoIndicator.get_profit_per_share(tg_period_summary[KEY_NAME['NP_CTRL']], NumUtil.convert_num_as_unit(tg_period_summary[KEY_NAME['SHARE_NUM']], '억'))
 
                 if period_unit == 'quarter':
+                    # sales_by_4prd, op_by_4prd, np_by_4prd는 서머리 데이터에서 추출하는 반면, ebitda_by_4prd는 재무제표에서 뽑아내므로
+                    # 존재하는 데이터의 기간에 따라, EV/EBITDA는 존재하지만 PER은 존재하지 않는 경우가 발생
                     sales_by_4prd = EconoIndicator.get_4prd_sum(KEY_NAME['SALES'], period, tg_sc_summary, False)
                     op_by_4prd = EconoIndicator.get_4prd_sum(KEY_NAME['OP'], period, tg_sc_summary, False)
                     np_by_4prd = EconoIndicator.get_4prd_sum(KEY_NAME['NP_CTRL'], period, tg_sc_summary, False)
