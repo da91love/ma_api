@@ -40,8 +40,8 @@ def lambda_handler(event, context=None) -> ResType:
 
     # Get data from API Gateway
     data = event['body-json']['data']
-    country = data.get('country')
-    share_code = data.get('shareCode')
+    country: str = data.get('country')
+    share_code: list = data.get('shareCode')
     market_code = data.get('marketCode')
 
 
@@ -52,8 +52,8 @@ def lambda_handler(event, context=None) -> ResType:
         quarter_result = FsUtil.open_csv_2_json_file(project_root + KO_QUARTER_ADDED_SUMMARY_DATA)
 
         if share_code:
-            year_result = _.filter_(year_result, {'shareCode': share_code})
-            quarter_result = _.filter_(quarter_result, {'shareCode': share_code})
+            year_result = _.filter_(year_result, lambda x: x['shareCode'] in share_code)
+            quarter_result = _.filter_(quarter_result, lambda x: x['shareCode'] in share_code)
 
         # market_code is temporary stopped
         if market_code:

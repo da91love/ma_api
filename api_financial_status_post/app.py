@@ -41,8 +41,8 @@ def lambda_handler(event, context=None) -> ResType:
 
     # Get data from API Gateway
     data = event['body-json']['data']
-    country = data.get('country')
-    share_code = data.get('shareCode')
+    country: str = data.get('country')
+    share_code: list = data.get('shareCode')
     market_code = data.get('marketCode')
 
 
@@ -53,7 +53,7 @@ def lambda_handler(event, context=None) -> ResType:
                 tg_data = FsUtil.open_csv_2_json_file(project_root + tg_path)
 
                 if share_code:
-                    tg_data = _.filter_(tg_data, {'shareCode': share_code})
+                    tg_data = _.filter_(tg_data, lambda x: x['shareCode'] in share_code)
 
                 FS_FMT[status][period] = tg_data
 
@@ -70,7 +70,7 @@ def lambda_handler(event, context=None) -> ResType:
                 tg_data = FsUtil.open_csv_2_json_file(project_root + tg_path)
 
                 if share_code:
-                    tg_data = _.filter_(tg_data, {'shareCode': share_code})
+                    tg_data = _.filter_(tg_data, lambda x: x['shareCode'] in share_code)
 
                 FS_FMT[status][period] = tg_data
 
