@@ -4,6 +4,7 @@ import pydash as _
 from common.util.EconoIndicator import EconoIndicator
 from ..logic.cut_data_by_term import cut_data_by_term
 from ..const.FILTER import *
+from common.const.KEY_NAME import *
 
 class Model:
 
@@ -27,8 +28,8 @@ class Model:
         for i, value in enumerate(quarterDataByShare):
             tg_share_info: list = quarterDataByShare.get(value)
 
-            real_data = _.filter_(tg_share_info, lambda v: not ('E' in v.get('period')))
-            tg_prd = filter.get(PERIOD) or _.last(real_data).get('period')
+            real_data = _.filter_(tg_share_info, lambda v: not ('E' in v.get(KEY_NAME['PERIOD'])))
+            tg_prd = filter.get(PERIOD) or _.last(real_data).get(KEY_NAME['PERIOD'])
             tg_prd_data = cut_data_by_term(tg_share_info, tg_prd, term_fltr)
             tg_prd_data_len = len(tg_prd_data)
 
@@ -65,16 +66,16 @@ class Model:
         for i, value in enumerate(quarterDataByShare):
             tg_share_info: list = quarterDataByShare.get(value)
 
-            real_data = _.filter_(tg_share_info, lambda v: not ('E' in v.get('period')))
-            tg_prd = filter.get(PERIOD) or _.last(real_data).get('period')
+            real_data = _.filter_(tg_share_info, lambda v: not ('E' in v.get(KEY_NAME['PERIOD'])))
+            tg_prd = filter.get(PERIOD) or _.last(real_data).get(KEY_NAME['PERIOD'])
             tg_prd_data = cut_data_by_term(tg_share_info, tg_prd)
             tg_prd_data_len = len(tg_prd_data)
 
             try:
                 if tg_prd_data_len > 0:
                     last_prd_data = _.last(tg_prd_data)
-                    tg_per = last_prd_data.get('per')
-                    tg_roe = last_prd_data.get('roe')
+                    tg_per = last_prd_data.get(KEY_NAME['PER'])
+                    tg_roe = last_prd_data.get(KEY_NAME['ROE'])
 
                     # 0 < PER < 10 and ROE > 15
                     if per_min_fltr < tg_per <= per_max_fltr:
@@ -106,17 +107,17 @@ class Model:
         for i, value in enumerate(quarterDataByShare):
             tg_share_info: list = quarterDataByShare.get(value)
 
-            real_data = _.filter_(tg_share_info, lambda v: not ('E' in v.get('period')))
-            tg_prd = filter.get(PERIOD) or _.last(real_data).get('period')
+            real_data = _.filter_(tg_share_info, lambda v: not ('E' in v.get(KEY_NAME['PERIOD'])))
+            tg_prd = filter.get(PERIOD) or _.last(real_data).get(KEY_NAME['PERIOD'])
             tg_prd_data = cut_data_by_term(tg_share_info, tg_prd)
             tg_prd_data_len = len(tg_prd_data)
 
             try:
                 if tg_prd_data_len > 0:
                     last_prd_data = _.last(tg_prd_data)
-                    tg_sales = last_prd_data.get('sales')
-                    tg_per = last_prd_data.get('per')
-                    tg_roe = last_prd_data.get('roe')
+                    tg_sales = last_prd_data.get(KEY_NAME['SALES'])
+                    tg_per = last_prd_data.get(KEY_NAME['PER'])
+                    tg_roe = last_prd_data.get(KEY_NAME['ROE'])
 
                     # 0 < PER < 10 and ROE > 15
                     if sales_min_fltr < tg_sales:
@@ -146,16 +147,16 @@ class Model:
         for i, value in enumerate(yearDataByShare):
             tg_share_info: list = yearDataByShare.get(value)
 
-            real_data = _.filter_(tg_share_info, lambda v: not ('E' in v.get('period')))
-            tg_prd = filter.get(PERIOD) or _.last(real_data).get('period')
+            real_data = _.filter_(tg_share_info, lambda v: not ('E' in v.get(KEY_NAME['PERIOD'])))
+            tg_prd = filter.get(PERIOD) or _.last(real_data).get(KEY_NAME['PERIOD'])
             tg_prd_data = cut_data_by_term(tg_share_info, tg_prd, term_fltr)
             tg_prd_data_len = len(tg_prd_data)
 
             try:
                 if tg_prd_data_len > 0:
                     last_prd_data = _.last(tg_prd_data)
-                    last_mv = tg_prd_data[0].get('mv')
-                    this_mv = last_prd_data.get('mv')
+                    last_mv = tg_prd_data[0].get(KEY_NAME['MV'])
+                    this_mv = last_prd_data.get(KEY_NAME['MV'])
 
                     # if latest marketvalue is smaller than past marketvalue
                     if _.is_number(last_mv) & _.is_number(this_mv):
@@ -184,16 +185,16 @@ class Model:
         for i, value in enumerate(quarterDataByShare):
             tg_share_info: list = quarterDataByShare.get(value)
 
-            real_data = _.filter_(tg_share_info, lambda v: not ('E' in v.get('period')))
-            tg_prd = filter.get(PERIOD) or _.last(real_data).get('period')
+            real_data = _.filter_(tg_share_info, lambda v: not ('E' in v.get(KEY_NAME['PERIOD'])))
+            tg_prd = filter.get(PERIOD) or _.last(real_data).get(KEY_NAME['PERIOD'])
             tg_prd_data = cut_data_by_term(tg_share_info, tg_prd, term_fltr)
             tg_prd_data_len = len(tg_prd_data)
 
             try:
                 if tg_prd_data_len > 0:
                     last_prd_data = _.last(tg_prd_data)
-                    last_op = tg_prd_data[0].get('op')
-                    this_op = last_prd_data.get('op')
+                    last_op = tg_prd_data[0].get(KEY_NAME['OP'])
+                    this_op = last_prd_data.get(KEY_NAME['OP'])
 
                     # if latest marketvalue is smaller than past marketvalue
                     if _.is_number(last_op) & _.is_number(this_op):
@@ -226,16 +227,16 @@ class Model:
         # for i, value in enumerate(quarterDataByShare):
         #     tg_share_info: list = quarterDataByShare.get(value)
         #
-        #     real_data = _.filter_(tg_share_info, lambda v: not ('E' in v.get('period')))
-        #     tg_prd = filter.get(PERIOD) or _.last(real_data).get('period')
+        #     real_data = _.filter_(tg_share_info, lambda v: not ('E' in v.get(KEY_NAME['PERIOD'])))
+        #     tg_prd = filter.get(PERIOD) or _.last(real_data).get(KEY_NAME['PERIOD'])
         #     tg_prd_data = cut_data_by_term(tg_share_info, tg_prd, term_fltr)
         #     tg_prd_data_len = len(tg_prd_data)
         #
         #     try:
         #         if tg_prd_data_len > 0:
         #             last_prd_data = _.last(tg_prd_data)
-        #             last_op = tg_prd_data[0].get('op')
-        #             this_op = last_prd_data.get('op')
+        #             last_op = tg_prd_data[0].get(KEY_NAME['OP'])
+        #             this_op = last_prd_data.get(KEY_NAME['OP'])
         #
         #             # if latest marketvalue is smaller than past marketvalue
         #             if _.is_number(last_op) & _.is_number(this_op):

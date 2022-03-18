@@ -42,6 +42,7 @@ def lambda_handler(event, context=None) -> ResType:
     data = event['body-json']['data']
     country: str = data.get('country')
     share_code: list = data.get('shareCode')
+    display_col: list = data.get('displayCol')
     market_code = data.get('marketCode')
 
 
@@ -54,6 +55,23 @@ def lambda_handler(event, context=None) -> ResType:
         if share_code:
             year_result = _.filter_(year_result, lambda x: x['shareCode'] in share_code)
             quarter_result = _.filter_(quarter_result, lambda x: x['shareCode'] in share_code)
+
+        if display_col:
+            year_result_filtered_by_col = []
+            for result_by_share in year_result:
+                result_filtered_by_col = {}
+                for col in display_col:
+                    result_filtered_by_col[col] = result_by_share[col]
+                year_result_filtered_by_col.append(result_filtered_by_col)
+            year_result = year_result_filtered_by_col
+
+            quarter_result_filtered_by_col = []
+            for result_by_share in quarter_result:
+                result_filtered_by_col = {}
+                for col in display_col:
+                    result_filtered_by_col[col] = result_by_share[col]
+                quarter_result_filtered_by_col.append(result_filtered_by_col)
+            quarter_result = quarter_result_filtered_by_col
 
         # market_code is temporary stopped
         if market_code:
