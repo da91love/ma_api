@@ -28,6 +28,7 @@ def create_summary_data(period_unit: str, summary: dict, pl: dict, bs: dict, cf:
                     ev: float = EconoIndicator.get_ev(tg_period_summary, tg_period_bs) if tg_period_summary and tg_period_bs else None
                     ev_ebitda: float = EconoIndicator.get_mltp(ev, ebitda)
                     epm: float = EconoIndicator.get_margin(ebitda, tg_period_summary[KEY_NAME['SALES']])
+                    roic: float = EconoIndicator.get_roic(ebitda, tg_period_bs)
 
                     pbr: float = EconoIndicator.get_mltp(tg_period_summary[KEY_NAME['MV']], tg_period_summary[KEY_NAME['EQT_CTRL']])
                     bps: float = EconoIndicator.get_profit_per_share(tg_period_summary[KEY_NAME['EQT_CTRL']], NumUtil.convert_num_as_unit(tg_period_summary[KEY_NAME['SHARE_NUM']], '억'))
@@ -49,6 +50,7 @@ def create_summary_data(period_unit: str, summary: dict, pl: dict, bs: dict, cf:
                     np_by_4prd = EconoIndicator.get_4prd_sum(KEY_NAME['NP_CTRL'], period, tg_sc_summary, False)
                     ebitda_by_4prd: float = EconoIndicator.get_ebitda_4prd_sum(period, tg_sc_pl, tg_sc_cf) if tg_period_pl and tg_period_cf else None
                     ebitda: float = EconoIndicator.get_ebitda(tg_period_pl, tg_period_cf) if tg_period_pl and tg_period_cf else None
+                    roic: float = EconoIndicator.get_roic(ebitda_by_4prd, tg_period_bs) if tg_period_bs else None
 
                     ev: float = EconoIndicator.get_ev(tg_period_summary, tg_period_bs) if tg_period_summary and tg_period_bs else None
                     ev_ebitda: float = EconoIndicator.get_mltp(ev, ebitda_by_4prd)
@@ -70,6 +72,7 @@ def create_summary_data(period_unit: str, summary: dict, pl: dict, bs: dict, cf:
                 tg_period_summary[KEY_NAME['EV']] = ev
                 tg_period_summary[KEY_NAME['EBITDA']] = ebitda
                 tg_period_summary[KEY_NAME['EV_EBITDA']] = ev_ebitda
+                tg_period_summary[KEY_NAME['ROIC']] = roic
                 tg_period_summary[KEY_NAME['EPM']] = epm
                 tg_period_summary[KEY_NAME['PBR']] = pbr
                 tg_period_summary[KEY_NAME['BPS']] = bps
@@ -81,6 +84,7 @@ def create_summary_data(period_unit: str, summary: dict, pl: dict, bs: dict, cf:
                 tg_period_summary[KEY_NAME['EPS']] = eps
                 tg_period_summary[KEY_NAME['DPRCT']] = tg_period_cf[KEY_NAME['DPRCT']] if tg_period_cf else None
                 tg_period_summary[KEY_NAME['AMRTZ']] = tg_period_cf[KEY_NAME['AMRTZ']] if tg_period_cf else None
+
                 # 본래 mv에서 share_num을 나누어야 하지만, 계산 상 동일하므로 get_profit_per_share함수를 사용
                 tg_period_summary[OTHER_KEY_NAME['PRICE']] = EconoIndicator.get_profit_per_share(NumUtil.convert_unit_as_num(tg_period_summary[KEY_NAME['MV']], '억'), tg_period_summary[KEY_NAME['SHARE_NUM']])
 

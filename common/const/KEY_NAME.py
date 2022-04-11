@@ -46,6 +46,7 @@ KEY_NAME = {
     'CASH_DPS': 'cashDps',
     'DVD_YIELD': 'dividendYield',
     'DVD_POT_RATIO': 'dividendPayoutRatio',
+    'ROIC': 'roic',
 
     'COST_OF_SALES': 'costOfRevenue',
     'GROSS_PRFT': 'grossProfit',

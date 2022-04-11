@@ -33,6 +33,23 @@ class EconoIndicator:
         except Exception:
             raise Exception
 
+    @staticmethod
+    def get_roic(ebitda: dict, bs: dict):
+        """
+        "roic = noplat/유형자산+운전자본변동" 이지만, 여기선 심플하게 "roic = ebitda/유형자산"으로 구한다
+        """
+        try:
+            sale_related_asst = bs.get(KEY_NAME['TGB_ASST']) + bs.get(KEY_NAME['INTGB_ASST'])
+
+            if NumUtil.is_digit(ebitda) and NumUtil.is_digit(sale_related_asst):
+                roic = (ebitda / sale_related_asst) * 100
+                return _.round_(roic, 2)
+            else:
+                return None
+
+        except Exception:
+            raise Exception
+
 
     @staticmethod
     def get_ebitda(pl, cf):
