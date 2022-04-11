@@ -34,9 +34,9 @@ class EconoIndicator:
             raise Exception
 
     @staticmethod
-    def get_roic(ebitda: dict, bs: dict):
+    def get_roic(op: dict, bs: dict):
         """
-        "roic = noplat/유형자산+운전자본변동" 이지만, 여기선 심플하게 "roic = ebitda/유형자산"으로 구한다
+        "roic = noplat/유무형자산+운전자본변동" 이지만, 여기선 심플하게 "roic = op/유무형자산"으로 구한다
         """
         try:
             # 유형자산의 경우 반드시 존재하야 하는 값이지만, 무형자산의 경우, 0일 때 네이버 재무제표에 None값으로 인식되어
@@ -44,9 +44,9 @@ class EconoIndicator:
             tangible_asst = bs.get(KEY_NAME['TGB_ASST'])
             intangible_asst = bs.get(KEY_NAME['INTGB_ASST']) or 0
 
-            if NumUtil.is_digit(ebitda) and NumUtil.is_digit(tangible_asst) and NumUtil.is_digit(intangible_asst):
+            if NumUtil.is_digit(op) and NumUtil.is_digit(tangible_asst) and NumUtil.is_digit(intangible_asst):
                 sales_related_asst = tangible_asst + intangible_asst
-                roic = (ebitda / sales_related_asst) * 100
+                roic = (op / sales_related_asst) * 100
                 return _.round_(roic, 2)
             else:
                 return None
