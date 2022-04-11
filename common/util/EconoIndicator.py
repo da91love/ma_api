@@ -39,10 +39,14 @@ class EconoIndicator:
         "roic = noplat/유형자산+운전자본변동" 이지만, 여기선 심플하게 "roic = ebitda/유형자산"으로 구한다
         """
         try:
-            sale_related_asst = bs.get(KEY_NAME['TGB_ASST']) + bs.get(KEY_NAME['INTGB_ASST'])
+            # 유형자산의 경우 반드시 존재하야 하는 값이지만, 무형자산의 경우, 0일 때 네이버 재무제표에 None값으로 인식되어
+            # 에러가 발생하므로 0으로 처리(유형자산이 존재하지 않으면 투자대상 기업이 아니므로 무시해도 좋음)
+            tangible_asst = bs.get(KEY_NAME['TGB_ASST'])
+            intangible_asst = bs.get(KEY_NAME['INTGB_ASST']) or 0
 
-            if NumUtil.is_digit(ebitda) and NumUtil.is_digit(sale_related_asst):
-                roic = (ebitda / sale_related_asst) * 100
+            if NumUtil.is_digit(ebitda) and NumUtil.is_digit(tangible_asst) and NumUtil.is_digit(intangible_asst):
+                sales_related_asst = tangible_asst + intangible_asst
+                roic = (ebitda / sales_related_asst) * 100
                 return _.round_(roic, 2)
             else:
                 return None

@@ -8,7 +8,7 @@ def create_summary_data(period_unit: str, summary: dict, pl: dict, bs: dict, cf:
     try:
         for share_code in summary:
             print(share_code)
-            if share_code == "011200":
+            if share_code == "100090":
                 print("!!")
             tg_sc_summary = summary.get(share_code)
             tg_sc_pl = pl.get(share_code)
@@ -28,7 +28,7 @@ def create_summary_data(period_unit: str, summary: dict, pl: dict, bs: dict, cf:
                     ev: float = EconoIndicator.get_ev(tg_period_summary, tg_period_bs) if tg_period_summary and tg_period_bs else None
                     ev_ebitda: float = EconoIndicator.get_mltp(ev, ebitda)
                     epm: float = EconoIndicator.get_margin(ebitda, tg_period_summary[KEY_NAME['SALES']])
-                    roic: float = EconoIndicator.get_roic(ebitda, tg_period_bs)
+                    roic: float = EconoIndicator.get_roic(ebitda, tg_period_bs) if tg_period_bs else None
 
                     pbr: float = EconoIndicator.get_mltp(tg_period_summary[KEY_NAME['MV']], tg_period_summary[KEY_NAME['EQT_CTRL']])
                     bps: float = EconoIndicator.get_profit_per_share(tg_period_summary[KEY_NAME['EQT_CTRL']], NumUtil.convert_num_as_unit(tg_period_summary[KEY_NAME['SHARE_NUM']], '억'))
