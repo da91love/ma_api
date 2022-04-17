@@ -72,6 +72,11 @@ def lambda_handler(event, context=None) -> ResType:
         result = Model.get_bluechip_model(q_result_by_share, filter)
     elif model == INVGROWTH:
         result = Model.get_invst_growth_model(q_result_by_share, filter)
+    elif model == ALLSHARES:
+        result = {
+            'year_result': Model.get_all_shares(y_result_by_share, filter),
+            'quarter_result': Model.get_all_shares(q_result_by_share, filter)
+        }
 
     return ResType(value=result).get_response()
 

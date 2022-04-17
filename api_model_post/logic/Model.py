@@ -248,3 +248,28 @@ class Model:
         #         pass
 
         return tg_shares
+
+    @staticmethod
+    def get_all_shares(periodDataByShare: dict, filter: dict):
+        """
+        :param quarterDataByShare: quarter data grouped by share
+        :param filter: filter as object
+        :return:
+        """
+        tg_shares = []
+
+        for i, value in enumerate(periodDataByShare):
+            tg_share_info: list = periodDataByShare.get(value)
+
+            real_data = _.filter_(tg_share_info, lambda v: not ('E' in v.get(KEY_NAME['PERIOD'])))
+            last_prd_data = _.last(real_data)
+
+            try:
+                if last_prd_data:
+                    tg_shares.append(last_prd_data)
+
+            # dict.get()의 값이 None과 같은 숫자가 아닐 경우: TypeError
+            except TypeError as e:
+                pass
+
+        return tg_shares
