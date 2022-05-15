@@ -181,6 +181,7 @@ class Model:
         # Get filter
         op_times_fltr = filter.get(OP_TIMES)
         term_fltr = filter.get(TERM)
+        profit_type_fltr = filter.get(PROFIT_TYPE)
 
         for i, value in enumerate(quarterDataByShare):
             tg_share_info: list = quarterDataByShare.get(value)
@@ -193,8 +194,8 @@ class Model:
             try:
                 if tg_prd_data_len > 0:
                     last_prd_data = _.last(tg_prd_data)
-                    last_op = tg_prd_data[0].get(KEY_NAME['OP'])
-                    this_op = last_prd_data.get(KEY_NAME['OP'])
+                    last_op = tg_prd_data[0].get(profit_type_fltr)
+                    this_op = last_prd_data.get(profit_type_fltr)
 
                     # if latest marketvalue is smaller than past marketvalue
                     if _.is_number(last_op) & _.is_number(this_op):

@@ -70,7 +70,7 @@ def lambda_handler(event, context=None) -> ResType:
         result = Model.get_collapse_model(y_result_by_share, filter)
     elif model == BLUECHIP:
         result = Model.get_bluechip_model(q_result_by_share, filter)
-    elif model == INVGROWTH:
+    elif model == CAPEXGROWTH:
         result = Model.get_invst_growth_model(q_result_by_share, filter)
     elif model == ALLSHARES:
         result = {
