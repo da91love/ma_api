@@ -194,12 +194,12 @@ class Model:
             try:
                 if tg_prd_data_len > 0:
                     last_prd_data = _.last(tg_prd_data)
-                    last_op = tg_prd_data[0].get(profit_type_fltr)
-                    this_op = last_prd_data.get(profit_type_fltr)
+                    last_prft = tg_prd_data[0].get(profit_type_fltr)
+                    this_prft = last_prd_data.get(profit_type_fltr)
 
                     # if latest marketvalue is smaller than past marketvalue
-                    if _.is_number(last_op) & _.is_number(this_op):
-                        if (EconoIndicator.get_growth_rate(last_op, this_op)) > op_times_fltr:
+                    if _.is_number(last_prft) & _.is_number(this_prft):
+                        if (EconoIndicator.get_growth_rate(last_prft, this_prft)) > op_times_fltr:
                             tg_shares.append(last_prd_data)
 
             # dict.get()의 값이 None과 같은 숫자가 아닐 경우: TypeError
