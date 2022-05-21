@@ -209,44 +209,39 @@ class Model:
         return tg_shares
 
     @staticmethod
-    def get_invst_growth_model(quarterDataByShare: dict, filter: dict):
+    def get_capex_growth_model(quarterDataByShare: dict, filter: dict):
         """
         :param quarterDataByShare: quarter data grouped by share
         :param filter: filter as object
         :return: 
         """
+        tg_shares = []
 
-        # 정확히는 자본적 지출로 비교해야하는데 자본적 지출을 구하기 위한 데이터가 없음
-        # 자본적 지출 = 유동자산 - 유동부채 + 감가상각비
+        # Get filter
+        capex_ratio_fltr = filter.get(CAPEX_RATIO)
 
-        # tg_shares = []
-        #
-        # # Get filter
-        # op_times_fltr = filter.get(OP_TIMES)
-        # term_fltr = filter.get(TERM)
-        #
-        # for i, value in enumerate(quarterDataByShare):
-        #     tg_share_info: list = quarterDataByShare.get(value)
-        #
-        #     real_data = _.filter_(tg_share_info, lambda v: not ('E' in v.get(KEY_NAME['PERIOD'])))
-        #     tg_prd = filter.get(PERIOD) or _.last(real_data).get(KEY_NAME['PERIOD'])
-        #     tg_prd_data = cut_data_by_term(tg_share_info, tg_prd, term_fltr)
-        #     tg_prd_data_len = len(tg_prd_data)
-        #
-        #     try:
-        #         if tg_prd_data_len > 0:
-        #             last_prd_data = _.last(tg_prd_data)
-        #             last_op = tg_prd_data[0].get(KEY_NAME['OP'])
-        #             this_op = last_prd_data.get(KEY_NAME['OP'])
-        #
-        #             # if latest marketvalue is smaller than past marketvalue
-        #             if _.is_number(last_op) & _.is_number(this_op):
-        #                 if (EconoIndicator.get_growth_rate(last_op, this_op)) > op_times_fltr:
-        #                     tg_shares.append(last_prd_data)
-        #
-        #     # dict.get()의 값이 None과 같은 숫자가 아닐 경우: TypeError
-        #     except TypeError as e:
-        #         pass
+        for i, value in enumerate(quarterDataByShare):
+            tg_share_info: list = quarterDataByShare.get(value)
+
+            real_data = _.filter_(tg_share_info, lambda v: not ('E' in v.get(KEY_NAME['PERIOD'])))
+            tg_prd = filter.get(PERIOD) or _.last(real_data).get(KEY_NAME['PERIOD'])
+            tg_prd_data = cut_data_by_term(tg_share_info, tg_prd)
+            tg_prd_data_len = len(tg_prd_data)
+
+            try:
+                if tg_prd_data_len > 0:
+                    last_prd_data = _.last(tg_prd_data)
+                    capex = last_prd_data.get(KEY_NAME['CAPEX'])
+                    assets = last_prd_data.get(KEY_NAME['ASST'])
+
+                    # if latest marketvalue is smaller than past marketvalue
+                    if _.is_number(capex) & _.is_number(assets):
+                        if ((capex / assets) * 100) > capex_ratio_fltr:
+                            tg_shares.append(last_prd_data)
+
+            # dict.get()의 값이 None과 같은 숫자가 아닐 경우: TypeError
+            except TypeError as e:
+                pass
 
         return tg_shares
 

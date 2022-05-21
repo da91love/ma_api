@@ -71,7 +71,7 @@ def lambda_handler(event, context=None) -> ResType:
     elif model == BLUECHIP:
         result = Model.get_bluechip_model(q_result_by_share, filter)
     elif model == CAPEXGROWTH:
-        result = Model.get_invst_growth_model(q_result_by_share, filter)
+        result = Model.get_capex_growth_model(q_result_by_share, filter)
     elif model == ALLSHARES:
         result = {
             'year_result': Model.get_all_shares(y_result_by_share, filter),
