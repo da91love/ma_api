@@ -7,18 +7,23 @@ def cut_data_by_term(tg_data, tg_prd, tg_term=None):
     :param tg_term:
     :return:
     """
-    tg_prd_idx = _.find_index(tg_data, lambda v: v.get('period') == tg_prd)
-    tg_data_to_tg_prd_idx = _.slice_(tg_data, 0, tg_prd_idx + 1)
+    try:
+        tg_prd_idx = _.find_index(tg_data, lambda v: v.get('period') == tg_prd)
+        tg_data_to_tg_prd_idx = _.slice_(tg_data, 0, tg_prd_idx + 1)
 
-    if tg_term:
-        result: list = []
-        for i in range(0, tg_term):
-            lgth = len(tg_data_to_tg_prd_idx) - 1
-            if lgth - 1 >= 0:
-                _.unshift(result, tg_data_to_tg_prd_idx[lgth - i])
-            else:
-                break
+        if tg_term:
+            result: list = []
+            for i in range(0, tg_term):
+                lgth = len(tg_data_to_tg_prd_idx) - 1
+                if lgth - 1 >= 0:
+                    _.unshift(result, tg_data_to_tg_prd_idx[lgth - i])
+                else:
+                    break
 
-        return result
-    else :
-        return tg_data_to_tg_prd_idx
+            return result
+        else :
+            return tg_data_to_tg_prd_idx
+
+    # 전체 데이터가 1개의 period 밖에 존재하지 않을시 IndexError 발생하므로, 이 경우 empty list 반환
+    except IndexError:
+        return []

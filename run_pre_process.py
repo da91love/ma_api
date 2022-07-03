@@ -1,0 +1,3 @@
+from pre_process.create_summary_data_wrapper import create_summary_data_wrapper
+
+create_summary_data_wrapper()
