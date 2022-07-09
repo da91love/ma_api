@@ -19,6 +19,9 @@ def create_entire_market_data_wrapper():
 
 
 def create_entire_market_data(period_data, period_unit):
+    # Create an instance
+    validation = Validation()
+
     # group by period
     period_data_by_group = _.group_by(period_data, lambda v: v[KEY_NAME['PERIOD']])
 
@@ -30,7 +33,7 @@ def create_entire_market_data(period_data, period_unit):
     result = []
     for period in period_data_by_group:
         # Period Validation
-        if not Validation.validate_period(tg_period= period, period_unit= period_unit):
+        if not validation.validate_period(tg_period= period, period_unit= period_unit):
             continue
 
         sum_data = {
