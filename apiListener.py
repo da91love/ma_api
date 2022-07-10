@@ -14,6 +14,7 @@ from api_comp_tg_grp_get.app import lambda_handler as get_comp_tg_grp
 from api_rawdata_get.app import lambda_handler as get_rawdata
 from api_financial_summary_post.app import lambda_handler as post_financial_summary
 from api_financial_status_post.app import lambda_handler as post_financial_status
+from api_market_summary_post.app import lambda_handler as post_market_summary
 from api_model_post.app import lambda_handler as post_model
 
 import sys
@@ -50,6 +51,27 @@ def model_post():
         }
     }
     result = post_model(data)
+
+    return make_response(jsonify(result))
+
+@api.route('/dev/api/ma-api/v1/front/market-summary',
+           methods=['post'])  # TODO : Insert any URL
+def market_summary_post():
+    # Get body, headers
+    body = request.json
+    headers = request.headers
+    params = request.args
+
+    # Insert necessary data to body
+    data = {
+        'header': headers,
+        'body-json': body,
+        'params': params,
+        'context': {
+            'http-method': 'POST'
+        }
+    }
+    result = post_market_summary(data)
 
     return make_response(jsonify(result))
 
