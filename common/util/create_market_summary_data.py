@@ -1,24 +1,12 @@
 import os
 project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-from common.util.FsUtil import FsUtil
 from common.util.EconoIndicator import EconoIndicator
 from common.util.Validation import Validation
 from common.const.KEY_NAME import KEY_NAME
-from common.const.COMM import PERIOD_UNIT
-from common.const.PATH import *
 import pydash as _
 
-def create_entire_market_data_wrapper():
-    # import all data
-    y_summary_data = FsUtil.open_csv_2_json_file(project_root + KO_YEAR_SUMMARY_DATA)
-    q_summary_data = FsUtil.open_csv_2_json_file(project_root + KO_QUARTER_SUMMARY_DATA)
-
-    create_entire_market_data(y_summary_data, PERIOD_UNIT['YEAR'])
-    create_entire_market_data(q_summary_data, PERIOD_UNIT['QUARTER'])
-
-
-def create_entire_market_data(period_data, period_unit):
+def create_market_summary_data(period_data: list, period_unit: str):
     # Create an instance
     validation = Validation()
 
@@ -29,7 +17,6 @@ def create_entire_market_data(period_data, period_unit):
     # Get market cap, revenue, operation income, net income
     # Ger psr, por, per
     # Get market value per company
-
     result = []
     for period in period_data_by_group:
         # Period Validation
@@ -43,6 +30,7 @@ def create_entire_market_data(period_data, period_unit):
             KEY_NAME['OP']: 0,
             KEY_NAME['NP_CTRL']: 0,
         }
+
         for s_data in period_data_by_group[period]:
             mv = s_data.get(KEY_NAME['MV'])
             sales = s_data.get(KEY_NAME['SALES'])
@@ -69,5 +57,3 @@ def create_entire_market_data(period_data, period_unit):
             result.append(sum_data)
 
     return result
-
-create_entire_market_data_wrapper()
