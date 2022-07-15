@@ -1,6 +1,7 @@
 # 必要なモジュールの読み込み
 from flask import Flask, jsonify, abort, make_response, request
 from flask_cors import CORS
+from run_pre_process import run_pre_process
 
 from api_auth_post.app import lambda_handler as post_auth
 from api_auth_delete.app import lambda_handler as delete_auth
@@ -27,6 +28,9 @@ os.path.dirname(sys.modules['__main__'].__file__)
 
 api = Flask(__name__)
 cors = CORS(api)
+
+# Run pre process
+run_pre_process()
 
 """
 # This flask API is only used for the development stage.
