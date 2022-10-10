@@ -51,8 +51,13 @@ class EconoIndicator:
             else:
                 return None
 
+        # 상폐 종목의 경우 유무형 자산의 가치가 0인 케이스 발생
+        except ZeroDivisionError:
+            return None
+
         except Exception:
             raise Exception
+
 
 
     @staticmethod
