@@ -5,11 +5,11 @@ from pandas.errors import EmptyDataError
 
 class FsUtil:
     @staticmethod
-    def save_json_2_csv_file(json_data: list, csv_dir: str):
+    def save_json_2_csv_file(json_data: list, csv_dir: str, index= False):
         try:
             df = pd.DataFrame.from_dict(json_data)
             df = df.fillna('')
-            df.to_csv(csv_dir, index=False)
+            df.to_csv(csv_dir, index=index)
 
             # writer = csv.writer(open(csv_dir, 'w', newline='', encoding=encoding))
             # writer.writerow(json_data[-1].keys())
@@ -30,7 +30,7 @@ class FsUtil:
             raise e
 
     @staticmethod
-    def open_csv_2_json_file(csv_dir: str, data_type: str):
+    def open_csv_2_json_file(csv_dir: str, data_type='records'):
         try:
             df_imported_data = pd.read_csv(csv_dir, dtype={'shareCode': str, 'marketCode': str})
             nan_2_none = df_imported_data.replace([np.nan], [None])

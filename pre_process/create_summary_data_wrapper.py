@@ -9,17 +9,17 @@ from common.const.PATH import *
 import pydash as _
 
 def create_summary_data_wrapper():
-    y_summary_data = FsUtil.open_csv_2_json_file(project_root + KO_YEAR_SUMMARY_DATA, 'records')
-    q_summary_data = FsUtil.open_csv_2_json_file(project_root + KO_QUARTER_SUMMARY_DATA, 'records')
+    y_summary_data = FsUtil.open_csv_2_json_file(project_root + KO_YEAR_SUMMARY_DATA)
+    q_summary_data = FsUtil.open_csv_2_json_file(project_root + KO_QUARTER_SUMMARY_DATA)
 
-    y_pl_data = FsUtil.open_csv_2_json_file(project_root + KO_YEAR_PL_DATA, 'records')
-    q_pl_data = FsUtil.open_csv_2_json_file(project_root + KO_QUARTER_PL_DATA, 'records')
+    y_pl_data = FsUtil.open_csv_2_json_file(project_root + KO_YEAR_PL_DATA)
+    q_pl_data = FsUtil.open_csv_2_json_file(project_root + KO_QUARTER_PL_DATA)
 
-    y_bs_data = FsUtil.open_csv_2_json_file(project_root + KO_YEAR_BS_DATA, 'records')
-    q_bs_data = FsUtil.open_csv_2_json_file(project_root + KO_QUARTER_BS_DATA, 'records')
+    y_bs_data = FsUtil.open_csv_2_json_file(project_root + KO_YEAR_BS_DATA)
+    q_bs_data = FsUtil.open_csv_2_json_file(project_root + KO_QUARTER_BS_DATA)
 
-    y_cf_data = FsUtil.open_csv_2_json_file(project_root + KO_YEAR_CF_DATA, 'records')
-    q_cf_data = FsUtil.open_csv_2_json_file(project_root + KO_QUARTER_CF_DATA, 'records')
+    y_cf_data = FsUtil.open_csv_2_json_file(project_root + KO_YEAR_CF_DATA)
+    q_cf_data = FsUtil.open_csv_2_json_file(project_root + KO_QUARTER_CF_DATA)
 
     # group by
     y_summary_data_by_share = _.group_by(y_summary_data, lambda v: v['shareCode'])
