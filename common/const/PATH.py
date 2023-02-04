@@ -12,6 +12,10 @@ KO_SHARE_INFO_DATA = "/static/ko/share_infos.csv"
 KO_MRK_INFO_DATA = "/static/ko/market_code.json"
 KO_YEAR_MARKET_SUMMARY_DATA = "/static/ko/marketSummaryData/market_summary_year_result.csv"
 KO_QUARTER_MARKET_SUMMARY_DATA = "/static/ko/marketSummaryData/market_summary_quarter_result.csv"
+KO_M2_DATA = "/static/ko/marketSummaryData/M2.csv"
+KO_GDP_DATA = "/static/ko/marketSummaryData/GDP.csv"
+
+
 
 US_YEAR_SUMMARY_DATA = "/static/us/rawData/year_result.csv"
 US_QUARTER_SUMMARY_DATA = "/static/us/rawData/quarter_result.csv"

@@ -49,8 +49,8 @@ def lambda_handler(event, context=None) -> ResType:
     year_result = None
     quarter_result = None
     if country == 'ko':
-        year_result = FsUtil.open_csv_2_json_file(project_root + KO_YEAR_ADDED_SUMMARY_DATA)
-        quarter_result = FsUtil.open_csv_2_json_file(project_root + KO_QUARTER_ADDED_SUMMARY_DATA)
+        year_result = FsUtil.open_csv_2_json_file(project_root + KO_YEAR_ADDED_SUMMARY_DATA, 'records')
+        quarter_result = FsUtil.open_csv_2_json_file(project_root + KO_QUARTER_ADDED_SUMMARY_DATA, 'records')
 
         if share_code:
             year_result = _.filter_(year_result, lambda x: x['shareCode'] in share_code)
@@ -80,8 +80,8 @@ def lambda_handler(event, context=None) -> ResType:
             # quarter_result = (df_q_result.loc[df_q_result['marketCode'] == share_code]).to_dict('records')
 
     elif country == 'us':
-        year_result = FsUtil.open_csv_2_json_file(project_root+KO_YEAR_ADDED_SUMMARY_DATA)
-        quarter_result = FsUtil.open_csv_2_json_file(project_root+KO_QUARTER_ADDED_SUMMARY_DATA)
+        year_result = FsUtil.open_csv_2_json_file(project_root+KO_YEAR_ADDED_SUMMARY_DATA, 'records')
+        quarter_result = FsUtil.open_csv_2_json_file(project_root+KO_QUARTER_ADDED_SUMMARY_DATA, 'records')
 
     result: dict = {
         'year_result': year_result,

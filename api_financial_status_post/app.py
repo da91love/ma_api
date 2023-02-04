@@ -50,7 +50,7 @@ def lambda_handler(event, context=None) -> ResType:
         for status in FS_PATH_KO:
             for period in FS_PATH_KO[status]:
                 tg_path = FS_PATH_KO[status][period]
-                tg_data = FsUtil.open_csv_2_json_file(project_root + tg_path)
+                tg_data = FsUtil.open_csv_2_json_file(project_root + tg_path, 'records')
 
                 if share_code:
                     tg_data = _.filter_(tg_data, lambda x: x['shareCode'] in share_code)
@@ -67,7 +67,7 @@ def lambda_handler(event, context=None) -> ResType:
         for status in FS_PATH_KO:
             for period in FS_PATH_KO[status]:
                 tg_path = FS_PATH_KO[status][period]
-                tg_data = FsUtil.open_csv_2_json_file(project_root + tg_path)
+                tg_data = FsUtil.open_csv_2_json_file(project_root + tg_path, 'records')
 
                 if share_code:
                     tg_data = _.filter_(tg_data, lambda x: x['shareCode'] in share_code)

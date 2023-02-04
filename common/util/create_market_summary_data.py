@@ -55,13 +55,6 @@ def create_market_summary_data(period_data: list, period_unit: str):
         if sum_data['tg_cmp_nb'] > 100:
             result.append(sum_data)
 
-        # Get psr por per
-        # sales_4prd = EconoIndicator.get_4prd_sum(KEY_NAME['SALES'], )
-
-        # sum_data[KEY_NAME['PSR']] = EconoIndicator.get_mltp(sum_data[KEY_NAME['MV']], sum_data[KEY_NAME['SALES']])
-        # sum_data[KEY_NAME['POR']] = EconoIndicator.get_mltp(sum_data[KEY_NAME['MV']], sum_data[KEY_NAME['OP']])
-        # sum_data[KEY_NAME['PER']] = EconoIndicator.get_mltp(sum_data[KEY_NAME['MV']], sum_data[KEY_NAME['NP_CTRL']])
-
     # Create temp_result to create multiple data
     # 멀티플 데이터 계산 시, 회사수가 다른 문제가 발생하여 각 매출, 영업이익, 당기순이익을 회사수로 나눈 값을 멀티플 재료로 활용
     temp_result = []

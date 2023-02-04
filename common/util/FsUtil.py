@@ -30,11 +30,11 @@ class FsUtil:
             raise e
 
     @staticmethod
-    def open_csv_2_json_file(csv_dir: str):
+    def open_csv_2_json_file(csv_dir: str, data_type: str):
         try:
             df_imported_data = pd.read_csv(csv_dir, dtype={'shareCode': str, 'marketCode': str})
             nan_2_none = df_imported_data.replace([np.nan], [None])
-            result: list = nan_2_none.to_dict('records')
+            result: list = nan_2_none.to_dict(data_type)
 
             return result
             # result = []
