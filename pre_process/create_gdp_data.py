@@ -18,7 +18,7 @@ def create_gdp_data():
                 modified_GDP[create_period] = value
 
         # save as csv
-        FsUtil.save_json_2_csv_file(modified_GDP, project_root + KO_GDP_MODIFIED_DATA, index=True)
+        FsUtil.save_json_2_csv_file([modified_GDP], project_root + KO_GDP_MODIFIED_DATA)
 
     except Exception as e:
         raise e
