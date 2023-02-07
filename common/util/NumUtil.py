@@ -5,14 +5,17 @@ class NumUtil:
     @staticmethod
     def is_digit(target):
         try:
+            # 숫자 vs str, None 등 구분
             float(target)
-            if math.isnan(target):
-                raise Exception
 
-            return True
+            # nan 구분
+            if not math.isnan(target):
+                return True
+            else:
+                return False
 
         except Exception:
-          return False
+            return False
 
     @staticmethod
     def c_float_if_digit(target):

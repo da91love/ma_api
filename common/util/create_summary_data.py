@@ -8,6 +8,8 @@ def create_summary_data(period_unit: str, summary: dict, pl: dict, bs: dict, cf:
     try:
         for share_code in summary:
 
+            # print(share_code)
+
             tg_sc_summary = summary.get(share_code)
             tg_sc_pl = pl.get(share_code)
             tg_sc_bs = bs.get(share_code)

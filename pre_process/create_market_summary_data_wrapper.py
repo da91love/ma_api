@@ -5,7 +5,7 @@ import pydash as _
 from common.util.FsUtil import FsUtil
 from common.util.create_market_summary_data import create_market_summary_data
 from common.const.COMM import PERIOD_UNIT
-from common.const.KEY_NAME import KEY_NAME
+from common.const.KEY_NAME import KEY_NAME, OTHER_KEY_NAME
 from common.const.PATH import *
 
 def create_market_summary_data_wrapper():
@@ -24,15 +24,21 @@ def create_market_summary_data_wrapper():
         tg_period = data[KEY_NAME['PERIOD']]
         tg_data = _.find(y_entire_market_data, {KEY_NAME['PERIOD']: tg_period})
 
-        tg_data['M2'] = M2.get(tg_period)
-        tg_data['GDP'] = GDP.get(tg_period)
+        tg_data[OTHER_KEY_NAME['M2']] = M2.get(tg_period)
+
+        # gdp는 전년도 데이터와 비교해야하기 때문에 tg_gdp_period 산출
+        tg_gdp_period = str(int((tg_period.split('/'))[0]) - 1) + '/' + tg_period.split('/')[1]
+        tg_data[OTHER_KEY_NAME['GDP']] = GDP.get(tg_gdp_period)
 
     for data in q_entire_market_data:
         tg_period = data[KEY_NAME['PERIOD']]
         tg_data = _.find(q_entire_market_data, {KEY_NAME['PERIOD']: tg_period})
 
-        tg_data['M2'] = M2.get(tg_period)
-        tg_data['GDP'] = GDP.get(tg_period)
+        tg_data[OTHER_KEY_NAME['M2']] = M2.get(tg_period)
+
+        # gdp는 전년도 데이터와 비교해야하기 때문에 tg_gdp_period 산출
+        tg_gdp_period = str(int((tg_period.split('/'))[0]) - 1) + '/' + tg_period.split('/')[1]
+        tg_data[OTHER_KEY_NAME['GDP']] = GDP.get(tg_gdp_period)
 
     # save as csv
     FsUtil.save_json_2_csv_file(y_entire_market_data, project_root + KO_YEAR_MARKET_SUMMARY_DATA)

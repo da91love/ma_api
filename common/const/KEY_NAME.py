@@ -120,6 +120,8 @@ KEY_NAME = {
 }
 
 OTHER_KEY_NAME = {
+    'M2': 'm2',
+    'GDP': 'gdp',
     'CODE': 'code',
     'NAME': 'name',
     'MARKET_TYPE': 'marketType',

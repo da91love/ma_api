@@ -38,6 +38,7 @@ def lambda_handler(event, context=None) -> ResType:
     # Get data from API Gateway
     header = event['header']
     auth_id = header['authId']
+    share_code = (event.get('params')).get('shareCode')
 
     # Check authentication
     user_id = get_authed_user_id(auth_id=auth_id)
@@ -49,5 +50,9 @@ def lambda_handler(event, context=None) -> ResType:
     json_value: list = [] if len(lRes_valuation) < 0 else lRes_valuation[0]['value']
     dict_value: dict = json.loads(json_value)
 
-    return ResType(value=dict_value).get_response()
+    value = None
+    if share_code:
+        value = dict_value.get(share_code)
+
+    return ResType(value=value).get_response()
 
