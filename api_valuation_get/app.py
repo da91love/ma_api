@@ -53,6 +53,8 @@ def lambda_handler(event, context=None) -> ResType:
     value = None
     if share_code:
         value = dict_value.get(share_code)
+    else:
+        value = dict_value
 
     return ResType(value=value).get_response()
 
