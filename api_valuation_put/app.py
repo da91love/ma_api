@@ -36,24 +36,31 @@ def lambda_handler(event, context=None) -> ResType:
     """
 
     # Get data from API Gateway
-    data = event['body-json']['data']
-    header = event['header']
+    data = (event.get('body-json')).get('data')
+    header = event.get('header')
+    share_code = data.get('shareCode')
 
-    auth_id = header['authId']
-    value = json.dumps(data['value'],  ensure_ascii=False)
+    auth_id = header.get('authId')
+    # value = json.dumps(data.get('value'),  ensure_ascii=False)
+    value = data.get('value')
+
 
     # Check authentication
     user_id = get_authed_user_id(auth_id=auth_id)
     if not user_id: raise AuthenticationException
 
+    # select valuation data to update
+    existing_value: list = AccessService.select_valuation(user_id=user_id)
+
+    json_existing_value: list = [] if len(existing_value) < 0 else (existing_value[0]).get('value')
+    dict_existing_value: dict = json.loads(json_existing_value)
+    dict_existing_value[share_code] = value
+
+    # dict 상태로 update후 db로 삽입 위해 json 화
+    updated_json_existing_value = json.dumps(dict_existing_value,  ensure_ascii=False)
+
     # Insert valuation data
-    AccessService.insert_valuation(user_id=user_id, value=value)
+    AccessService.insert_valuation(user_id=user_id, value=updated_json_existing_value)
 
-    # select valuation data
-    lRes_valuation: list = AccessService.select_valuation(user_id=user_id)
-
-    json_value: list = [] if len(lRes_valuation) < 0 else lRes_valuation[0]['value']
-    dict_value: dict = json.loads(json_value)
-
-    return ResType(value=dict_value).get_response()
+    return ResType(value=value).get_response()
 

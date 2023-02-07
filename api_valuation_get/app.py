@@ -40,7 +40,6 @@ def lambda_handler(event, context=None) -> ResType:
     auth_id = header['authId']
     share_code = (event.get('params')).get('shareCode')
 
-    # Check authentication
     user_id = get_authed_user_id(auth_id=auth_id)
     if not user_id: raise AuthenticationException
 
