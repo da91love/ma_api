@@ -1,11 +1,11 @@
 shareCode,shareName,shareNameEn,marketType,shareType
 098120,마이크로컨텍솔,Micro Contact Solution Co.Ltd.,KOSDAQ,보통주
-131100,스카이이앤엠,SKY E&M Co. Ltd.,KOSDAQ,보통주
 009520,포스코엠텍,POSCO M-TECH CO.LTD.,KOSDAQ,보통주
 058820,CMG제약,CMG Pharmaceutical Co. Ltd.,KOSDAQ,보통주
 050120,ES큐브,ES CUBE,KOSDAQ,보통주
 024120,KB오토시스,KB Autosys Co.Ltd,KOSDAQ,보통주
 044180,KD,KD Corporation,KOSDAQ,보통주
+086960,MDS테크,MDS Tech,KOSDAQ,보통주
 950110,SBI핀테크솔루션즈,SBI FinTech Solutions Co. Ltd.,KOSDAQ,보통주
 079940,가비아,GABIA Inc.,KOSDAQ,보통주
 078890,가온미디어,KAON Media Co. Ltd.,KOSDAQ,보통주
@@ -22,10 +22,8 @@ shareCode,shareName,shareNameEn,marketType,shareType
 049720,고려신용정보,KORYO CREDIT INFORMATION CO. LTD.,KOSDAQ,보통주
 014570,고려제약,KOREAN DRUG CO. LTD.,KOSDAQ,보통주
 348150,고바이오랩,KoBioLabs Inc,KOSDAQ,보통주
-098460,고영,Koh Young Technology Inc.,KOSDAQ,보통주
 035290,골드앤에스,Gold&S,KOSDAQ,보통주
 038530,골드퍼시픽,Gold Pacific Co.Ltd,KOSDAQ,보통주
-215000,골프존,GOLFZON Co. Ltd.,KOSDAQ,보통주
 121440,골프존뉴딘홀딩스,GOLFZON NEWDIN HOLDINGS Co. Ltd.,KOSDAQ,보통주
 366030,공구우먼,09women Co. Ltd.,KOSDAQ,보통주
 014200,광림,KANGLIM Co. LTD.,KOSDAQ,보통주
@@ -34,7 +32,7 @@ shareCode,shareName,shareNameEn,marketType,shareType
 355150,교보10호스팩,Kyobo 10 Special Purpose Acquisition Company,KOSDAQ,보통주
 397880,교보11호스팩,Kyobo 11 Special Purpose Acquisition Company,KOSDAQ,보통주
 421800,교보12호스팩,Kyobo 12 Special Purpose Acquisition Company,KOSDAQ,보통주
-331520,교보9호스팩,Kyobo 9 Special Purpose Acquisition Company,KOSDAQ,보통주
+440790,교보13호스팩,Kyobo 13 Special Purpose Acquisition Company,KOSDAQ,보통주
 053270,구영테크,GUYOUNGTECHNOLOGY COMPANY LIMITED,KOSDAQ,보통주
 066620,국보디자인,KUKBO DESIGN,KOSDAQ,보통주
 043650,국순당,KOOK SOON DANG CO. LTD.,KOSDAQ,보통주
@@ -70,7 +68,6 @@ shareCode,shareName,shareNameEn,marketType,shareType
 138610,나이벡,NIBEC CO. LTD.,KOSDAQ,보통주
 130580,나이스디앤비,NICE D&B CO. LTD.,KOSDAQ,보통주
 036800,나이스정보통신,NICE INFORMATION&TELECOMMUNICATION INC.,KOSDAQ,보통주
-030190,NICE평가정보,NICE Information Service Co. Ltd.,KOSDAQ,보통주
 267320,나인테크,Naintech. CO.LTD.,KOSDAQ,보통주
 111710,남화산업,Namhwa Industrial Co.Ltd,KOSDAQ,보통주
 091590,남화토건,Nam Hwa Construction Company Limited,KOSDAQ,보통주
@@ -111,14 +108,13 @@ shareCode,shareName,shareNameEn,marketType,shareType
 069140,누리플랜,Nuriplan Co. Ltd,KOSDAQ,보통주
 040160,누리플렉스,NuriFlex,KOSDAQ,보통주
 332290,누보,NOUSBO,KOSDAQ,보통주
-126870,뉴로스,NEUROS Co. Ltd.,KOSDAQ,보통주
+348340,뉴로메카,Neuromeka Co. Ltd.,KOSDAQ,보통주
 060260,뉴보텍,NUVOTEC Co. Ltd,KOSDAQ,보통주
 012340,뉴인텍,NUIN TEK CO. LTD,KOSDAQ,보통주
 214870,뉴지랩파마,NewGLAB Pharma,KOSDAQ,보통주
 270870,뉴트리,Newtree Co. Ltd.,KOSDAQ,보통주
 144960,뉴파워프라즈마,New Power Plasma Co.Ltd,KOSDAQ,보통주
 085670,뉴프렉스,NEWFLEX TECHNOLOGY Co. LTD.,KOSDAQ,보통주
-119860,다나와,DANAWA Co. Ltd,KOSDAQ,보통주
 064260,다날,DANAL CO. LTD.,KOSDAQ,보통주
 093640,다믈멀티미디어,Tamul Multimedia Co. Ltd.,KOSDAQ,보통주
 340360,다보링크,DAVOLINK,KOSDAQ,보통주
@@ -140,9 +136,12 @@ shareCode,shareName,shareNameEn,marketType,shareType
 025440,대성엘텍,DAESUNG ELTEC CO. LTD.,KOSDAQ,보통주
 027830,대성창투,Daesung Private Equity Inc.,KOSDAQ,보통주
 104040,대성파인텍,Daesung Fine Tech. Co. Ltd,KOSDAQ,보통주
+129920,대성하이텍,Daesung Hi-Tech Co. Ltd.,KOSDAQ,보통주
 387310,대신밸런스제10호스팩,Daishin Balance No.10 Special Purpose Acquisition Company,KOSDAQ,보통주
 397500,대신밸런스제11호스팩,Daishin Balance No.11 Special Purpose Acquisition Company,KOSDAQ,보통주
 426670,대신밸런스제12호스팩,Daishin Balance No.12 Special Purpose Acquisition Company,KOSDAQ,보통주
+438220,대신밸런스제13호스팩,Daishin Balance No.13 Special Purpose Acquisition Company,KOSDAQ,보통주
+442310,대신밸런스제14호스팩,Daishin Balance No.14 Special Purpose Acquisition Company,KOSDAQ,보통주
 020180,대신정보통신,DaishinInformation,KOSDAQ,보통주
 045390,대아티아이,DAEA TI CO. LTD.,KOSDAQ,보통주
 108380,대양전기공업,DAYANG ELECTRIC CO.LTD,KOSDAQ,보통주
@@ -166,11 +165,10 @@ shareCode,shareName,shareNameEn,marketType,shareType
 067080,대화제약,DAE HWA PHARM CO. LTD,KOSDAQ,보통주
 161570,THE MIDONG,THE MIDONG Co. Ltd,KOSDAQ,보통주
 298540,더네이쳐홀딩스,THE NATURE HOLDINGS CO. LTD,KOSDAQ,보통주
-073570,WI,WI Co.Ltd.,KOSDAQ,보통주
+393890,더블유씨피,W-SCOPE CHUNGJU PLANT CO. LTD.,KOSDAQ,보통주
 299170,더블유에스아이,WSI Co. Ltd.,KOSDAQ,보통주
-192410,THQ,The HQ,KOSDAQ,보통주
 089230,THE E&M,THE E&M Co. Ltd.,KOSDAQ,보통주
-213420,덕산네오룩스,DUK SAN NEOLUX CO.LTD,KOSDAQ,보통주
+224060,더코디,THE CODI,KOSDAQ,보통주
 317330,덕산테코피아,Duksan Techopia Co. Ltd.,KOSDAQ,보통주
 077360,덕산하이메탈,DUK SAN HI METAL CO.LTD.,KOSDAQ,보통주
 090410,덕신하우징,DUCKSHIN HOUSING CO. LTD.,KOSDAQ,보통주
@@ -184,7 +182,6 @@ shareCode,shareName,shareNameEn,marketType,shareType
 005160,동국산업,DONGKUK INDUSTRIES COMPANY,KOSDAQ,보통주
 075970,동국알앤에스,DONGKUK REFRACTORIES & STEEL CO. LTD.,KOSDAQ,보통주
 100130,동국S&C,DONGKUK STRUCTURES & CONSTRUCTION COMPANY LIMITED,KOSDAQ,보통주
-086450,동국제약,DongKook Pharmaceutical Co.Ltd.,KOSDAQ,보통주
 099410,동방선기,Dongbang Ship Machinery Co. Ltd,KOSDAQ,보통주
 033500,동성화인텍,DONGSUNG FINETEC CO. Ltd,KOSDAQ,보통주
 025950,동신건설,DongshinEngineering&Construction,KOSDAQ,보통주
@@ -207,7 +204,7 @@ shareCode,shareName,shareNameEn,marketType,shareType
 203650,드림시큐리티,Dream Security Co.Ltd.,KOSDAQ,보통주
 223250,드림씨아이에스,DreamCIS INC.,KOSDAQ,보통주
 060570,드림어스컴퍼니,Dreamus Company,KOSDAQ,보통주
-217620,디딤,Didim Inc.,KOSDAQ,보통주
+217620,디딤이앤에프,Didim E&F,KOSDAQ,보통주
 016670,디모아,DMOA,KOSDAQ,보통주
 187870,디바이스이엔지,Device ENG CO.Ltd,KOSDAQ,보통주
 404950,DB금융스팩10호,DB Finance No.10 Special Purpose Acquisition Co. Ltd.,KOSDAQ,보통주
@@ -225,7 +222,7 @@ shareCode,shareName,shareNameEn,marketType,shareType
 109740,디에스케이,DSK Co.Ltd.,KOSDAQ,보통주
 196490,디에이테크놀로지,DA Technology Co.Ltd.,KOSDAQ,보통주
 066900,디에이피,DAP Co. Ltd,KOSDAQ,보통주
-180400,디엑스앤브이엑스,Dx & Vx,KOSDAQ,보통주
+180400,DXVX,Dx & Vx,KOSDAQ,보통주
 127120,디엔에이링크,DNA Link Inc,KOSDAQ,보통주
 092070,디엔에프,DNF Co. Ltd.,KOSDAQ,보통주
 068790,DMS,DMS Co.Ltd.,KOSDAQ,보통주
@@ -243,6 +240,7 @@ shareCode,shareName,shareNameEn,marketType,shareType
 263020,디케이앤디,DK&D,KOSDAQ,보통주
 290550,디케이티,DK Tech Co. Ltd.,KOSDAQ,보통주
 187220,디티앤씨,DT&C.co.ltd.,KOSDAQ,보통주
+383930,디티앤씨알오,DT&CRO CO. Ltd.,KOSDAQ,보통주
 131180,딜리,DILLI ILLUSTRATE INC.,KOSDAQ,보통주
 315640,딥노이드,DEEPNOID Inc.,KOSDAQ,보통주
 317120,라닉스,RANIX INC.,KOSDAQ,보통주
@@ -257,8 +255,6 @@ shareCode,shareName,shareNameEn,marketType,shareType
 171010,램테크놀러지,RAM TECHNOLOGY CO. LTD.,KOSDAQ,보통주
 084650,랩지노믹스,LabGenomics. Co. Ltd.,KOSDAQ,보통주
 217500,러셀,RUSSELL CO. LTD.,KOSDAQ,보통주
-141080,레고켐바이오,LegoChem Biosciences Inc.,KOSDAQ,보통주
-060300,레드로버,REDROVER CO.LTD,KOSDAQ,보통주
 038390,레드캡투어,RedcapTour Co. Ltd.,KOSDAQ,보통주
 294140,레몬,LEMON COMPANY LIMITED,KOSDAQ,보통주
 228670,레이,Ray Co. Ltd.,KOSDAQ,보통주
@@ -276,7 +272,6 @@ shareCode,shareName,shareNameEn,marketType,shareType
 038060,루멘스,LUMENS CO. LTD.,KOSDAQ,보통주
 085370,루트로닉,Lutronic Corporation,KOSDAQ,보통주
 060240,룽투코리아,LONGTU KOREA Inc.,KOSDAQ,보통주
-058470,리노공업,LEENO Industrial Inc,KOSDAQ,보통주
 039980,리노스,LEENOS CORP.,KOSDAQ,보통주
 019570,리더스 기술투자,Leaders Technology Investment Co.Ltd,KOSDAQ,보통주
 016100,리더스코스메틱,LEADERS COSMETICS CO.LTD.,KOSDAQ,보통주
@@ -287,21 +282,17 @@ shareCode,shareName,shareNameEn,marketType,shareType
 042500,링네트,RingNet Co. Ltd.,KOSDAQ,보통주
 219420,링크제니시스,Linkgenesis Co. Ltd.,KOSDAQ,보통주
 195500,마니커에프앤지,Maniker F&G,KOSDAQ,보통주
-222810,마이더스AI,Midas AI Co.Ltd.,KOSDAQ,보통주
 305090,마이크로디지탈,Micro Digital Co. Ltd.,KOSDAQ,보통주
 147760,마이크로프랜드,Micro Friend Inc.,KOSDAQ,보통주
 377480,마인즈랩,MINDS LAB INC.,KOSDAQ,보통주
 169330,엠브레인,Macromill Embrain Co. Ltd.,KOSDAQ,보통주
 038290,마크로젠,Macrogen Inc.,KOSDAQ,보통주
-267980,매일유업,Maeil Dairies Co. Ltd.,KOSDAQ,보통주
 005990,매일홀딩스,MAEIL HOLDINGS CO. LTD.,KOSDAQ,보통주
-127160,매직마이크로,MAGICMICRO CO.LTD,KOSDAQ,보통주
 093520,매커스,MAKUS Inc.,KOSDAQ,보통주
 377030,맥스트,MAXST CO. LTD,KOSDAQ,보통주
 100590,머큐리,Mercury Corporation,KOSDAQ,보통주
 067280,멀티캠퍼스,Multicampus Corporation,KOSDAQ,보통주
 072870,메가스터디,MegaStudy Co. Ltd.,KOSDAQ,보통주
-215200,메가스터디교육,MegaStudyEdu Co. Ltd,KOSDAQ,보통주
 133750,메가엠디,MegaMD Co. Ltd.,KOSDAQ,보통주
 235980,메드팩토,MedPacto Inc.,KOSDAQ,보통주
 041920,메디아나,MEDIANA Co.LTD,KOSDAQ,보통주
@@ -318,24 +309,26 @@ shareCode,shareName,shareNameEn,marketType,shareType
 096640,멜파스,Melfas Inc.,KOSDAQ,보통주
 257370,명성티엔에스,Mstns Co.Ltd.,KOSDAQ,보통주
 080420,모다이노칩,Moda-InnoChips Co. Ltd.,KOSDAQ,보통주
+417970,모델솔루션,Model Solution Co. Ltd.,KOSDAQ,보통주
 080160,모두투어,MODETOUR NETWORK INC.,KOSDAQ,보통주
-100030,모바일리더,Mobileleader Co. Ltd.,KOSDAQ,보통주
 087260,모바일어플라이언스,MOBILE APPLIANCE INC.,KOSDAQ,보통주
 101330,모베이스,MOBASE Co. Ltd.,KOSDAQ,보통주
 012860,모베이스전자,MOBASE ELECTRONICS CO.LTD.,KOSDAQ,보통주
 363260,모비데이즈,Mobidays,KOSDAQ,보통주
 348030,모비릭스,MOBIRIX Corporation,KOSDAQ,보통주
 250060,모비스,Mobiis Co. Ltd.,KOSDAQ,보통주
-288980,모아데이타,Moadata Co. Ltd,KOSDAQ,보통주
+288980,모아데이타,Moadata,KOSDAQ,보통주
 033200,모아텍,MOATECH CO. LTD.,KOSDAQ,보통주
+333050,모코엠시스,MOCOMSYS,KOSDAQ,보통주
 118990,모트렉스,MOTREX CO.LTD,KOSDAQ,보통주
 006920,모헨즈,Mohenz. Co. Ltd,KOSDAQ,보통주
+038340,MIT,MUGUNGHWA INFORMATION TECHNOLOGY,KOSDAQ,보통주
 001810,무림SP,MOORIM SP CO. LTD.,KOSDAQ,보통주
 279600,미디어젠,MediaZenInc.,KOSDAQ,보통주
 095500,미래나노텍,MNTECH Co.Ltd.,KOSDAQ,보통주
+254490,미래반도체,MIRAI SEMICONDUCTORS CO. LTD.,KOSDAQ,보통주
 218150,미래생명자원,MILAE BIORESOURCES CO. LTD.,KOSDAQ,보통주
 353490,미래에셋대우스팩 5호,MIRAE ASSET DAEWOO SPECIAL PURPOSE ACQUISITION 5 COMPANY,KOSDAQ,보통주
-328380,미래에셋대우스팩3호,MIRAE ASSET DAEWOO SPECIAL PURPOSE ACQUISITION 3 COMPANY,KOSDAQ,보통주
 100790,미래에셋벤처투자,Mirae Asset Venture Investment Co. Ltd,KOSDAQ,보통주
 412930,미래에셋비전스팩1호,Mirae Asset Vision Special Purpose Acquisition 1 Company,KOSDAQ,보통주
 049950,미래컴퍼니,meerecompany Incorporated,KOSDAQ,보통주
@@ -347,7 +340,6 @@ shareCode,shareName,shareNameEn,marketType,shareType
 206640,바디텍메드,Boditech Med Inc.,KOSDAQ,보통주
 018700,바른손,Barunson,KOSDAQ,보통주
 035620,바른손이앤에이,Barunson Entertainment & Arts Corporation,KOSDAQ,보통주
-064520,바른전자,Barun Electronics Co. Ltd.,KOSDAQ,보통주
 053030,바이넥스,Binex Co. Ltd.,KOSDAQ,보통주
 301300,바이브컴퍼니,VAIV company Inc.,KOSDAQ,보통주
 064550,바이오니아,BIONEER CORPORATION,KOSDAQ,보통주
@@ -365,6 +357,7 @@ shareCode,shareName,shareNameEn,marketType,shareType
 323990,박셀바이오,Vaxcell-Bio Therapeutics,KOSDAQ,보통주
 267790,배럴,BARREL Co. Ltd.,KOSDAQ,보통주
 046310,백금T&A,BG T&A Co.,KOSDAQ,보통주
+331520,밸로프,VALOFE,KOSDAQ,보통주
 066410,버킷스튜디오,BUCKET STUDIO Co.Ltd.,KOSDAQ,보통주
 382900,범한퓨얼셀,Bumhan Fuel Cell Co. Ltd.,KOSDAQ,보통주
 206400,베노홀딩스,Benoholdings lnc.,KOSDAQ,보통주
@@ -387,25 +380,27 @@ shareCode,shareName,shareNameEn,marketType,shareType
 365900,브이씨,VC Inc.,KOSDAQ,보통주
 251630,브이원텍,V-ONE TECH CO. LTD.,KOSDAQ,보통주
 018290,브이티지엠피,VT GMP Co.Ltd.,KOSDAQ,보통주
-044480,블루베리 NFT,Blueberry NFT,KOSDAQ,보통주
+044480,블레이드 Ent,BLADE Entertainment,KOSDAQ,보통주
 033560,블루콤,BLUECOM CO.LTD.,KOSDAQ,보통주
 369370,블리츠웨이,Blitzway,KOSDAQ,보통주
 126340,비나텍,VINA TECH CO.LTD.,KOSDAQ,보통주
 121800,비덴트,Vidente Co. Ltd.,KOSDAQ,보통주
 148140,비디아이,BDI Co. LTD.,KOSDAQ,보통주
-082800,비보존 헬스케어,Vivozon Healthcare Inc,KOSDAQ,보통주
+082800,비보존 제약,VIVOZON PHARMACEUTICAL,KOSDAQ,보통주
 318410,비비씨,Best Bristle Company CO. Ltd.,KOSDAQ,보통주
+419540,비스토스,Bistos Co. Ltd.,KOSDAQ,보통주
 146320,비씨엔씨,BCnC Co. Ltd.,KOSDAQ,보통주
 200780,비씨월드제약,BCWORLDPHARM Co. Ltd.,KOSDAQ,보통주
 141000,비아트론,Viatron Technologies Inc.,KOSDAQ,보통주
-090460,비에이치,BH Co. Ltd.,KOSDAQ,보통주
 083650,비에이치아이,BHI Co. LTD.,KOSDAQ,보통주
-032790,BNGT,BNGT,KOSDAQ,보통주
+032790,비엔지티,BNGT,KOSDAQ,보통주
+445360,비엔케이제1호스팩,BNK 1 SPECIAL PURPOSE ACQUISITION COMPANY,KOSDAQ,보통주
 142760,비엘,BL Corporation,KOSDAQ,보통주
 065170,비엘팜텍,BL Pharmtech,KOSDAQ,보통주
 086670,비엠티,BMT Co.Ltd.,KOSDAQ,보통주
 335890,비올,VIOL Co. Ltd.,KOSDAQ,보통주
 138580,비즈니스온,BusinessOn Communication Co. Ltd,KOSDAQ,보통주
+126600,BGF에코머티리얼즈,BGFecomaterials,KOSDAQ,보통주
 082920,비츠로셀,VITZROCELL Co. Ltd.,KOSDAQ,보통주
 054220,비츠로시스,VitzroSys. Co. LTD,KOSDAQ,보통주
 042370,비츠로테크,Vitzro Tech Co. LTD.,KOSDAQ,보통주
@@ -419,8 +414,10 @@ shareCode,shareName,shareNameEn,marketType,shareType
 065450,빅텍,VICTEK. Co. Ltd.,KOSDAQ,보통주
 072950,빛샘전자,VISSEM Electronics Co. Ltd.,KOSDAQ,보통주
 143240,사람인에이치알,SaraminHR Co. Ltd,KOSDAQ,보통주
+419120,산돌,Sandoll Inc.,KOSDAQ,보통주
 100090,삼강엠앤티,SAMKANG M&T Co. Ltd,KOSDAQ,보통주
 122350,삼기,SAMKEE CORP.,KOSDAQ,보통주
+419050,삼기이브이,SAMKEE EV CO.LTD.,KOSDAQ,보통주
 014970,삼륭물산,Samryoong,KOSDAQ,보통주
 018310,삼목에스폼,SAMMOK S-FORM CO.LTD.,KOSDAQ,보통주
 053700,삼보모터스,SAMBO MOTORS CO. LTD.,KOSDAQ,보통주
@@ -428,6 +425,7 @@ shareCode,shareName,shareNameEn,marketType,shareType
 023600,삼보판지,SAMBO CORRUGATED BOARD CO. LTD.,KOSDAQ,보통주
 377630,삼성스팩4호,SAMSUNG SPECIAL PURPOSE ACQUISITION 4 COMPANY,KOSDAQ,보통주
 425290,삼성스팩6호,SAMSUNG SPECIAL PURPOSE ACQUISITION 6 COMPANY,KOSDAQ,보통주
+439250,삼성스팩7호,SAMSUNG SPECIAL PURPOSE ACQUISITION 7 COMPANY,KOSDAQ,보통주
 380320,삼성머스트스팩5호,SAMSUNG MUST SPECIAL PURPOSE ACQUISITION 5 COMPANY,KOSDAQ,보통주
 009300,삼아제약,Sam-A Pharm. Co. Ltd,KOSDAQ,보통주
 225190,삼양옵틱스,SAMYANG OPTICS CO. LTD,KOSDAQ,보통주
@@ -454,7 +452,9 @@ shareCode,shareName,shareNameEn,marketType,shareType
 089980,상아프론테크,SANG-A FRONTEC CO. LTD.,KOSDAQ,보통주
 042940,상지카일룸,Sangji Caelum Inc.,KOSDAQ,보통주
 042600,새로닉스,SERONICS. CO. LTD.,KOSDAQ,보통주
+107600,새빗켐,Sebitchem Co. LTD,KOSDAQ,보통주
 252990,샘씨엔에스,SEMCNS Co. Ltd.,KOSDAQ,보통주
+378800,샤페론,Shaperon Inc.,KOSDAQ,보통주
 294630,서남,SuNAM Co. Ltd.,KOSDAQ,보통주
 038070,서린바이오,SeouLinBioscience CO. LTD.,KOSDAQ,보통주
 006730,서부T&D,Seobu T&D Co.Ltd,KOSDAQ,보통주
@@ -463,7 +463,6 @@ shareCode,shareName,shareNameEn,marketType,shareType
 019770,서연탑메탈,SEOYON TOPMETAL CO. LTD.,KOSDAQ,보통주
 043710,서울리거,SEOULEAGUER CO. LTD.,KOSDAQ,보통주
 092190,서울바이오시스,SEOUL VIOSYS CO. LTD.,KOSDAQ,보통주
-046890,서울반도체,SEOUL SEMICONDUCTOR CO. LTD.,KOSDAQ,보통주
 063170,서울옥션,Seoul Auction Co. Ltd..,KOSDAQ,보통주
 027040,서울전자통신,SEOUL ELECTRONICS & TELECOM,KOSDAQ,보통주
 018680,서울제약,SEOUL PHARMA CO. LTD,KOSDAQ,보통주
@@ -477,6 +476,7 @@ shareCode,shareName,shareNameEn,marketType,shareType
 035890,서희건설,SEOHEE CONSTRUCTION CO. LTD.,KOSDAQ,보통주
 357550,석경에이티,Sukgyung AT Co. Ltd.,KOSDAQ,보통주
 003100,선광,SUN KWANG Co. Ltd,KOSDAQ,보통주
+067370,선바이오,SunBio Inc.,KOSDAQ,보통주
 171090,선익시스템,SUNIC SYSTEM Co. Ltd.,KOSDAQ,보통주
 086710,선진뷰티사이언스,SUNJIN BEAUTY SCIENCE CO. LTD.,KOSDAQ,보통주
 014620,성광벤드,SUNG KWANG BEND CO. LTD.,KOSDAQ,보통주
@@ -500,6 +500,7 @@ shareCode,shareName,shareNameEn,marketType,shareType
 039310,세중,SEJOONG CO. LTD.,KOSDAQ,보통주
 067770,세진티에스,SEJIN T.S CO. LTD.,KOSDAQ,보통주
 053450,세코닉스,SEKONIX CO. LTD.,KOSDAQ,보통주
+222810,세토피아,Setopia,KOSDAQ,보통주
 252500,세화피앤씨,SEWHA P&C INC.,KOSDAQ,보통주
 347000,센코,SENKO Co.Ltd.,KOSDAQ,보통주
 331920,셀레믹스,Celemics Inc.,KOSDAQ,보통주
@@ -509,10 +510,9 @@ shareCode,shareName,shareNameEn,marketType,shareType
 108860,셀바스AI,SELVAS AI Inc.,KOSDAQ,보통주
 208370,셀바스헬스케어,SELVAS Healthcare Inc.,KOSDAQ,보통주
 068760,셀트리온제약,Celltrion Pharm Inc.,KOSDAQ,보통주
-091990,셀트리온헬스케어,Celltrion Healthcare Co. Ltd.,KOSDAQ,보통주
+068940,셀피글로벌,Cellfie Global,KOSDAQ,보통주
 060230,소니드,Sonid,KOSDAQ,보통주
 290690,소룩스,Solux Co. Ltd.,KOSDAQ,보통주
-053110,소리바다,SORIBADA INC.,KOSDAQ,보통주
 950200,소마젠,Psomagen Inc.,KOSDAQ,보통주
 032680,소프트센,SOFTCEN CO. LTD.,KOSDAQ,보통주
 258790,소프트캠프,SOFTCAMP CO. LTD,KOSDAQ,보통주
@@ -521,10 +521,11 @@ shareCode,shareName,shareNameEn,marketType,shareType
 154040,솔루에타,Solueta Co.Ltd.,KOSDAQ,보통주
 035610,솔본,SOLBORN Inc.,KOSDAQ,보통주
 357780,솔브레인,Soulbrain Co. Ltd.,KOSDAQ,보통주
-036830,솔브레인홀딩스,Soulbrain Holdings Co. Ltd.,KOSDAQ,보통주
 304100,솔트룩스,SALTLUX Inc,KOSDAQ,보통주
+328380,솔트웨어,Saltware,KOSDAQ,보통주
 086980,쇼박스,SHOWBOX Corp.,KOSDAQ,보통주
 050960,수산아이앤티,SOOSAN INT Co. LTD.,KOSDAQ,보통주
+084180,수성샐바시온,Soosung Salvacion,KOSDAQ,보통주
 253840,수젠텍,Sugentech Inc.,KOSDAQ,보통주
 236200,슈프리마,Suprema Inc.,KOSDAQ,보통주
 317770,슈프리마아이디,Suprema ID Inc.,KOSDAQ,보통주
@@ -553,15 +554,17 @@ shareCode,shareName,shareNameEn,marketType,shareType
 025870,신라에스지,SILLA SG CO. LTD.,KOSDAQ,보통주
 215600,신라젠,SillaJen Inc.,KOSDAQ,보통주
 065350,신성델타테크,SHINSUNG DELTA TECH CO. LTD,KOSDAQ,보통주
+162300,신스틸,SHIN STEEL CO.LTD.,KOSDAQ,보통주
 002800,신신제약,SINSIN PHARMACEUTICAL CO. LTD.,KOSDAQ,보통주
 344050,신영스팩6호,Shinyoung HappyTomorrow No.6 Special Purpose Acquisition Company,KOSDAQ,보통주
 419270,신영스팩7호,Shinyoung HappyTomorrow No.7 Special Purpose Acquisition Company,KOSDAQ,보통주
+430220,신영스팩8호,Shinyoung HappyTomorrow No.8 Special Purpose Acquisition Company,KOSDAQ,보통주
+445970,신영스팩9호,Shinyoung HappyTomorrow No.9 Special Purpose Acquisition Company,KOSDAQ,보통주
 017000,신원종합개발,ShinwonConstruction,KOSDAQ,보통주
 012790,신일제약,SHINIL PHARMACEUTICAL CO. LTD.,KOSDAQ,보통주
 138070,신진에스엠,SINJIN SM CO. LTD.,KOSDAQ,보통주
 226330,신테카바이오,SyntekaBioInc.,KOSDAQ,보통주
 418210,신한제10호스팩,Shinhan 10th Special Purpose Acquisition Company,KOSDAQ,보통주
-333050,신한제6호스팩,Shinhan 6th Special Purpose Acquisition Company,KOSDAQ,보통주
 366330,신한제7호스팩,Shinhan 7th Special Purpose Acquisition Company,KOSDAQ,보통주
 393360,신한제8호스팩,Shinhan 8th Special Purpose Acquisition Company,KOSDAQ,보통주
 405640,신한제9호스팩,Shinhan 9th Special Purpose Acquisition Company,KOSDAQ,보통주
@@ -587,7 +590,7 @@ shareCode,shareName,shareNameEn,marketType,shareType
 352480,씨앤씨인터내셔널,C&C INTERNATIONAL,KOSDAQ,보통주
 023460,CNH,CNH CO. LTD.,KOSDAQ,보통주
 264660,씨앤지하이테크,C&G Hi Tech Co. Ltd,KOSDAQ,보통주
-352700,씨앤투스성진,CNTUS SUNGJIN CO.Ltd,KOSDAQ,보통주
+352700,씨앤투스,CNTUS,KOSDAQ,보통주
 056730,CNT85,CNT85,KOSDAQ,보통주
 065770,CS,CS CORPORATION,KOSDAQ,보통주
 297090,씨에스베어링,CS BEARING Co. Ltd.,KOSDAQ,보통주
@@ -598,7 +601,6 @@ shareCode,shareName,shareNameEn,marketType,shareType
 376290,씨유테크,CU TECH CORPORATION,KOSDAQ,보통주
 189330,씨이랩,XIIlab Co. Ltd,KOSDAQ,보통주
 311690,CJ 바이오사이언스,CJ Bioscience,KOSDAQ,보통주
-035760,CJ ENM,CJ ENM CO. Ltd.,KOSDAQ,보통주
 051500,CJ프레시웨이,CJ Freshway Corporation,KOSDAQ,보통주
 096530,씨젠,Seegene Inc.,KOSDAQ,보통주
 900120,씨케이에이치,CKH Food & Health Limited,KOSDAQ,보통주
@@ -627,17 +629,18 @@ shareCode,shareName,shareNameEn,marketType,shareType
 054800,아이디스홀딩스,IDIS Holdings Co. Ltd.,KOSDAQ,보통주
 332370,아이디피,IDP Corp. Ltd.,KOSDAQ,보통주
 339950,아이비김영,IBKIMYOUNG CO.LTD.,KOSDAQ,보통주
-335870,IBKS제12호스팩,IBKS No.12 Special Purpose Acquisition Company,KOSDAQ,보통주
 351340,IBKS제13호스팩,IBKS No.13 Special Purpose Acquisition Company,KOSDAQ,보통주
 388790,IBKS제16호스팩,IBKS No.16 Special Purpose Acquisition Company,KOSDAQ,보통주
 405350,IBKS제17호스팩,IBKS No.17 Special Purpose Acquisition Company,KOSDAQ,보통주
 424760,IBKS제18호스팩,IBKS No.18 Special Purpose Acquisition Company,KOSDAQ,보통주
+426550,IBKS제19호스팩,IBKS No.19 Special Purpose Acquisition Company,KOSDAQ,보통주
+439730,IBKS제20호스팩,IBKS No.20 Special Purpose Acquisition Company,KOSDAQ,보통주
+442770,IBKS제21호스팩,IBKS No.21 Special Purpose Acquisition Company,KOSDAQ,보통주
 099190,아이센스,i-SENS Inc.,KOSDAQ,보통주
 289010,아이스크림에듀,i-Scream Edu Co. Ltd.,KOSDAQ,보통주
 214430,아이쓰리시스템,i3system Ind.,KOSDAQ,보통주
 040910,아이씨디,ICD Co. Ltd.,KOSDAQ,보통주
 368600,아이씨에이치,ICH Co. Ltd.,KOSDAQ,보통주
-068940,아이씨케이,ICK Co. Ltd.,KOSDAQ,보통주
 052860,아이앤씨,I&C Technology Co. Ltd.,KOSDAQ,보통주
 095340,ISC,ISC Co. LTD.,KOSDAQ,보통주
 069920,아이에스이커머스,ISE Commerce Company Limited,KOSDAQ,보통주
@@ -646,7 +649,6 @@ shareCode,shareName,shareNameEn,marketType,shareType
 101390,아이엠,IM CO. LTD,KOSDAQ,보통주
 052220,iMBC,iMBC Co. Ltd.,KOSDAQ,보통주
 078860,아이오케이,IOKCOMPANY Co. Ltd.,KOSDAQ,보통주
-114810,아이원스,IONES Co. Ltd.,KOSDAQ,보통주
 090150,아이윈,iWIN,KOSDAQ,보통주
 123010,아이윈플러스,iWIN PLUS,KOSDAQ,보통주
 031310,아이즈비전,EYESVISION CORPORATION,KOSDAQ,보통주
@@ -660,7 +662,6 @@ shareCode,shareName,shareNameEn,marketType,shareType
 124500,아이티센,ITCEN CO. LTD.,KOSDAQ,보통주
 372800,아이티아이즈,ITEYES Inc.,KOSDAQ,보통주
 099520,ITX-AI,ITX-AI Co. Ltd.,KOSDAQ,보통주
-084850,아이티엠반도체,ITM Semiconductor Co. Ltd,KOSDAQ,보통주
 114840,아이패밀리에스씨,iFamilySC Co. Ltd.,KOSDAQ,보통주
 027360,아주IB투자,AJU IB INVESTMENT CO. LTD.,KOSDAQ,보통주
 032080,아즈텍WB,AZTECH WB CO. LTD,KOSDAQ,보통주
@@ -682,10 +683,10 @@ shareCode,shareName,shareNameEn,marketType,shareType
 061040,알에프텍,RFTECH CO. LTD,KOSDAQ,보통주
 148250,알엔투테크놀로지,RN2 Technologies Co. Ltd.,KOSDAQ,보통주
 347860,알체라,Alchera Inc.,KOSDAQ,보통주
-196170,알테오젠,Alteogen Inc.,KOSDAQ,보통주
 123750,알톤스포츠,Alton Sports Co. Ltd.,KOSDAQ,보통주
 085810,알티캐스트,Alticast Corporation,KOSDAQ,보통주
 117670,알파홀딩스,Alpha Holdings Inc.,KOSDAQ,보통주
+314140,알피바이오,RPbio Inc.,KOSDAQ,보통주
 291650,압타머사이언스,Aptamer Sciences Inc,KOSDAQ,보통주
 293780,압타바이오,Aptabio Therapeutics Inc.,KOSDAQ,보통주
 196300,애니젠,ANYGEN CO. LTD.,KOSDAQ,보통주
@@ -701,6 +702,7 @@ shareCode,shareName,shareNameEn,marketType,shareType
 174900,앱클론,AbClon Inc.,KOSDAQ,보통주
 255440,야스,YAS Co. Ltd,KOSDAQ,보통주
 030960,양지사,Yangjisa,KOSDAQ,보통주
+073570,어반리튬,Urban Lithium,KOSDAQ,보통주
 102120,어보브반도체,ABOV Semiconductor Co.Ltd.,KOSDAQ,보통주
 263540,어스앤에어로스페이스,Earth & Aerospace Manufacturing,KOSDAQ,보통주
 238120,얼라인드,Aligned Genetics Inc.,KOSDAQ,보통주
@@ -713,6 +715,7 @@ shareCode,shareName,shareNameEn,marketType,shareType
 097780,에스맥,S-MAC CO.LTD,KOSDAQ,보통주
 289080,SV인베스트먼트,SV INVESTMENT CORPORATION,KOSDAQ,보통주
 151910,SBW생명과학,SBW Life Sciences,KOSDAQ,보통주
+389500,에스비비테크,SBB TECH Co. Ltd.,KOSDAQ,보통주
 019550,SBI인베스트먼트,SBI Investment KOREA Co. Ltd.,KOSDAQ,보통주
 046140,SBS콘텐츠허브,SBS Contents Hub Co.Ltd.,KOSDAQ,보통주
 042110,에스씨디,SCD CO.LTD.,KOSDAQ,보통주
@@ -724,10 +727,10 @@ shareCode,shareName,shareNameEn,marketType,shareType
 101490,에스앤에스텍,S&S TECH CORPORATION,KOSDAQ,보통주
 095910,에스에너지,S-Energy CO. LTD.,KOSDAQ,보통주
 275630,에스에스알,SSR Inc.,KOSDAQ,보통주
+419530,SAMG엔터,SAMG ENTERTAINMENT CO.LTD,KOSDAQ,보통주
 031330,에스에이엠티,SAMT CO.LTD.,KOSDAQ,보통주
-351320,에스에이티이엔지,Solution Advanced Technology,KOSDAQ,보통주
 060540,에스에이티,System and Application Technologies Inc.,KOSDAQ,보통주
-056190,에스에프에이,SFA Engineering Corporation,KOSDAQ,보통주
+351320,에스에이티이엔지,Solution Advanced Technology,KOSDAQ,보통주
 036540,SFA반도체,SFA Semicon Co. Ltd,KOSDAQ,보통주
 080000,에스엔유,SNU Precision Co. Ltd.,KOSDAQ,보통주
 091340,S&K폴리텍,S&K POLYTEC CO. LTD.,KOSDAQ,보통주
@@ -743,9 +746,8 @@ shareCode,shareName,shareNameEn,marketType,shareType
 184230,SGA솔루션즈,SGA Solutions Co.Ltd.,KOSDAQ,보통주
 040610,SG&G,SG&G Corporation,KOSDAQ,보통주
 255220,SG,SG CO. LTD.,KOSDAQ,보통주
-337450,SK5호스팩,SK NO.5 SPECIAL PURPOSE ACQUISITION CO. LTD.,KOSDAQ,보통주
-340350,SK6호스팩,SK NO.6 SPECIAL PURPOSE ACQUISITION COMPANY,KOSDAQ,보통주
 408920,에스케이증권7호스팩,SK Securities ACPC No.7 Special Purpose Acquisition Company,KOSDAQ,보통주
+435870,에스케이증권제8호스팩,SK Securities No.8 Special Purpose Acquisition Company,KOSDAQ,보통주
 096630,에스코넥,S Connect Co. LTD,KOSDAQ,보통주
 069510,에스텍,ESTec Corporation,KOSDAQ,보통주
 041910,에스텍파마,ESTECHPHARMA CO. LTD,KOSDAQ,보통주
@@ -753,7 +755,6 @@ shareCode,shareName,shareNameEn,marketType,shareType
 039440,에스티아이,Systems Technology Incorporated,KOSDAQ,보통주
 098660,에스티오,STO Co. Ltd.,KOSDAQ,보통주
 052020,에스티큐브,STCUBE,KOSDAQ,보통주
-237690,에스티팜,ST Pharm Co. Ltd.,KOSDAQ,보통주
 050760,에스폴리텍,S POLYTECH CO.LTD.,KOSDAQ,보통주
 288620,에스퓨얼셀,S-Fuelcell Co. Ltd.,KOSDAQ,보통주
 317830,에스피시스템스,SP SYSTEMS CO.LTD.,KOSDAQ,보통주
@@ -782,8 +783,8 @@ shareCode,shareName,shareNameEn,marketType,shareType
 239610,에이치엘사이언스,HLSCIENCE Co. LTD,KOSDAQ,보통주
 353070,에이치엠씨제4호스팩,HMCIB No.4 Special Purpose Acquisition Company,KOSDAQ,보통주
 353060,에이치엠씨제5호스팩,HMCIB No.5 Special Purpose Acquisition Company,KOSDAQ,보통주
+148930,에이치와이티씨,HYTC CO. LTD,KOSDAQ,보통주
 044780,에이치케이,HK CO. LTD.,KOSDAQ,보통주
-195940,HK이노엔,HK inno.N Corporation,KOSDAQ,보통주
 403870,HPSP,HPSP Co. Ltd.,KOSDAQ,보통주
 357230,에이치피오,H.PIO Co.Ltd,KOSDAQ,보통주
 071670,에이테크솔루션,A-Tech Solution CO. LTD.,KOSDAQ,보통주
@@ -801,11 +802,10 @@ shareCode,shareName,shareNameEn,marketType,shareType
 211270,AP위성,Asia Pacific Satellite Inc.,KOSDAQ,보통주
 089970,에이피티씨,APTC,KOSDAQ,보통주
 230240,에치에프알,HFR Inc.,KOSDAQ,보통주
-230360,에코마케팅,ECHOMARKETING Co.Ltd.,KOSDAQ,보통주
 038870,에코바이오,EcoBio Holdings Co. Ltd.,KOSDAQ,보통주
+101360,에코앤드림,Eco&Dream,KOSDAQ,보통주
 128540,에코캡,ECOCAB CO. LTD.,KOSDAQ,보통주
 086520,에코프로,ECOPRO CO. LTD,KOSDAQ,보통주
-247540,에코프로비엠,ECOPRO BM CO. LTD.,KOSDAQ,보통주
 383310,에코프로에이치엔,ECOPRO HN CO. LTD,KOSDAQ,보통주
 038110,에코플라스틱,ECOPLASTIC CORPORATION,KOSDAQ,보통주
 073540,에프알텍,FRTEK CO. LTD.,KOSDAQ,보통주
@@ -816,6 +816,7 @@ shareCode,shareName,shareNameEn,marketType,shareType
 173940,에프엔씨엔터,FNC ENTERTAINMENT Co. Ltd.,KOSDAQ,보통주
 083500,에프엔에스테크,FNS TECH. Co.Ltd.,KOSDAQ,보통주
 054940,엑사이엔씨,EXA E&C Inc,KOSDAQ,보통주
+043090,엑서지21,Exergy21,KOSDAQ,보통주
 950130,엑세스바이오,Access Bio Inc.,KOSDAQ,보통주
 205100,엑셈,EXEM CO. LTD.,KOSDAQ,보통주
 070300,엑스큐어,Xcure Corp.,KOSDAQ,보통주
@@ -825,16 +826,19 @@ shareCode,shareName,shareNameEn,marketType,shareType
 236810,엔비티,NBT INC.,KOSDAQ,보통주
 333620,엔시스,Nsys Co. Ltd.,KOSDAQ,보통주
 101400,엔시트론,N CITRON INC.,KOSDAQ,보통주
-217820,엔에스,NS Co. Ltd,KOSDAQ,보통주
 031860,엔에스엔,NSN Co. Ltd.,KOSDAQ,보통주
 391060,엔에이치스팩20호,NH SPECIAL PURPOSE ACQUISITION 20 COMPANY,KOSDAQ,보통주
 396770,엔에이치스팩22호,NH SPECIAL PURPOSE ACQUISITION 22 COMPANY,KOSDAQ,보통주
 422040,엔에이치스팩23호,NH SPECIAL PURPOSE ACQUISITION 23 COMPANY,KOSDAQ,보통주
+437780,엔에이치스팩24호,NH SPECIAL PURPOSE ACQUISITION 24 COMPANY,KOSDAQ,보통주
+438580,엔에이치스팩25호,NH SPECIAL PURPOSE ACQUISITION 25 COMPANY,KOSDAQ,보통주
+439410,엔에이치스팩26호,NH SPECIAL PURPOSE ACQUISITION 26 COMPANY,KOSDAQ,보통주
+440820,엔에이치스팩27호,NH SPECIAL PURPOSE ACQUISITION 27 COMPANY,KOSDAQ,보통주
 104200,NHN벅스,NHN BUGS Corporation,KOSDAQ,보통주
-060250,NHN한국사이버결제,NHN KCP Corp.,KOSDAQ,보통주
 265740,엔에프씨,NFC Corporation,KOSDAQ,보통주
 053290,NE능률,NE Neungyule Inc.,KOSDAQ,보통주
 354200,엔젠바이오,NGeneBio Co. Ltd.,KOSDAQ,보통주
+419080,엔젯,ENJET Co.LTD,KOSDAQ,보통주
 208860,엔지스테크널러지,EnGIS Technologies Inc.,KOSDAQ,보통주
 183490,엔지켐생명과학,ENZYCHEM LIFESCIENCES CORPORATION,KOSDAQ,보통주
 182400,엔케이맥스,NKMAX Co. Ltd.,KOSDAQ,보통주
@@ -849,9 +853,7 @@ shareCode,shareName,shareNameEn,marketType,shareType
 061970,엘비세미콘,LB SEMICON CO. LTD.,KOSDAQ,보통주
 138690,엘아이에스,LIS Co. Ltd.,KOSDAQ,보통주
 290650,엘앤씨바이오,L&C BIO,KOSDAQ,보통주
-066970,엘앤에프,L&F CO. LTD,KOSDAQ,보통주
 156100,엘앤케이바이오,L&K BIOMED CO. LTD.,KOSDAQ,보통주
-108320,LX세미콘,LX Semicon,KOSDAQ,보통주
 073110,엘엠에스,LMS Co.Ltd.,KOSDAQ,보통주
 083310,엘오티베큠,LOT Vacuum. Co. Ltd.,KOSDAQ,보통주
 037950,엘컴텍,ELCOMTEC CO.LTD,KOSDAQ,보통주
@@ -868,8 +870,8 @@ shareCode,shareName,shareNameEn,marketType,shareType
 033310,엠투엔,M2N Co.Ltd,KOSDAQ,보통주
 259630,엠플러스,mPlus Corp,KOSDAQ,보통주
 065150,엠피대산,MPDAESAN Inc,KOSDAQ,보통주
+050540,엠피씨플러스,MPC plus,KOSDAQ,보통주
 115960,연우,YONWOO CO. LTD,KOSDAQ,보통주
-090740,연이비앤티,YOUNYI B&T Inc.,KOSDAQ,보통주
 060850,영림원소프트랩,YoungLimWon SoftLab. Co. Ltd.,KOSDAQ,보통주
 007530,영신금속,YoungsinMetalIndustrial,KOSDAQ,보통주
 143540,영우디에스피,YoungWoo DSP Co.Ltd.,KOSDAQ,보통주
@@ -889,6 +891,7 @@ shareCode,shareName,shareNameEn,marketType,shareType
 014940,오리엔탈정공,ORIENTAL PRECISION & ENGINEERING CO.LTD,KOSDAQ,보통주
 065500,오리엔트정공,Orient Precision Industries Inc.,KOSDAQ,보통주
 010470,오리콤,ORICOM Inc.,KOSDAQ,보통주
+417860,오브젠,OBZEN Inc.,KOSDAQ,보통주
 352910,오비고,Obigo Inc.,KOSDAQ,보통주
 053980,오상자이엘,OSANGJAIEL Co. Ltd,KOSDAQ,보통주
 052420,오성첨단소재,OSUNG ADVANCED MATERIALS CO. LTD.,KOSDAQ,보통주
@@ -896,12 +899,14 @@ shareCode,shareName,shareNameEn,marketType,shareType
 039200,오스코텍,OSCOTEC Inc.,KOSDAQ,보통주
 031510,오스템,AUSTEM CO.LTD,KOSDAQ,보통주
 048260,오스템임플란트,OSSTEM IMPLANT.CO.Ltd,KOSDAQ,보통주
+368970,오에스피,OSP Co. Ltd,KOSDAQ,보통주
 138080,오이솔루션,OE Solutions Co. Ltd.,KOSDAQ,보통주
 080580,오킨스전자,OKins Electronics Co.Ltd.,KOSDAQ,보통주
 067170,오텍,Autech Corporation,KOSDAQ,보통주
 353590,오토앤,AUTO& Inc.,KOSDAQ,보통주
 173130,오파스넷,OPASNET co. Ltd,KOSDAQ,보통주
 049480,오픈베이스,Openbase Inc.,KOSDAQ,보통주
+394280,오픈엣지테크놀로지,Openedges Technology Inc.,KOSDAQ,보통주
 309930,오하임아이엔티,OHEIM INT Co.Ltd.,KOSDAQ,보통주
 244460,올리패스,OLIPASS Corporation,KOSDAQ,보통주
 226950,올릭스,Olix Pharmaceuticals Inc.,KOSDAQ,보통주
@@ -909,6 +914,7 @@ shareCode,shareName,shareNameEn,marketType,shareType
 131030,옵투스제약,OPTUS Pharmaceutical,KOSDAQ,보통주
 082210,옵트론텍,OPTRONTEC Inc.,KOSDAQ,보통주
 109080,옵티시스,OPTICIS CO. LTD.,KOSDAQ,보통주
+380540,옵티코어,Opticore. Inc,KOSDAQ,보통주
 153710,옵티팜,Optipharm. CO. LTD,KOSDAQ,보통주
 051390,YW,YW COMPANY LIMITED,KOSDAQ,보통주
 321820,와이더플래닛,Wider Planet Inc.,KOSDAQ,보통주
@@ -949,10 +955,8 @@ shareCode,shareName,shareNameEn,marketType,shareType
 053080,원방테크,WONBANG TECH CO. LTD.,KOSDAQ,보통주
 032940,원익,WonIk,KOSDAQ,보통주
 104830,원익머트리얼즈,WONIK Materials Co. Ltd.,KOSDAQ,보통주
-240810,원익IPS,WONIK IPS Co.Ltd.,KOSDAQ,보통주
 014190,원익큐브,WONIK CUBE Corp.,KOSDAQ,보통주
-074600,원익QnC,WONIK QnC CORPORATION,KOSDAQ,보통주
-131390,원익피앤이,WONIK PNE,KOSDAQ,보통주
+217820,원익피앤이,WONIK PNE,KOSDAQ,보통주
 030530,원익홀딩스,WONIK HOLDINGS CO.LTD.,KOSDAQ,보통주
 012620,원일특강,WonilSpecialSteel,KOSDAQ,보통주
 382840,원준,Onejoon Co. Ltd.,KOSDAQ,보통주
@@ -966,7 +970,6 @@ shareCode,shareName,shareNameEn,marketType,shareType
 065950,웰크론,Welcron Company Limited,KOSDAQ,보통주
 076080,웰크론한텍,WELCRON HANTEC CO.LTD.,KOSDAQ,보통주
 196700,웹스,WAPS Co. Ltd.,KOSDAQ,보통주
-069080,웹젠,Webzen Inc.,KOSDAQ,보통주
 053580,웹케시,WebCash Corporation,KOSDAQ,보통주
 071460,위니아,WINIA,KOSDAQ,보통주
 377460,위니아에이드,WINIA AID CO.LTD.,KOSDAQ,보통주
@@ -985,8 +988,8 @@ shareCode,shareName,shareNameEn,marketType,shareType
 097800,윈팩,WINPAC INC.,KOSDAQ,보통주
 192390,윈하이텍,WINHITECH CO. Ltd.,KOSDAQ,보통주
 313760,윌링스,WILLINGS CO. LTD.,KOSDAQ,보통주
-900340,윙입푸드,WING YIP FOOD (CHINA) HOLDINGS GROUP LIMITED,KOSDAQ,보통주
-064510,유네코,UNECO,KOSDAQ,보통주
+335870,윙스풋,WINGS FOOT,KOSDAQ,보통주
+900340,윙입푸드,WING YIP FOOD HOLDINGS GROUP,KOSDAQ,보통주
 036200,유니셈,UNION SEMICONDUCTOR EQUIPMENT&MATERIALS,KOSDAQ,보통주
 018000,유니슨,UNISON CO. LTD.,KOSDAQ,보통주
 203450,유니온커뮤니티,Union community Co. Ltd.,KOSDAQ,보통주
@@ -997,16 +1000,17 @@ shareCode,shareName,shareNameEn,marketType,shareType
 048430,유라테크,YURA TECH. CO. LTD.,KOSDAQ,보통주
 206650,유바이오로직스,EuBiologics Co. Ltd.,KOSDAQ,보통주
 089850,유비벨록스,UbiVelox Inc.,KOSDAQ,보통주
+084440,유비온,UBION CO.LTD.,KOSDAQ,보통주
 032620,유비케어,UBCARE CO. LTD.,KOSDAQ,보통주
 264450,유비쿼스,Ubiquoss Inc.,KOSDAQ,보통주
 078070,유비쿼스홀딩스,Ubiquoss Holdings Inc.,KOSDAQ,보통주
 024800,유성티엔에스,YOOSUNG T&S CO.LTD,KOSDAQ,보통주
 054930,유신,Yooshin Engineering Corporation,KOSDAQ,보통주
-038340,UCI,UCI Co.Ltd.,KOSDAQ,보통주
 069330,유아이디,U.I.DISPLAY CO.LTD.,KOSDAQ,보통주
 049520,유아이엘,UIL Co.Ltd,KOSDAQ,보통주
-367460,유안타제7호스팩,Yuanta 7 SPECIAL PURPOSE ACQUISITION COMPANY,KOSDAQ,보통주
+435380,유안타제10호스팩,Yuanta 10 SPECIAL PURPOSE ACQUISITION COMPANY,KOSDAQ,보통주
 367480,유안타제8호스팩,Yuanta 8 SPECIAL PURPOSE ACQUISITION COMPANY,KOSDAQ,보통주
+430700,유안타제9호스팩,Yuanta 9 SPECIAL PURPOSE ACQUISITION COMPANY,KOSDAQ,보통주
 263770,유에스티,UST CO. LTD.,KOSDAQ,보통주
 388720,유일로보틱스,Yuilrobotics. co. Ltd,KOSDAQ,보통주
 340930,유일에너테크,YOUIL ENERGY TECH CO.LTD.,KOSDAQ,보통주
@@ -1014,24 +1018,25 @@ shareCode,shareName,shareNameEn,marketType,shareType
 373340,유진스팩6호,EUGENE SPECIAL PURPOSE ACQUISITION 6 COMPANY,KOSDAQ,보통주
 388800,유진스팩7호,EUGENE SPECIAL PURPOSE ACQUISITION 7 COMPANY,KOSDAQ,보통주
 413630,유진스팩8호,EUGENE SPECIAL PURPOSE ACQUISITION 8 COMPANY,KOSDAQ,보통주
+442130,유진스팩9호,EUGENE SPECIAL PURPOSE ACQUISITION 9 COMPANY,KOSDAQ,보통주
 056080,유진로봇,Yujin Robot Co. Ltd.,KOSDAQ,보통주
-084370,유진테크,Eugene Technology Co. Ltd.,KOSDAQ,보통주
 178780,유테크,U-Tech Co.Ltd.,KOSDAQ,보통주
 179900,유티아이,UTI INC.,KOSDAQ,보통주
 263050,유틸렉스,Eutilex Co. Ltd.,KOSDAQ,보통주
 191410,육일씨엔에쓰,RYUK-IL C&S. Ltd,KOSDAQ,보통주
+372170,윤성에프앤씨,YUNSUNG F&C Co.Ltd,KOSDAQ,보통주
 072770,율호,Yulho,KOSDAQ,보통주
 039020,이건홀딩스,EAGON HOLDINGS CO. LTD.,KOSDAQ,보통주
 067920,이글루,IGLOO Corporation,KOSDAQ,보통주
 044960,이글벳,Eagle Veterinary Technology Co.Ltd,KOSDAQ,보통주
 303530,이노뎁,INNODEP INC.,KOSDAQ,보통주
+296640,이노룰스,INNORULES CO.LTD,KOSDAQ,보통주
 302430,이노메트리,INNOMETRY Co. Ltd.,KOSDAQ,보통주
 056090,이노시스,Innosys,KOSDAQ,보통주
 073490,이노와이어리스,InnoWireless Co.Ltd.,KOSDAQ,보통주
 215790,이노인스트루먼트,INNO INSTRUMENT INC.,KOSDAQ,보통주
 246960,이노테라피,InnoTherapy Inc.,KOSDAQ,보통주
 088390,이녹스,INNOX Corporation,KOSDAQ,보통주
-272290,이녹스첨단소재,INNOX Advanced Materials Co. Ltd.,KOSDAQ,보통주
 053350,이니텍,INITECH Co. Ltd.,KOSDAQ,보통주
 041520,이라이콤,e-LITECOM CO. LTD.,KOSDAQ,보통주
 264850,이랜시스,Elensys Co.Ltd.,KOSDAQ,보통주
@@ -1039,9 +1044,7 @@ shareCode,shareName,shareNameEn,marketType,shareType
 164060,이루다,ILOODA Co.Ltd,KOSDAQ,보통주
 065440,이루온,ELUON Corporation,KOSDAQ,보통주
 115610,이미지스,IMAGIS Co. Ltd.,KOSDAQ,보통주
-349720,이베스트스팩5호,Ebest Special Purpose Acquisition No5 Company,KOSDAQ,보통주
 078020,이베스트투자증권,EBEST INVESTMENT & SECURITIES Co. Ltd.,KOSDAQ,보통주
-084180,EV수성,EV SOOSUNG,KOSDAQ,보통주
 131400,이브이첨단소재,EV ADVANCED MATERIAL,KOSDAQ,보통주
 351330,이삭엔지니어링,ISAAC Engineering Co. Ltd.,KOSDAQ,보통주
 080010,이상네트웍스,eSANG Networks Co.Ltd,KOSDAQ,보통주
@@ -1049,7 +1052,6 @@ shareCode,shareName,shareNameEn,marketType,shareType
 047560,이스트소프트,ESTsoft Corp.,KOSDAQ,보통주
 900110,이스트아시아홀딩스,East Asia Holdings Investment Limited,KOSDAQ,보통주
 067010,이씨에스,ECS TELECOM Co. Ltd.,KOSDAQ,보통주
-101360,이엔드디,E&D Co. Ltd.,KOSDAQ,보통주
 102710,이엔에프테크놀로지,ENF Technology Co. Ltd,KOSDAQ,보통주
 066980,이엔코퍼레이션,E& Corporation CO. LTD.,KOSDAQ,보통주
 063760,이엘피,ELP Corp.,KOSDAQ,보통주
@@ -1057,7 +1059,6 @@ shareCode,shareName,shareNameEn,marketType,shareType
 083470,이엠앤아이,EMnI Co. Ltd.,KOSDAQ,보통주
 095190,이엠코리아,EMKOREA Co. LTD.,KOSDAQ,보통주
 091120,이엠텍,EM-Tech. CO. LTD.,KOSDAQ,보통주
-039030,이오테크닉스,EO Technics Co. Ltd.,KOSDAQ,보통주
 294090,이오플로우,EOFlow Co. Ltd.,KOSDAQ,보통주
 245620,EDGC,Eone Diagnomics Genome Center Co. Ltd.,KOSDAQ,보통주
 088290,이원컴포텍,EWON COMFORTECH CO. LTD,KOSDAQ,보통주
@@ -1076,14 +1077,15 @@ shareCode,shareName,shareNameEn,marketType,shareType
 041830,인바디,InBody Co. Ltd.,KOSDAQ,보통주
 352940,인바이오,ENBIOCO. LTD.,KOSDAQ,보통주
 079950,인베니아,INVENIA Co.Ltd.,KOSDAQ,보통주
+389470,인벤티지랩,Inventage Lab Inc.,KOSDAQ,보통주
 277410,인산가,INSAN Inc.,KOSDAQ,보통주
 060150,인선이엔티,INSUN ENVIRONMENTAL NEW TECHNOLOGY CO.,KOSDAQ,보통주
 033230,인성정보,INSUNG INFORMATION CO. LTD,KOSDAQ,보통주
 037330,인지디스플레,INZI DISPLAY COMPANY LIMITED,KOSDAQ,보통주
+100030,인지소프트,Inzisoft,KOSDAQ,보통주
 211050,인카금융서비스,INCAR FINANCIAL SERVICE Co.Ltd.,KOSDAQ,보통주
 083640,인콘,INCON Co. Ltd.,KOSDAQ,보통주
 216050,인크로스,Incross Co.Ltd.,KOSDAQ,보통주
-049070,인탑스,INTOPS CO. LTD.,KOSDAQ,보통주
 119610,인터로조,INTEROJO CO. LTD.,KOSDAQ,보통주
 017250,인터엠,IntermCorporation,KOSDAQ,보통주
 051370,인터플렉스,INTERFLEX CO. LTD.,KOSDAQ,보통주
@@ -1109,6 +1111,7 @@ shareCode,shareName,shareNameEn,marketType,shareType
 289220,자이언트스텝,GIANTSTEP Inc.,KOSDAQ,보통주
 174880,장원테크,JangWonTech Co. Ltd.,KOSDAQ,보통주
 049630,재영솔루텍,JAEYOUNG SOLUTEC CO.LTD.,KOSDAQ,보통주
+417840,저스템,Justem.Co.Ltd.,KOSDAQ,보통주
 110020,전진바이오팜,JEONJINBIO CO. LTD.,KOSDAQ,보통주
 208140,정다운,JUNGDAWN Co. Ltd.,KOSDAQ,보통주
 040420,정상제이엘에스,JLS CO.LTD.,KOSDAQ,보통주
@@ -1131,13 +1134,13 @@ shareCode,shareName,shareNameEn,marketType,shareType
 287410,제이시스메디칼,Jeisys Medical,KOSDAQ,보통주
 137950,제이씨케미칼,JC Chemical Corporation LTD.,KOSDAQ,보통주
 033320,제이씨현시스템,JCH Systems Inc.,KOSDAQ,보통주
+417500,제이아이테크,JI-Tech Co. Ltd.,KOSDAQ,보통주
 204270,제이앤티씨,JNTC CO.LTD.,KOSDAQ,보통주
 026040,제이에스티나,J.ESTINA Co.Ltd,KOSDAQ,보통주
 126880,제이엔케이히터,JNK HEATERS Co. Ltd,KOSDAQ,보통주
 322510,제이엘케이,JLK Inc.,KOSDAQ,보통주
 033050,제이엠아이,JEONGMOON INFORMATION CO.LTD.,KOSDAQ,보통주
 094970,제이엠티,JMT CO.Ltd.,KOSDAQ,보통주
-035900,JYP Ent.,JYP Entertainment Corporation,KOSDAQ,보통주
 058420,제이웨이,J way Co.Ltd.,KOSDAQ,보통주
 089790,제이티,JT Corporation.,KOSDAQ,보통주
 950170,JTC,JTC Inc.,KOSDAQ,보통주
@@ -1154,7 +1157,6 @@ shareCode,shareName,shareNameEn,marketType,shareType
 034940,조아제약,ChoA Pharmaceutical Co. LTD.,KOSDAQ,보통주
 067000,조이시티,JoyCity Corporation,KOSDAQ,보통주
 033340,좋은사람들,GOOD PEOPLE CO. LTD.,KOSDAQ,보통주
-036930,주성엔지니어링,JUSUNG ENGINEERING Co.Ltd.,KOSDAQ,보통주
 357580,아모센스,Amosense Co. Ltd.,KOSDAQ,보통주
 226400,오스테오닉,OSTEONIC Co. Ltd.,KOSDAQ,보통주
 187420,제노포커스,GenoFocus Inc.,KOSDAQ,보통주
@@ -1193,23 +1195,22 @@ shareCode,shareName,shareNameEn,marketType,shareType
 085660,차바이오텍,Chabiotech Co.Ltd.,KOSDAQ,보통주
 261780,차백신연구소,CHA Vaccine Research Institute,KOSDAQ,보통주
 900250,크리스탈신소재,China Crystal New Material Holdings Co. Ltd.,KOSDAQ,보통주
-158310,참존글로벌,Charmzone Global,KOSDAQ,보통주
 094850,참좋은여행,Very Good Tour Co.Ltd.,KOSDAQ,보통주
 004650,창해에탄올,Changhae Ethanol Co. Ltd.,KOSDAQ,보통주
-278280,천보,Chunbo Co. Ltd.,KOSDAQ,보통주
 362320,청담글로벌,CHUNGDAMGLOBAL Co. Ltd.,KOSDAQ,보통주
 066360,체리부로,Cherrybro Co.Ltd,KOSDAQ,보통주
 047820,초록뱀미디어,CHOROKBAEM MEDIA CO.LTD.,KOSDAQ,보통주
+131100,초록뱀이앤엠,Chorokbaem E&M,KOSDAQ,보통주
 052300,초록뱀컴퍼니,CHOROKBAEM COMPANY,KOSDAQ,보통주
 094360,칩스앤미디어,Chips&Media Inc.,KOSDAQ,보통주
 016790,카나리아바이오,CANARIABIO,KOSDAQ,보통주
 016920,카스,Cas,KOSDAQ,보통주
 284620,카이노스메드,KAINOS MEDICINE INC.,KOSDAQ,보통주
-293490,카카오게임즈,Kakao Games Corp.,KOSDAQ,보통주
 042000,카페24,Cafe24 Corp.,KOSDAQ,보통주
 317530,캐리소프트,CARRIESOFT Co. Ltd.,KOSDAQ,보통주
 071850,캐스텍코리아,CASTEC KOREA CO.LTD,KOSDAQ,보통주
 050110,캠시스,CammSys Corp.,KOSDAQ,보통주
+119860,커넥트웨이브,Connectwave,KOSDAQ,보통주
 223310,커머스마이너,Commerce miner,KOSDAQ,보통주
 900310,컬러레이,Coloray International Investment Co. Limited,KOSDAQ,보통주
 078340,컴투스,Com2uS Corporation,KOSDAQ,보통주
@@ -1221,8 +1222,9 @@ shareCode,shareName,shareNameEn,marketType,shareType
 221980,케이디켐,KDCHEM CO. LTD.,KOSDAQ,보통주
 900280,골든센츄리,Cayman Golden Century Wheel Group Limited,KOSDAQ,보통주
 024840,KBI메탈,KBI METAL CO. LTD.,KOSDAQ,보통주
-342550,케이비제20호스팩,KB No.20 Special Purpose Acquisition Company,KOSDAQ,보통주
 424140,케이비제21호스팩,KB No.21 Special Purpose Acquisition Company Co. Ltd.,KOSDAQ,보통주
+436530,케이비제22호스팩,KB No.22 Special Purpose Acquisition Company,KOSDAQ,보통주
+440200,케이비제23호스팩,KB No.23 Special Purpose Acquisition Company,KOSDAQ,보통주
 318000,KBG,KBG,KOSDAQ,보통주
 192250,케이사인,KSIGN CO. Ltd.,KOSDAQ,보통주
 021320,KCC건설,KCC ENGINEERING & CONSTRUCTION CO. LTD.,KOSDAQ,보통주
@@ -1251,7 +1253,6 @@ shareCode,shareName,shareNameEn,marketType,shareType
 060370,KT서브마린,KT Submarine Co. Ltd.,KOSDAQ,보통주
 036030,케이티알파,kt alpha,KOSDAQ,보통주
 064820,케이프,CAPE INDUSTRIES LTD.,KOSDAQ,보통주
-347140,케이프이에스제4호,CAPE-ES No.4 Special Purpose Acquisition Company,KOSDAQ,보통주
 256940,케이피에스,KPS Corporation,KOSDAQ,보통주
 024880,케이피에프,KPF,KOSDAQ,보통주
 114450,KPX생명과학,KPX LIFESCIENCE CO. LTD.,KOSDAQ,보통주
@@ -1259,7 +1260,6 @@ shareCode,shareName,shareNameEn,marketType,shareType
 054410,케이피티유,Korea Plasma Technology U Co.Ltd,KOSDAQ,보통주
 258610,케일럼,CAELUM,KOSDAQ,보통주
 274090,켄코아에어로스페이스,Kencoa Aerospace Corporation,KOSDAQ,보통주
-217600,켐온,CHEMON Inc.,KOSDAQ,보통주
 089010,켐트로닉스,CHEMTRONICS Co. Ltd.,KOSDAQ,보통주
 220260,켐트로스,Chemtros Co. Ltd.,KOSDAQ,보통주
 052400,코나아이,KONA I CO.LTD.,KOSDAQ,보통주
@@ -1269,16 +1269,12 @@ shareCode,shareName,shareNameEn,marketType,shareType
 047770,코데즈컴바인,Codes Combine Co.Ltd.,KOSDAQ,보통주
 078940,코드네이처,CODENATURE INC.,KOSDAQ,보통주
 080530,코디,KODI Co.LTD.,KOSDAQ,보통주
-224060,코디엠,CODI-M Co. LTD.,KOSDAQ,보통주
 104540,코렌텍,Corentec Co. Ltd.,KOSDAQ,보통주
 027050,코리아나,COREANA COSMETICS CO.LTD,KOSDAQ,보통주
-290510,코리아센터,Koreacenter Co.Ltd.,KOSDAQ,보통주
 190650,코리아에셋투자증권,KOREA ASSET INVESTMENT SECURITIES CO.LTD.,KOSDAQ,보통주
-101670,코리아에스이,KOREA SE CORPORATION,KOSDAQ,보통주
 123410,코리아에프티,KOREA FUEL-TECH CORPORATION,KOSDAQ,보통주
 036690,코맥스,COMMAX Co.Ltd.,KOSDAQ,보통주
 049430,코메론,KOMELON CORPORATION,KOSDAQ,보통주
-183300,코미코,KoMiCo Ltd.,KOSDAQ,보통주
 041960,코미팜,KOMIPHARM INTERNATIONAL CO. LTD.,KOSDAQ,보통주
 089890,코세스,KOSES Co.Ltd,KOSDAQ,보통주
 009730,코센,KOSSEN Co.Ltd.,KOSDAQ,보통주
@@ -1286,7 +1282,7 @@ shareCode,shareName,shareNameEn,marketType,shareType
 222040,코스맥스엔비티,COSMAX NBT INC.,KOSDAQ,보통주
 241710,코스메카코리아,COSMECCA KOREA CO.LTD.,KOSDAQ,보통주
 069110,코스온,COSON Co. Ltd.,KOSDAQ,보통주
-166480,코아스템,CORESTEM Inc.,KOSDAQ,보통주
+166480,코아스템켐온,CORESTEMCHEMON,KOSDAQ,보통주
 045970,코아시아,CoAsia Corporation,KOSDAQ,보통주
 196450,코아시아옵틱스,CoAsia Optics,KOSDAQ,보통주
 029960,코엔텍,Korea Environment Technology Co. LTD.,KOSDAQ,보통주
@@ -1300,8 +1296,6 @@ shareCode,shareName,shareNameEn,marketType,shareType
 015710,코콤,KOCOM CO. LTD,KOSDAQ,보통주
 052330,코텍,KORTEK CORPORATION,KOSDAQ,보통주
 322780,코퍼스코리아,COPUS KOREA Co. Ltd.,KOSDAQ,보통주
-126600,코프라,KOPLA Co. LTD.,KOSDAQ,보통주
-200130,콜마비앤에이치,KolmarBNH Co. Ltd,KOSDAQ,보통주
 294570,쿠콘,coocon Corporation,KOSDAQ,보통주
 317690,퀀타매트릭스,QuantaMatrix Incorporated,KOSDAQ,보통주
 365270,큐라클,curacle co. ltd.,KOSDAQ,보통주
@@ -1310,6 +1304,7 @@ shareCode,shareName,shareNameEn,marketType,shareType
 051780,큐로홀딩스,CUROHOLDINGS Co. Ltd.,KOSDAQ,보통주
 115180,큐리언트,Qurient Co. Ltd.,KOSDAQ,보통주
 182360,큐브엔터,CUBE ENTERTAINMENT INC.,KOSDAQ,보통주
+405100,큐알티,Quality Reliability Technology Inc.,KOSDAQ,보통주
 066310,큐에스아이,Q.S.I Co. Ltd.,KOSDAQ,보통주
 016600,큐캐피탈,Q Capital Partners Co. Ltd.,KOSDAQ,보통주
 096240,크레버스,Creverse,KOSDAQ,보통주
@@ -1319,13 +1314,14 @@ shareCode,shareName,shareNameEn,marketType,shareType
 083790,크리스탈지노믹스,CrystalGenomics,KOSDAQ,보통주
 045520,크린앤사이언스,Clean & Science Co. Ltd,KOSDAQ,보통주
 036170,클라우드에어,Cloud Air Co.Ltd.,KOSDAQ,보통주
-214150,클래시스,CLASSYS Inc.,KOSDAQ,보통주
 352770,클리노믹스,Clinomics Inc.,KOSDAQ,보통주
 237880,클리오,CLIO Cosmetics Co. Ltd,KOSDAQ,보통주
 139670,키네마스터,KineMaster Corporation,KOSDAQ,보통주
 413600,키움제6호스팩,Kiwoom No.6 Special Purpose Acquisition Company,KOSDAQ,보통주
+433530,키움제7호스팩,Kiwoom No.7 Special Purpose Acquisition Company,KOSDAQ,보통주
 054780,키이스트,KEYEAST Co. Ltd.,KOSDAQ,보통주
 219130,타이거일렉,TigerElec Co.Ltd.,KOSDAQ,보통주
+360070,탑머티리얼,TOP MATERIAL Co.Ltd,KOSDAQ,보통주
 065130,탑엔지니어링,Top Engineering Company Limited,KOSDAQ,보통주
 134580,탑코미디어,Topco Media,KOSDAQ,보통주
 023160,태광,T. K. CORPORATION,KOSDAQ,보통주
@@ -1335,9 +1331,8 @@ shareCode,shareName,shareNameEn,marketType,shareType
 124560,태웅로직스,Taewoong Logistics Co. Ltd.,KOSDAQ,보통주
 191420,테고사이언스,Tego Science Inc.,KOSDAQ,보통주
 073640,테라사이언스,TERA SCIENCE Co.LTD,KOSDAQ,보통주
-182690,테라셈,TerraSem Co. Ltd.,KOSDAQ,보통주
 066700,테라젠이텍스,THERAGEN ETEX CO.LTD.,KOSDAQ,보통주
-095610,테스,TES CO. LTD.,KOSDAQ,보통주
+064520,테크엘,TechL,KOSDAQ,보통주
 089030,테크윙,Techwing Inc.,KOSDAQ,보통주
 054450,텔레칩스,Telechips Inc.,KOSDAQ,보통주
 091440,텔레필드,Telefield Inc.,KOSDAQ,보통주
@@ -1355,17 +1350,18 @@ shareCode,shareName,shareNameEn,marketType,shareType
 117730,티로보틱스,T-Robotics co. Ltd.,KOSDAQ,보통주
 033830,티비씨,TAEGU BROADCASTING CORPORATION,KOSDAQ,보통주
 057680,티사이언티픽,T Scientific Co.Ltd,KOSDAQ,보통주
-064760,티씨케이,TOKAI CARBON KOREA CO. LTD,KOSDAQ,보통주
+204610,티쓰리,T3 Entertainment Inc.,KOSDAQ,보통주
 246710,티앤알바이오팹,T&R Biofab Co. Ltd,KOSDAQ,보통주
 340570,티앤엘,T&L Co. LTD.,KOSDAQ,보통주
 043220,티에스넥스젠,TS Nexgen,KOSDAQ,보통주
 277880,티에스아이,TSI Co. Ltd.,KOSDAQ,보통주
-131290,티에스이,TSE CO.Ltd,KOSDAQ,보통주
 246690,TS인베스트먼트,T.S.Investment Corporation,KOSDAQ,보통주
 317240,TS트릴리온,TS Trillion Co. Ltd.,KOSDAQ,보통주
+425420,티에프이,TFE Co. Ltd.,KOSDAQ,보통주
 356860,티엘비,TLB Co. Ltd.,KOSDAQ,보통주
 062860,티엘아이,TLI Inc.,KOSDAQ,보통주
 321550,티움바이오,TiumBio Co. Ltd.,KOSDAQ,보통주
+425040,티이엠씨,TEMC Co. Ltd.,KOSDAQ,보통주
 032540,TJ미디어,TJ MEDIA CO.LTD,KOSDAQ,보통주
 022220,TKG애강,TKG AIKANG,KOSDAQ,보통주
 104480,티케이케미칼,TK CHEMICAL CORPORATION,KOSDAQ,보통주
@@ -1378,7 +1374,6 @@ shareCode,shareName,shareNameEn,marketType,shareType
 034230,파라다이스,Paradise Company Limited,KOSDAQ,보통주
 033540,파라텍,Paratech Company Limited,KOSDAQ,보통주
 043200,파루,PARU CO. LTD.,KOSDAQ,보통주
-214450,파마리서치,PharmaResearch,KOSDAQ,보통주
 208340,파멥신,PharmAbcine Inc.,KOSDAQ,보통주
 177830,파버나인,PAVONINE CO. LTD.,KOSDAQ,보통주
 037070,파세코,PASECO CO.LTD,KOSDAQ,보통주
@@ -1389,11 +1384,11 @@ shareCode,shareName,shareNameEn,marketType,shareType
 170790,파이오링크,Piolink Inc.,KOSDAQ,보통주
 049120,파인디앤씨,FINE DNC CO.LTD.,KOSDAQ,보통주
 038950,파인디지털,FINEDIGITAL Inc.,KOSDAQ,보통주
+441270,파인엠텍,Fine M-Tec Co.Ltd.,KOSDAQ,보통주
 106240,파인테크닉스,FINE TECHNIX CO. LTD,KOSDAQ,보통주
 131760,파인텍,FINETEK CO. LTD.,KOSDAQ,보통주
 065690,파커스,PAKERS CO. Ltd.,KOSDAQ,보통주
 140860,파크시스템스,Park Systems Corp.,KOSDAQ,보통주
-091700,파트론,PARTRON CO. LTD,KOSDAQ,보통주
 032800,판타지오,Fantagio Corp.,KOSDAQ,보통주
 318010,팜스빌,Pharmsville Co. Ltd.,KOSDAQ,보통주
 027710,팜스토리,FarmStory CO.LTD.,KOSDAQ,보통주
@@ -1401,12 +1396,11 @@ shareCode,shareName,shareNameEn,marketType,shareType
 054300,팬스타엔터프라이즈,Panstar Enterprise Co. Ltd.,KOSDAQ,보통주
 068050,팬엔터테인먼트,PAN ENTERTAINMENT CO. LTD.,KOSDAQ,보통주
 222110,팬젠,Pangen Biotech Inc.,KOSDAQ,보통주
-263750,펄어비스,PearlAbyss Corp.,KOSDAQ,보통주
 251970,펌텍코리아,PUM-TECH KOREA CO. LTD.,KOSDAQ,보통주
+168360,펨트론,PEMTRON Corporation,KOSDAQ,보통주
 087010,펩트론,Peptron Inc.,KOSDAQ,보통주
 119500,포메탈,FORMETAL CO. LTD,KOSDAQ,보통주
 389140,포바이포,4by4 Inc.,KOSDAQ,보통주
-022100,포스코 ICT,POSCO ICT COMPANY LTD.,KOSDAQ,보통주
 189690,포시에스,FORCS Co. Ltd.,KOSDAQ,보통주
 318020,포인트모바일,POINT MOBILE Co. Ltd.,KOSDAQ,보통주
 256630,포인트엔지니어링,POINT ENGINEERING Co. Ltd.,KOSDAQ,보통주
@@ -1431,6 +1425,7 @@ shareCode,shareName,shareNameEn,marketType,shareType
 377220,프롬바이오,From Bio Co. Ltd.,KOSDAQ,보통주
 335810,프리시젼바이오,Precision Biosensor Inc.,KOSDAQ,보통주
 053160,프리엠스,FreeMs Corporation,KOSDAQ,보통주
+405000,플라즈맵,Plasmapp Co. Ltd.,KOSDAQ,보통주
 041590,플래스크,Flask,KOSDAQ,보통주
 367000,플래티어,Plateer Co. Ltd.,KOSDAQ,보통주
 075130,플랜티넷,PLANTYNET Co. Ltd.,KOSDAQ,보통주
@@ -1442,14 +1437,12 @@ shareCode,shareName,shareNameEn,marketType,shareType
 241820,피씨엘,PCL. Inc,KOSDAQ,보통주
 237750,피앤씨테크,PNC Technologies Co. Ltd.,KOSDAQ,보통주
 024850,피에스엠씨,PSMC Co. Ltd,KOSDAQ,보통주
-319660,피에스케이,PSK INC.,KOSDAQ,보통주
 031980,피에스케이홀딩스,PSK HOLDINGS INC.,KOSDAQ,보통주
 002230,피에스텍,PS Tec. Co. Ltd.,KOSDAQ,보통주
 057880,피에이치씨,PHC,KOSDAQ,보통주
 043370,피에이치에이,PHA,KOSDAQ,보통주
 239890,피엔에이치테크,P&H TECH Co. Ltd.,KOSDAQ,보통주
 347740,피엔케이피부임상연구센타,P&K Skin Research Center Co.Ltd.,KOSDAQ,보통주
-137400,피엔티,People & Technology Inc.,KOSDAQ,보통주
 024940,PN풍년,PNPOONGNYUN CO.LTD,KOSDAQ,보통주
 128660,피제이메탈,PJ METAL CO. LTD.,KOSDAQ,보통주
 006140,피제이전자,PJ ELECTRONICS CO. LTD.,KOSDAQ,보통주
@@ -1457,22 +1450,23 @@ shareCode,shareName,shareNameEn,marketType,shareType
 304840,피플바이오,PeopleBio Inc.,KOSDAQ,보통주
 062970,피피아이,PPI. INC,KOSDAQ,보통주
 087600,픽셀플러스,Pixelplus. Co. Ltd.,KOSDAQ,보통주
+291810,핀텔,Pintel Co. Ltd.,KOSDAQ,보통주
 161580,필옵틱스,PHILOPTICS CO. LTD.,KOSDAQ,보통주
 347770,핌스,PIMS Inc.,KOSDAQ,보통주
 163730,핑거,Finger Inc.,KOSDAQ,보통주
-332710,하나금융14호스팩,Hana Financial Fourteen Special Purpose Acquisition Company,KOSDAQ,보통주
-341160,하나금융15호스팩,Hana Financial Fifteenth Special Purpose Acquisition Company,KOSDAQ,보통주
+417180,핑거스토리,Finger Story CO. LTD.,KOSDAQ,보통주
 343510,하나금융16호스팩,Hana Financial Sixteen Special Purpose Acquisition Company,KOSDAQ,보통주
 388220,하나금융19호스팩,Hana Financial Nineteen Special Purpose Acquisition Company,KOSDAQ,보통주
 400560,하나금융20호스팩,Hana Financial Twenty Special Purpose Acquisition Company,KOSDAQ,보통주
 406760,하나금융21호스팩,Hana Financial Twenty-one SPAC,KOSDAQ,보통주
 418170,하나금융22호스팩,Hana Financial Twenty-two SPAC,KOSDAQ,보통주
+427950,하나금융23호스팩,Hana Financial Twenty-three SPAC,KOSDAQ,보통주
+430230,하나금융24호스팩,Hana Financial Twenty-four SPAC,KOSDAQ,보통주
+435620,하나금융25호스팩,Hana Financial Twenty-five SPAC,KOSDAQ,보통주
 299030,하나기술,HANA TECHNOLOGY CO.LTD.,KOSDAQ,보통주
-067310,하나마이크론,Hana Micron Inc.,KOSDAQ,보통주
 372290,하나머스트7호스팩,Hana Must Seven Special Purpose Acquisition Company,KOSDAQ,보통주
-166090,하나머티리얼즈,Hana Materials Inc.,KOSDAQ,보통주
 136480,하림,HARIM Co. Ltd.,KOSDAQ,보통주
-003380,하림지주,Harim Holdings Co. Ltd.,KOSDAQ,보통주
+101670,하이드로리튬,Hydro Lithium,KOSDAQ,보통주
 365590,하이딥,HiDeep,KOSDAQ,보통주
 149980,하이로닉,Hironic Co.Ltd,KOSDAQ,보통주
 013030,하이록코리아,HY-LOK CORPORATION,KOSDAQ,보통주
@@ -1499,9 +1493,9 @@ shareCode,shareName,shareNameEn,marketType,shareType
 053300,한국정보인증,KOREA INFORMATION CERTIFICATE AUTHORITY INCORPORATED,KOSDAQ,보통주
 025770,한국정보통신,KoreaInformation&Communication,KOSDAQ,보통주
 409570,한국제10호스팩,Korea No.10 Special Purpose Acquisition Co. LTD.,KOSDAQ,보통주
+436610,한국제11호스팩,Korea No.11 Special Purpose Acquisition Co. LTD.,KOSDAQ,보통주
 023760,한국캐피탈,Han Kook Capital Co. Ltd.,KOSDAQ,보통주
 054040,한국컴퓨터,KOREA COMPUTER INC.,KOSDAQ,보통주
-050540,한국코퍼레이션,HANKOOK Corporation Inc.,KOSDAQ,보통주
 021650,한국큐빅,CUBIC KOREA INC.,KOSDAQ,보통주
 053590,한국테크놀로지,HANKOOK Technology Inc.,KOSDAQ,보통주
 032300,한국파마,KOREA PHARMA Co. Ltd.,KOSDAQ,보통주
@@ -1511,22 +1505,22 @@ shareCode,shareName,shareNameEn,marketType,shareType
 256150,한독크린텍,Handok Clean Tech Co. Ltd.,KOSDAQ,보통주
 092460,한라IMS,HANLA IMS Co. LTD,KOSDAQ,보통주
 047080,한빛소프트,HANBIT SOFT Inc.,KOSDAQ,보통주
+114810,한솔아이원스,Hansol IONES,KOSDAQ,보통주
 070590,한솔인티큐브,Hansol Inticube Co. Ltd.,KOSDAQ,보통주
 226440,한송네오텍,HANSONGNEOTECH CO.LTD.,KOSDAQ,보통주
 042520,한스바이오메드,HANS BIOMED CORPORATION,KOSDAQ,보통주
 078350,한양디지텍,HANYANG DIGITECH CO.LTD.,KOSDAQ,보통주
 045100,한양이엔지,HANYANG ENG CO.LTD.,KOSDAQ,보통주
-046110,한일네트웍스,HANIL NETWORKS CO. LTD.,KOSDAQ,보통주
 024740,한일단조,HanilForgingIndustrial,KOSDAQ,보통주
 005860,한일사료,HANIL FEED Co.Ltd,KOSDAQ,보통주
 123840,한일진공,HANIL VACUUM CO. LTD.,KOSDAQ,보통주
 007770,한일화학,HANIL CHEMICAL IND. CO. LTD,KOSDAQ,보통주
-043090,한창바이오텍,HanChang Biotech,KOSDAQ,보통주
+198940,한주라이트메탈,HANJOO LIGHT METAL CO. LTD.,KOSDAQ,보통주
 079170,한창산업,Hanchang Industry Co. Ltd.,KOSDAQ,보통주
-086960,한컴MDS,Hancom MDS Inc.,KOSDAQ,보통주
 054920,한컴위드,Hancom WITH,KOSDAQ,보통주
 002680,한탑,Hantop Inc.,KOSDAQ,보통주
 386580,한화플러스제2호스팩,Hanwha Plus No 2 Special Purpose Acquisition Company,KOSDAQ,보통주
+430460,한화플러스제3호스팩,Hanwha Plus No 3 Special Purpose Acquisition Company,KOSDAQ,보통주
 034810,해성산업,Haesung Industrial Co. Ltd.,KOSDAQ,보통주
 076610,해성옵틱스,Haesung Optics Co.Ltd,KOSDAQ,보통주
 059270,해성티피씨,Haisung TPC Co. Ltd.,KOSDAQ,보통주
@@ -1553,6 +1547,7 @@ shareCode,shareName,shareNameEn,marketType,shareType
 097870,효성오앤비,Hyosung ONB Co. Ltd,KOSDAQ,보통주
 290270,휴네시온,Hunesion co.ltd,KOSDAQ,보통주
 353190,휴럼,Hurum Co. Ltd.,KOSDAQ,보통주
+192410,휴림네트웍스,Hyulim Networks,KOSDAQ,보통주
 090710,휴림로봇,Hyulim ROBOT Co.Ltd.,KOSDAQ,보통주
 205470,휴마시스,HUMASIS CO. LTD.,KOSDAQ,보통주
 115160,휴맥스,HUMAX CO. LTD.,KOSDAQ,보통주
@@ -1562,14 +1557,63 @@ shareCode,shareName,shareNameEn,marketType,shareType
 065510,휴비츠,Huvitz Co. Ltd.,KOSDAQ,보통주
 215090,휴센텍,Hucentech,KOSDAQ,보통주
 263920,휴엠앤씨,HuM&C,KOSDAQ,보통주
-243070,휴온스,Huons Co. Ltd.,KOSDAQ,보통주
 084110,휴온스글로벌,Huons Global Co. Ltd.,KOSDAQ,보통주
-145020,휴젤,Hugel Inc.,KOSDAQ,보통주
 024060,흥구석유,HeunguOil,KOSDAQ,보통주
 010240,흥국,HEUNGKUK METALTECH CO.LTD.,KOSDAQ,보통주
 189980,흥국에프엔비,HYUNGKUK F&B Co. Ltd,KOSDAQ,보통주
 037440,희림,Heerim Architects & Planners,KOSDAQ,보통주
 238490,힘스,HIMS CO. LTD.,KOSDAQ,보통주
+098460,고영,Koh Young Technology Inc.,KOSDAQ GLOBAL,보통주
+215000,골프존,GOLFZON Co. Ltd.,KOSDAQ GLOBAL,보통주
+030190,NICE평가정보,NICE Information Service Co. Ltd.,KOSDAQ GLOBAL,보통주
+213420,덕산네오룩스,DUK SAN NEOLUX CO.LTD,KOSDAQ GLOBAL,보통주
+086450,동국제약,DongKook Pharmaceutical Co.Ltd.,KOSDAQ GLOBAL,보통주
+141080,레고켐바이오,LegoChem Biosciences Inc.,KOSDAQ GLOBAL,보통주
+058470,리노공업,LEENO Industrial Inc,KOSDAQ GLOBAL,보통주
+267980,매일유업,Maeil Dairies Co. Ltd.,KOSDAQ GLOBAL,보통주
+215200,메가스터디교육,MegaStudyEdu Co. Ltd,KOSDAQ GLOBAL,보통주
+090460,비에이치,BH Co. Ltd.,KOSDAQ GLOBAL,보통주
+046890,서울반도체,SEOUL SEMICONDUCTOR CO. LTD.,KOSDAQ GLOBAL,보통주
+091990,셀트리온헬스케어,Celltrion Healthcare Co. Ltd.,KOSDAQ GLOBAL,보통주
+036830,솔브레인홀딩스,Soulbrain Holdings Co. Ltd.,KOSDAQ GLOBAL,보통주
+035760,CJ ENM,CJ ENM CO. Ltd.,KOSDAQ GLOBAL,보통주
+084850,아이티엠반도체,ITM Semiconductor Co. Ltd,KOSDAQ GLOBAL,보통주
+196170,알테오젠,Alteogen Inc.,KOSDAQ GLOBAL,보통주
+056190,에스에프에이,SFA Engineering Corporation,KOSDAQ GLOBAL,보통주
+237690,에스티팜,ST Pharm Co. Ltd.,KOSDAQ GLOBAL,보통주
+195940,HK이노엔,HK inno.N Corporation,KOSDAQ GLOBAL,보통주
+230360,에코마케팅,ECHOMARKETING Co.Ltd.,KOSDAQ GLOBAL,보통주
+247540,에코프로비엠,ECOPRO BM CO. LTD.,KOSDAQ GLOBAL,보통주
+060250,NHN한국사이버결제,NHN KCP Corp.,KOSDAQ GLOBAL,보통주
+066970,엘앤에프,L&F CO. LTD,KOSDAQ GLOBAL,보통주
+240810,원익IPS,WONIK IPS Co.Ltd.,KOSDAQ GLOBAL,보통주
+074600,원익QnC,WONIK QnC CORPORATION,KOSDAQ GLOBAL,보통주
+069080,웹젠,Webzen Inc.,KOSDAQ GLOBAL,보통주
+084370,유진테크,Eugene Technology Co. Ltd.,KOSDAQ GLOBAL,보통주
+272290,이녹스첨단소재,INNOX Advanced Materials Co. Ltd.,KOSDAQ GLOBAL,보통주
+039030,이오테크닉스,EO Technics Co. Ltd.,KOSDAQ GLOBAL,보통주
+049070,인탑스,INTOPS CO. LTD.,KOSDAQ GLOBAL,보통주
+035900,JYP Ent.,JYP Entertainment Corporation,KOSDAQ GLOBAL,보통주
+036930,주성엔지니어링,JUSUNG ENGINEERING Co.Ltd.,KOSDAQ GLOBAL,보통주
+278280,천보,Chunbo Co. Ltd.,KOSDAQ GLOBAL,보통주
+293490,카카오게임즈,Kakao Games Corp.,KOSDAQ GLOBAL,보통주
+183300,코미코,KoMiCo Ltd.,KOSDAQ GLOBAL,보통주
+200130,콜마비앤에이치,KolmarBNH Co. Ltd,KOSDAQ GLOBAL,보통주
+214150,클래시스,CLASSYS Inc.,KOSDAQ GLOBAL,보통주
+095610,테스,TES CO. LTD.,KOSDAQ GLOBAL,보통주
+064760,티씨케이,TOKAI CARBON KOREA CO. LTD,KOSDAQ GLOBAL,보통주
+131290,티에스이,TSE CO.Ltd,KOSDAQ GLOBAL,보통주
+214450,파마리서치,PharmaResearch,KOSDAQ GLOBAL,보통주
+091700,파트론,PARTRON CO. LTD,KOSDAQ GLOBAL,보통주
+263750,펄어비스,PearlAbyss Corp.,KOSDAQ GLOBAL,보통주
+022100,포스코 ICT,POSCO ICT COMPANY LTD.,KOSDAQ GLOBAL,보통주
+319660,피에스케이,PSK INC.,KOSDAQ GLOBAL,보통주
+137400,피엔티,People & Technology Inc.,KOSDAQ GLOBAL,보통주
+067310,하나마이크론,Hana Micron Inc.,KOSDAQ GLOBAL,보통주
+166090,하나머티리얼즈,Hana Materials Inc.,KOSDAQ GLOBAL,보통주
+003380,하림지주,Harim Holdings Co. Ltd.,KOSDAQ GLOBAL,보통주
+243070,휴온스,Huons Co. Ltd.,KOSDAQ GLOBAL,보통주
+145020,휴젤,Hugel Inc.,KOSDAQ GLOBAL,보통주
 095570,AJ네트웍스,AJ Networks Co.Ltd.,KOSPI,보통주
 006840,AK홀딩스,AK Holdings Inc.,KOSPI,보통주
 282330,BGF리테일,BGF Retail,KOSPI,보통주
@@ -1599,12 +1643,16 @@ shareCode,shareName,shareNameEn,marketType,shareType
 012630,HDC,HDC HOLDINGS CO.Ltd,KOSPI,보통주
 294870,HDC현대산업개발,HYUNDAI DEVELOPMENT COMPANY,KOSPI,보통주
 097230,HJ중공업,HJ SHIPBUILDING & CONSTRUCTION,KOSPI,보통주
+014790,HL D&I,HL D&I HALLA CORPORATION,KOSPI,보통주
+204320,HL만도,HL Mando,KOSPI,보통주
+060980,HL홀딩스,HL Holdings Corporation,KOSPI,보통주
 003560,IHQ,IHQ,KOSPI,보통주
 175330,JB금융지주,JB Financial Group Co. Ltd.,KOSPI,보통주
 234080,JW생명과학,JW LIFESCIENCE,KOSPI,보통주
 001060,JW중외제약,JWPHARMACEUTICAL,KOSPI,보통주
 096760,JW홀딩스,JW HOLDINGS CORPORATION,KOSPI,보통주
 105560,KB금융,KB Financial Group,KOSPI,보통주
+432320,KB스타리츠,KB STAR REIT,KOSPI,보통주
 009070,KCTC,KCTC,KOSPI,보통주
 016380,KG스틸,KG DONGBUSTEEL,KOSPI,보통주
 001390,KG케미칼,KG Chemical,KOSPI,보통주
@@ -1626,6 +1674,7 @@ shareCode,shareName,shareNameEn,marketType,shareType
 010120,LS ELECTRIC,LS ELECTRIC,KOSPI,보통주
 000680,LS네트웍스,LSNetworks,KOSPI,보통주
 006260,LS,LS,KOSPI,보통주
+108320,LX세미콘,LX Semicon,KOSPI,보통주
 001120,LX인터내셔널,LX INTERNATIONAL CORP.,KOSPI,보통주
 023150,MH에탄올,MHETHANOL,KOSPI,보통주
 035420,NAVER,NAVER,KOSPI,보통주
@@ -1826,7 +1875,6 @@ shareCode,shareName,shareNameEn,marketType,shareType
 071840,롯데하이마트,LOTTE Himart,KOSPI,보통주
 027740,마니커,MANIKER,KOSPI,보통주
 357430,마스턴프리미어리츠,MASTERN PREMIER REIT 1,KOSPI,보통주
-204320,만도,Mando Corporation,KOSPI,보통주
 001080,만호제강,ManhoRope&Wire,KOSPI,보통주
 088980,맥쿼리인프라,Macquarie Korea Infrastructure Fund,KOSPI,보통주
 138040,메리츠금융지주,Meritz Financial Group,KOSPI,보통주
@@ -1856,6 +1904,7 @@ shareCode,shareName,shareNameEn,marketType,shareType
 134380,미원화학,Miwon Chemicals,KOSPI,보통주
 003650,미창석유,MichangOilInd,KOSPI,보통주
 155900,바다로19호,Badaro No.19 Ship Investment Company,KOSPI,보통주
+377740,바이오노트,BioNote,KOSPI,보통주
 003610,방림,Pangrim,KOSPI,보통주
 001340,백광산업,PaikkwangIndustrial,KOSPI,보통주
 035150,백산,Baiksan,KOSPI,보통주
@@ -1957,6 +2006,7 @@ shareCode,shareName,shareNameEn,marketType,shareType
 336370,솔루스첨단소재,Solus Advanced Materials,KOSPI,보통주
 248070,솔루엠,SOLUM,KOSPI,보통주
 004430,송원산업,SongwonIndustrial,KOSPI,보통주
+126720,수산인더스트리,Soosan Industries,KOSPI,보통주
 017550,수산중공업,SoosanHeavyIndustries,KOSPI,보통주
 026890,스틱인베스트먼트,STIC Investments Inc.,KOSPI,보통주
 134790,시디즈,SidizInc,KOSPI,보통주
@@ -1975,8 +2025,8 @@ shareCode,shareName,shareNameEn,marketType,shareType
 001720,신영증권,ShinyoungSecurities,KOSPI,보통주
 009270,신원,Shinwon,KOSPI,보통주
 002700,신일전자,SHINIL ELECTRONICS,KOSPI,보통주
+002870,신풍,SHINPOONG INC.,KOSPI,보통주
 019170,신풍제약,ShinpoongPharmaceutical,KOSPI,보통주
-002870,신풍제지,ShinpoongPaperMfg,KOSPI,보통주
 055550,신한지주,ShinhanFinancialGroup Co.Ltd.,KOSPI,보통주
 404990,신한서부티엔디리츠,SHINHAN SEOBU T&D REIT,KOSPI,보통주
 293940,신한알파리츠,Shinhan Alpha REIT,KOSPI,보통주
@@ -1986,6 +2036,7 @@ shareCode,shareName,shareNameEn,marketType,shareType
 003620,쌍용차,SsangyongMotor,KOSPI,보통주
 004770,써니전자,SunnyElectronics,KOSPI,보통주
 015540,쎌마테라퓨틱스,THELMA Therapeutics,KOSPI,보통주
+403550,쏘카,SOCAR,KOSPI,보통주
 004920,씨아이테크,CITECH,KOSPI,보통주
 112610,씨에스윈드,CS Wind Corporation,KOSPI,보통주
 000120,CJ대한통운,CJ LOGISTICS,KOSPI,보통주
@@ -2029,8 +2080,8 @@ shareCode,shareName,shareNameEn,marketType,shareType
 082740,HSD엔진,HSD Engine,KOSPI,보통주
 003580,HLB글로벌,HLB GLOBAL Co. Ltd.,KOSPI,보통주
 011200,HMM,HMM,KOSPI,보통주
-007460,에이프로젠 MED,Aprogen Medicines,KOSPI,보통주
-003060,에이프로젠제약,Aprogen pharmaceuticalsInc.,KOSPI,보통주
+003060,에이프로젠바이오로직스,Aprogen Biologics,KOSPI,보통주
+007460,에이프로젠,Aprogen,KOSPI,보통주
 244920,에이플러스에셋,A Plus Asset,KOSPI,보통주
 036570,엔씨소프트,NCsoftCorporation,KOSPI,보통주
 380440,엔에이치스팩19호,NH SPECIAL PURPOSE ACQUISITION 19 COMPANY,KOSPI,보통주
@@ -2071,6 +2122,7 @@ shareCode,shareName,shareNameEn,marketType,shareType
 010600,웰바이오텍,WELLBIOTEC,KOSPI,보통주
 008600,윌비스,TheWillBes,KOSPI,보통주
 014830,유니드,UNID,KOSPI,보통주
+446070,유니드비티플러스,UNID btplus,KOSPI,보통주
 047400,유니온머티리얼,Union Materials Corp.,KOSPI,보통주
 000910,유니온,Union,KOSPI,보통주
 011330,유니켐,UNI CHEM.CO.LTD,KOSPI,보통주
@@ -2196,6 +2248,7 @@ shareCode,shareName,shareNameEn,marketType,shareType
 005420,코스모화학,COSMOCHEMICALCO,KOSPI,보통주
 071950,코아스,KOAS,KOSPI,보통주
 003070,코오롱글로벌,KolonGlobalCorporation,KOSPI,보통주
+450140,코오롱모빌리티그룹,KOLON MOBILITY GROUP,KOSPI,보통주
 002020,코오롱,KOLON CORPORATION,KOSPI,보통주
 120110,코오롱인더,KOLON INDUSTRIES,KOSPI,보통주
 138490,코오롱플라스틱,KOLON PLASTICS INC.,KOSPI,보통주
@@ -2259,7 +2312,6 @@ shareCode,shareName,shareNameEn,marketType,shareType
 005430,한국공항,KoreaAirportService,KOSPI,보통주
 010040,한국내화,KOREAREFRACTORIES,KOSPI,보통주
 025540,한국단자,KoreaElectricTerminal,KOSPI,보통주
-096300,베트남개발1,Vietnam Real Estate Development Fund1,KOSPI,보통주
 004090,한국석유,KOREA PETROLEUM INDUSTRIES,KOSPI,보통주
 002200,한국수출포장,KoreaExportPackagingIndustrial,KOSPI,보통주
 002960,한국쉘석유,HankookShellOil,KOSPI,보통주
@@ -2289,8 +2341,6 @@ shareCode,shareName,shareNameEn,marketType,shareType
 003350,한국화장품제조,HankookCosmeticsManufacturing,KOSPI,보통주
 011500,한농화성,HANNONGCHEMICALSINC.,KOSPI,보통주
 002390,한독,HANDOK Inc.,KOSPI,보통주
-014790,한라,Halla Corporation,KOSPI,보통주
-060980,한라홀딩스,Halla Holdings Corporation,KOSPI,보통주
 053690,한미글로벌,HanmiGlobal Co. Ltd,KOSPI,보통주
 042700,한미반도체,HANMISemiconductorCO.Ltd.,KOSPI,보통주
 008930,한미사이언스,Hanmi Science,KOSPI,보통주
@@ -2389,4 +2439,4 @@ shareCode,shareName,shareNameEn,marketType,shareType
 079980,휴비스,HUVIS,KOSPI,보통주
 005010,휴스틸,HUSTEEL,KOSPI,보통주
 000540,흥국화재,HeungkukFire&MarineInsurance,KOSPI,보통주
-003280,흥아해운,HeungaShipping,KOSPI,보통주
+003280,흥아해운,HeungaShipping,KOSPI,보통주ㅁ
