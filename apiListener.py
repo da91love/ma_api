@@ -17,6 +17,7 @@ from api_financial_summary_post.app import lambda_handler as post_financial_summ
 from api_financial_status_post.app import lambda_handler as post_financial_status
 from api_market_summary_post.app import lambda_handler as post_market_summary
 from api_model_post.app import lambda_handler as post_model
+from api_stock_price_info_get.app import lambda_handler as get_stock_price_info
 
 import sys
 import os
@@ -36,6 +37,27 @@ run_pre_process()
 # This flask API is only used for the development stage.
 # DO NOT deploy on production
 """
+
+@api.route('/dev/api/ma-api/v1/front/stock-price-info',
+           methods=['get'])  # TODO : Insert any URL
+def stock_price_info_get():
+    # Get body, headers
+    body = request.json
+    headers = request.headers
+    params = request.args
+
+    # Insert necessary data to body
+    data = {
+        'header': headers,
+        'body-json': body,
+        'params': params,
+        'context': {
+            'http-method': 'POST'
+        }
+    }
+    result = get_stock_price_info(data)
+
+    return make_response(jsonify(result))
 
 @api.route('/dev/api/ma-api/v1/front/model',
            methods=['post'])  # TODO : Insert any URL

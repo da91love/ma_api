@@ -3,7 +3,7 @@ project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 import pydash as _
 from common.util.FsUtil import FsUtil
-from common.const.PATH import *
+from common.const.LOCAL_PATH import *
 
 def create_gdp_data():
     try:

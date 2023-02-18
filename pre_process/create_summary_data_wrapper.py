@@ -5,7 +5,7 @@ sys.path.append(project_root)
 
 from common.util.create_summary_data import create_summary_data
 from common.util.FsUtil import FsUtil
-from common.const.PATH import *
+from common.const.LOCAL_PATH import *
 import pydash as _
 
 def create_summary_data_wrapper():

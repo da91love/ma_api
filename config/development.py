@@ -14,7 +14,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # )['Body'].read().decode('utf-8')
 
 config = {
-    "name": "production",
+    "name": "development",
     "ROOT": BASE_DIR,
     "DB": {
             "mysql": {
@@ -37,6 +37,9 @@ config = {
         "redis_port": "xxxx",
         "redis_ssl": True,
         "redis_token": None,
+    },
+    "AUTH": {
+        "FSC_OPEN_API": "mXwh51CbHVJpZ4ACqYwC6VKezfgfLNg1O+MibCmClldeC0NmQ97VQYE+ZbLtzseE2Pj1LUFvZCtXAdjVjSXMDw==",
     },
     "LOCK_TIME_LIMIT": 15,
     "LOG_CONFIG": {

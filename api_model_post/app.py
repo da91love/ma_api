@@ -10,7 +10,7 @@ sys.path.append(api_root)
 
 from common.util.config_get import get_config
 from common.AppBase import AppBase
-from common.const.PATH import *
+from common.const.LOCAL_PATH import *
 from common.util.FsUtil import FsUtil
 from .type.Res_type import ResType
 from .logic.Model import Model

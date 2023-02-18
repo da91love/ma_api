@@ -6,7 +6,7 @@ from common.util.FsUtil import FsUtil
 from common.util.create_market_summary_data import create_market_summary_data
 from common.const.COMM import PERIOD_UNIT
 from common.const.KEY_NAME import KEY_NAME, OTHER_KEY_NAME
-from common.const.PATH import *
+from common.const.LOCAL_PATH import *
 
 def create_market_summary_data_wrapper():
     # import all data

@@ -1,4 +1,4 @@
-from common.const.PATH import *
+from common.const.LOCAL_PATH import *
 
 FS_PATH_KO = {
     'pl': {

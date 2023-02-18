@@ -2,7 +2,7 @@ from common.util.config_get import get_config
 from common.AppBase import AppBase
 from common.util.FsUtil import FsUtil
 from .type.Res_type import ResType
-from common.const.PATH import *
+from common.const.LOCAL_PATH import *
 from .logic.ShareSearchInHeaderFormatter import ShareSearchInHeaderFormatter
 
 # import boto3
