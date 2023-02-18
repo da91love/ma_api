@@ -37,9 +37,9 @@ def lambda_handler(event, context=None) -> ResType:
 
     # Get data from API Gateway
     data = event['body-json']['data']
-    header = event['header']
+    header = event.get('header')
 
-    auth_id = header['authId']
+    auth_id = header.get('authId')
     value = json.dumps(data['value'],  ensure_ascii=False)
 
     # Check authentication

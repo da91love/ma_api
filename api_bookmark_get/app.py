@@ -35,8 +35,8 @@ def lambda_handler(event, context=None) -> ResType:
     :return: (dict)
     """
     # Get data from API Gateway
-    header = event['header']
-    auth_id = header['authId']
+    header = event.get('header')
+    auth_id = header.get('authId')
 
     # Check authentication
     user_id = get_authed_user_id(auth_id=auth_id)

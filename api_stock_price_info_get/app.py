@@ -19,6 +19,7 @@ sys.path.append(api_root)
 
 # import module
 import requests
+import pydash as _
 
 # Create instance
 config = get_config()
@@ -69,13 +70,13 @@ def lambda_handler(event, context=None) -> ResType:
     """
 
     # Get data from API Gateway
-    header = event['header']
-    auth_id = header['authId']
+    header = event.get('header')
+    auth_id = header.get('authId')
     service_key = (config.get('AUTH')).get('FSC_OPEN_API')
-    num_of_rows = (event.get('params')).get('numOfRows') or 10000
+    num_of_rows = (event.get('params')).get('numOfRows')
     page_no = (event.get('params')).get('pageNo')
-    result_type = (event.get('params')).get('resultType')
-    bas_dt = (event.get('params')).get('basDt') or now.strftime('%Y%m%d')
+    result_type = (event.get('params')).get('resultType') or "json"
+    bas_dt = (event.get('params')).get('basDt')
     begin_bas_dt = (event.get('params')).get('beginBasDt')
     end_bas_dt = (event.get('params')).get('endBasDt')
     like_bas_dt = (event.get('params')).get('likeBasDt')
@@ -128,5 +129,8 @@ def lambda_handler(event, context=None) -> ResType:
         "endMrktTotAmt": end_mrkt_tot_amt,
     })
 
-    return ResType(value=res.get('body')).get_response()
+    json_res = res.json()
+    result = (((json_res.get('response')).get('body')).get('items')).get('item')
+
+    return ResType(value=result).get_response()
 
