@@ -15,6 +15,7 @@ KO_QUARTER_MARKET_SUMMARY_DATA = "/static/ko/marketSummaryData/market_summary_qu
 KO_M2_DATA = "/static/ko/marketSummaryData/M2.csv"
 KO_GDP_DATA = "/static/ko/marketSummaryData/GDP.csv"
 KO_GDP_MODIFIED_DATA = "/static/ko/marketSummaryData/GDP_MODIFIED.csv"
+KO_MRT_CAP_TEST_DATA = "/static/ko/marketSummaryData/mrkcap.csv"
 
 
 US_YEAR_SUMMARY_DATA = "/static/us/rawData/year_result.csv"

@@ -2,3 +2,4 @@ FSC_OPEN_API_GET_STOCK_PRICE_INFO_URL = "https://apis.data.go.kr/1160100/service
 FSC_OPEN_API_GET_PREEMPTIVE_RIGHT_CERTIFICATE_PRICE_INFO_URL = "https://apis.data.go.kr/1160100/service/GetStockSecuritiesInfoService/getPreemptiveRightCertificatePriceInfo"
 FSC_OPEN_API_GET_SECURITIES_PRICE_INFO_URL = "https://apis.data.go.kr/1160100/service/GetStockSecuritiesInfoService/getSecuritiesPriceInfo"
 FSC_OPEN_API_GET_PREEMPTIVE_RIGHT_SECURITIES_PRICE_INFO_URL = "https://apis.data.go.kr/1160100/service/GetStockSecuritiesInfoService/getPreemptiveRightSecuritiesPriceInfo"
+KRX_OPEN_API_GET_MRK_CAP_URL = "http://data-dbg.krx.co.kr/svc/apis/idx/kosdaq_dd_trd"
