@@ -13,8 +13,8 @@ def create_mrkcap_data(auth_key: str, api_url: str, mrkcap_date_e: list):
 
     # Set variables
     result = []
-    tg_data = dt(2010, 1, 1)
-    crt_dt = dt.now().strftime('%Y-%m-%d')
+    tg_data: datetime = dt(2010, 1, 1)
+    crt_dt_4_csv = dt.now().strftime('%Y/%m/%d')
     i = 0
 
     # Set date checking list
@@ -22,15 +22,16 @@ def create_mrkcap_data(auth_key: str, api_url: str, mrkcap_date_e: list):
     for d in mrkcap_date_e:
         date_checking_list.append(d.get('BAS_DD'))
 
-    while (tg_data.strftime('%Y-%m-%d')) != crt_dt:
+    while (tg_data.strftime('%Y/%m/%d')) != crt_dt_4_csv:
 
-        # Set target date as str
-        str_tg_date = tg_data.strftime('%Y%m%d')
+        # Set target date
+        tg_date_4_api: str = tg_data.strftime('%Y%m%d')
+        tg_date_4_csv: str = tg_data.strftime('%Y/%m/%d')
 
         # 기존 데이터에서 존재하면 그냥 PASS
-        if str_tg_date in date_checking_list:
+        if tg_date_4_api in date_checking_list:
             # Print log
-            print(str_tg_date + ' done')
+            print(tg_date_4_api + ' done')
 
             # Add +1 day
             tg_data += datetime.timedelta(days=i+1)
@@ -40,7 +41,7 @@ def create_mrkcap_data(auth_key: str, api_url: str, mrkcap_date_e: list):
             res = requests.get(
                 api_url,
                 headers={"AUTH_KEY": auth_key},
-                params={"basDd": str_tg_date}
+                params={"basDd": tg_date_4_api}
             )
 
             # Get res as josn
@@ -55,7 +56,7 @@ def create_mrkcap_data(auth_key: str, api_url: str, mrkcap_date_e: list):
 
             # Set API value into format
             res_format = {
-                "BAS_DD": str_tg_date,
+                "BAS_DD": tg_date_4_csv,
                 "IDX_CLSS": value.get('IDX_CLSS'),
                 "IDX_NM": value.get('IDX_NM'),
                 "ACC_TRDVOL": value.get('ACC_TRDVOL'),
@@ -67,7 +68,7 @@ def create_mrkcap_data(auth_key: str, api_url: str, mrkcap_date_e: list):
             result.append(res_format)
 
             # Print log
-            print(str_tg_date + ' done')
+            print(tg_date_4_api + ' done')
 
             # Add +1 day
             tg_data += datetime.timedelta(days=i+1)
