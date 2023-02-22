@@ -40,6 +40,7 @@ config = {
     },
     "AUTH": {
         "FSC_OPEN_API": "mXwh51CbHVJpZ4ACqYwC6VKezfgfLNg1O+MibCmClldeC0NmQ97VQYE+ZbLtzseE2Pj1LUFvZCtXAdjVjSXMDw==",
+        "FRX_OPEN_API": "D437B6E30BCB46B2B2FF96F80C4CCAABE5B91CD0",
     },
     "LOCK_TIME_LIMIT": 15,
     "LOG_CONFIG": {
