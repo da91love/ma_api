@@ -17,6 +17,7 @@ KO_GDP_DATA = "/static/ko/marketSummaryData/GDP.csv"
 KO_GDP_MODIFIED_DATA = "/static/ko/marketSummaryData/GDP_MODIFIED.csv"
 KO_KOSPI_MRK_CAP_DATA = "/static/ko/marketSummaryData/kospi_mrkcap.csv"
 KO_KOSDAQ_MRK_CAP_DATA = "/static/ko/marketSummaryData/kosdaq_mrkcap.csv"
+KO_ALL_MRK_CAP_DATA = "/static/ko/marketSummaryData/all_mrkcap.csv"
 
 
 US_YEAR_SUMMARY_DATA = "/static/us/rawData/year_result.csv"

@@ -29,7 +29,7 @@ def create_mrkcap_data(auth_key: str, api_url: str, mrkcap_date_e: list):
         tg_date_4_csv: str = tg_data.strftime('%Y/%m/%d')
 
         # 기존 데이터에서 존재하면 그냥 PASS
-        if tg_date_4_api in date_checking_list:
+        if tg_date_4_csv in date_checking_list:
             # Print log
             print(tg_date_4_api + ' done')
 
@@ -73,4 +73,7 @@ def create_mrkcap_data(auth_key: str, api_url: str, mrkcap_date_e: list):
             # Add +1 day
             tg_data += datetime.timedelta(days=i+1)
 
-    return result
+    # Concat existing result and new requested result
+    concated_result = mrkcap_date_e + result
+
+    return concated_result

@@ -26,7 +26,7 @@ def get_mrkcap():
 
         # request to API
         res = requests.get(
-            KRX_OPEN_API_GET_MRK_CAP_URL,
+            KRX_OPEN_API_GET_KOSPI_MRK_CAP_URL,
             headers={
                 "AUTH_KEY": "D437B6E30BCB46B2B2FF96F80C4CCAABE5B91CD0"
             },
@@ -65,7 +65,7 @@ def get_mrkcap():
 
 
     # save as csv
-    FsUtil.save_json_2_csv_file(result, project_root + KO_MRT_CAP_TEST_DATA)
+    FsUtil.save_json_2_csv_file(result, project_root + KO_KOSPI_MRK_CAP_DATA)
 
 
 get_mrkcap()
