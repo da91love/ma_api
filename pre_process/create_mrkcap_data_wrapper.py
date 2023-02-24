@@ -53,14 +53,27 @@ def create_mrkcap_data_wrapper():
         if date in date_checking_list:
             pass
         else:
-            tg_list: list = grouped_mrkcap.get('date')
+            tg_list: list = grouped_mrkcap.get(date)
 
-            sumed_result = {
-                "BAS_DD": tg_list,
-                "ACC_TRDVOL": reduce(lambda acc, cur: acc + cur["ACC_TRDVOL"], grouped_mrkcap.get('date'), 0),
-                "ACC_TRDVAL": reduce(lambda acc, cur: acc + cur["ACC_TRDVAL"], grouped_mrkcap.get('date'), 0),
-                "MKTCAP": reduce(lambda acc, cur: acc + cur["MKTCAP"], grouped_mrkcap.get('date'), 0)
-            }
+            sumed_result = {}
+            if tg_list[0].get('ACC_TRDVOL') is None:
+                sumed_result = {
+                    "BAS_DD": date,
+                    "ACC_TRDVOL": None,
+                    "ACC_TRDVAL": None,
+                    "MKTCAP": None
+                }
+            else:
+                acc_trdvol = reduce(lambda acc, cur: acc + cur["ACC_TRDVOL"], tg_list, 0)
+                acc_trdval = reduce(lambda acc, cur: acc + cur["ACC_TRDVAL"], tg_list, 0)
+                mktcap = reduce(lambda acc, cur: acc + cur["MKTCAP"], tg_list, 0)
+
+                sumed_result = {
+                    "BAS_DD": date,
+                    "ACC_TRDVOL": acc_trdvol,
+                    "ACC_TRDVAL": acc_trdval,
+                    "MKTCAP": mktcap
+                }
 
             all_mrkcap_n.append(sumed_result)
 
