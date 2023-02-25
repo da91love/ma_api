@@ -47,26 +47,26 @@ def lambda_handler(event, context=None) -> ResType:
     quarter_result = None
     if country == 'ko':
         # Open market summary data
-        year_result = FsUtil.open_csv_2_json_file(project_root + KO_YEAR_MARKET_SUMMARY_DATA)
-        quarter_result = FsUtil.open_csv_2_json_file(project_root + KO_QUARTER_MARKET_SUMMARY_DATA)
+        year_result: list = FsUtil.open_csv_2_json_file(project_root + KO_YEAR_MARKET_SUMMARY_DATA)
+        quarter_result: list = FsUtil.open_csv_2_json_file(project_root + KO_QUARTER_MARKET_SUMMARY_DATA)
 
         # Open macro data
-        mrkcap = FsUtil.open_csv_2_json_file(project_root + KO_ALL_MRK_CAP_DATA)
-        gdp = FsUtil.open_csv_2_json_file(project_root + KO_GDP_DATA)
-        m2 = FsUtil.open_csv_2_json_file(project_root + KO_M2_DATA)
+        mrkcap: dict = _.group_by(FsUtil.open_csv_2_json_file(project_root + KO_ALL_MRK_CAP_DATA), lambda v: v['BAS_DD'])
+        gdp: dict = FsUtil.open_csv_2_json_file(project_root + KO_GDP_DATA)[0]
+        m2: dict = FsUtil.open_csv_2_json_file(project_root + KO_M2_DATA)[0]
 
         for date in mrkcap:
-            date_time_obj = datetime.strptime(date, '%Y/%m/%d')
+            date_time_obj = datetime.datetime.strptime(date, '%Y/%m/%d')
 
             tg_year = date_time_obj.year
             tg_month = date_time_obj.month
 
             if gdp.get(date) is None:
-                tg_date = (datetime.datetime(tg_year, 12, 31)).strftime('%Y/%m/%d')
+                tg_date = (datetime.datetime(tg_year, 12, 1)).strftime('%Y/%m')
                 gdp[date] = gdp.get(tg_date)
 
             if m2.get(date) is None:
-                tg_date = (datetime.datetime(tg_year, tg_month, 31)).strftime('%Y/%m/%d')
+                tg_date = (datetime.datetime(tg_year, tg_month, 1)).strftime('%Y/%m')
                 m2[date] = m2.get(tg_date)
 
 
