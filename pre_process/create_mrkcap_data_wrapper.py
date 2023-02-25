@@ -64,9 +64,9 @@ def create_mrkcap_data_wrapper():
                     "MKTCAP": None
                 }
             else:
-                acc_trdvol = reduce(lambda acc, cur: acc + cur["ACC_TRDVOL"], tg_list, 0)
-                acc_trdval = reduce(lambda acc, cur: acc + cur["ACC_TRDVAL"], tg_list, 0)
-                mktcap = reduce(lambda acc, cur: acc + cur["MKTCAP"], tg_list, 0)
+                acc_trdvol = reduce(lambda acc, cur: float(acc) + float(cur["ACC_TRDVOL"]), tg_list, 0)
+                acc_trdval = reduce(lambda acc, cur: float(acc) + float(cur["ACC_TRDVAL"]), tg_list, 0)
+                mktcap = reduce(lambda acc, cur: float(acc) + float(cur["MKTCAP"]), tg_list, 0)
 
                 sumed_result = {
                     "BAS_DD": date,
