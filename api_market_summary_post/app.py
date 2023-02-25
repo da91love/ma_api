@@ -79,6 +79,7 @@ def lambda_handler(event, context=None) -> ResType:
         year_result = FsUtil.open_csv_2_json_file(project_root+KO_YEAR_ADDED_SUMMARY_DATA)
         quarter_result = FsUtil.open_csv_2_json_file(project_root+KO_QUARTER_ADDED_SUMMARY_DATA)
 
+    # gdp와 m2는 억원 단위로 return되고, 시가총액은 원단위로 return
     result: dict = {
         'mrk_smr': {
             'year_result': year_result,
