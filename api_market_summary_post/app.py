@@ -51,11 +51,16 @@ def lambda_handler(event, context=None) -> ResType:
         quarter_result: list = FsUtil.open_csv_2_json_file(project_root + KO_QUARTER_MARKET_SUMMARY_DATA)
 
         # Open macro data
-        mrkcap: dict = _.group_by(FsUtil.open_csv_2_json_file(project_root + KO_ALL_MRK_CAP_DATA), lambda v: v['BAS_DD'])
+        mrkcap: list = FsUtil.open_csv_2_json_file(project_root + KO_ALL_MRK_CAP_DATA)
         gdp: dict = FsUtil.open_csv_2_json_file(project_root + KO_GDP_DATA)[0]
         m2: dict = FsUtil.open_csv_2_json_file(project_root + KO_M2_DATA)[0]
 
-        for date in mrkcap:
+        # gdp 및 m2와 동일한 데이터 포맷으로 변경하기 위해 period가 key로 된 dict로 변형
+        mrkcap_obj: dict = {}
+        for data in mrkcap:
+            mrkcap_obj[data.get('BAS_DD')] = data
+
+        for date in mrkcap_obj:
             date_time_obj = datetime.datetime.strptime(date, '%Y/%m/%d')
 
             tg_year = date_time_obj.year
@@ -82,7 +87,7 @@ def lambda_handler(event, context=None) -> ResType:
         'macro': {
             'gdp': gdp,
             'm2': m2,
-            'mrkcap': mrkcap
+            'mrkcap': mrkcap_obj
         }
 
     }
