@@ -4,3 +4,4 @@ FSC_OPEN_API_GET_SECURITIES_PRICE_INFO_URL = "https://apis.data.go.kr/1160100/se
 FSC_OPEN_API_GET_PREEMPTIVE_RIGHT_SECURITIES_PRICE_INFO_URL = "https://apis.data.go.kr/1160100/service/GetStockSecuritiesInfoService/getPreemptiveRightSecuritiesPriceInfo"
 KRX_OPEN_API_GET_KOSPI_MRK_CAP_URL = "http://data-dbg.krx.co.kr/svc/apis/idx/kospi_dd_trd"
 KRX_OPEN_API_GET_KOSDAQ_MRK_CAP_URL = "http://data-dbg.krx.co.kr/svc/apis/idx/kosdaq_dd_trd"
+NAVER_API_GET_STOCK_PRICE_URL = "https://polling.finance.naver.com/api/realtime"
