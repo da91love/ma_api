@@ -52,14 +52,25 @@ def lambda_handler(event, context=None) -> ResType:
 
         # Open macro data
         mrkcap: list = FsUtil.open_csv_2_json_file(project_root + KO_ALL_MRK_CAP_DATA)
+        kospi_mrkcap: list = FsUtil.open_csv_2_json_file(project_root + KO_KOSPI_MRK_CAP_DATA)
+        kosdaq_mrkcap: list = FsUtil.open_csv_2_json_file(project_root + KO_KOSDAQ_MRK_CAP_DATA)
         gdp: dict = FsUtil.open_csv_2_json_file(project_root + KO_GDP_DATA)[0]
         m2: dict = FsUtil.open_csv_2_json_file(project_root + KO_M2_DATA)[0]
 
-        # gdp 및 m2와 동일한 데이터 포맷으로 변경하기 위해 period가 key로 된 dict로 변형
+        # gdp 및 m2와 동일한 데이터 포맷으로 변경하기 위해 mrkcap데이터를 period가 key로 된 dict로 변형
         mrkcap_obj: dict = {}
+        kospi_mrkcap_obj: dict = {}
+        kosdaq_mrkcap_obj: dict = {}
         for data in mrkcap:
             mrkcap_obj[data.get('BAS_DD')] = data
 
+        for data in kospi_mrkcap:
+            kospi_mrkcap_obj[data.get('BAS_DD')] = data
+
+        for data in kosdaq_mrkcap:
+            kosdaq_mrkcap_obj[data.get('BAS_DD')] = data
+
+        # gdp 및 m2 데이터의 period를 yyyy/mm/dd헝태로 formatting
         for date in mrkcap_obj:
             date_time_obj = datetime.datetime.strptime(date, '%Y/%m/%d')
 
@@ -88,7 +99,9 @@ def lambda_handler(event, context=None) -> ResType:
         'macro': {
             'gdp': gdp,
             'm2': m2,
-            'mrkcap': mrkcap_obj
+            'mrkcap': mrkcap_obj,
+            'kospi_mrkcap': kospi_mrkcap_obj,
+            'kosdaq_mrkcap': kosdaq_mrkcap_obj
         }
 
     }
