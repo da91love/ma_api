@@ -28,6 +28,9 @@ def create_mrkcap_data(auth_key: str, api_url: str, mrkcap_date_e: list):
         tg_date_4_api: str = tg_data.strftime('%Y%m%d')
         tg_date_4_csv: str = tg_data.strftime('%Y/%m/%d')
 
+        if tg_date_4_api == "20230522":
+            print('stop')
+
         # 기존 데이터에서 존재하면 그냥 PASS
         if tg_date_4_csv in date_checking_list:
             # Print log
